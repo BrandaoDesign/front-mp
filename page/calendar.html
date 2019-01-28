@@ -1,0 +1,194 @@
+<!-- page -->
+<section class="page">
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <h2 class="page-header__title"><b class="ico-calendar"></b> Calendário</h2>
+    <ul class="crumbs">
+      <li>
+        <a href="../index.html">Início <b class="ico-arrow-right"></b></a>
+      </li>
+      <li>
+        <p>Calendário</p>
+      </li>
+    </ul>
+  </div>
+  <!-- fim: HEADER -->
+
+  <!-- content -->
+  <content class="row">
+
+    <aside class="col-2 box b-right">
+      <fieldset class="mail-header">
+        <button class="bt-secondary bt-small bt-block" name="button">Novo Evento <b class="ico-calendar"></b></button>
+      </fieldset>
+      <fieldset>
+        <h6>EVENTOS</h6><br>
+        <div class="small">
+          <a class="mb-5 status block bg-info block" href="#">Reunião</a>
+          <a class="mb-5 status block bg-error block" href="#">Audiência</a>
+          <a class="mb-5 status block bg-success block" href="#">Curso</a>
+        </div>
+      </fieldset>
+    </aside>
+
+      <!-- calendar -->
+      <article class="row-full box theme-showcase">
+
+        <div id="holder" class="" ></div>
+
+        <script type="text/tmpl" id="tmpl">
+          {{
+          var date = date || new Date(),
+              month = date.getMonth(),
+              year = date.getFullYear(),
+              first = new Date(year, month, 1),
+              last = new Date(year, month + 1, 0),
+              startingDay = first.getDay(),
+              thedate = new Date(year, month, 1 - startingDay),
+              dayclass = lastmonthcss,
+              today = new Date(),
+              i, j;
+          if (mode === 'week') {
+            thedate = new Date(date);
+            thedate.setDate(date.getDate() - date.getDay());
+            first = new Date(thedate);
+            last = new Date(thedate);
+            last.setDate(last.getDate()+6);
+          } else if (mode === 'day') {
+            thedate = new Date(date);
+            first = new Date(thedate);
+            last = new Date(thedate);
+            last.setDate(thedate.getDate() + 1);
+          }
+
+          }}
+
+          <fieldset class="mail-header">
+            <div class="row row-center">
+              <div class="row-center mr-10">
+                <button class="js-cal-prev button bt-medium input-group-left"><b class="ico-arrow-left"></b></button>
+                <button class="js-cal-next button bt-medium input-group-right"><b class="ico-arrow-right"></b></button>
+                <button class="max-s js-cal-option button bt-medium ml-5 {{: first.toDateInt() <= today.toDateInt() && today.toDateInt() <= last.toDateInt() ? 'active':'' }}" data-date="{{: today.toISOString()}}" data-mode="month">Hoje</button>
+              </div>
+              <div class="row-full">
+                <h2 class="text-center">{{ if (mode !== 'day') { }}
+                  {{ if (mode === 'month') { }}<span class="js-cal-option" data-mode="year">{{: months[month] }}</span>{{ } }}
+                  {{ if (mode ==='week') { }}
+                      <span>{{: shortMonths[first.getMonth()] }} {{: first.getDate() }} - {{: shortMonths[last.getMonth()] }} {{: last.getDate() }}</span>
+                    {{ } }}
+                    <span class="js-cal-years">{{: year}}</span>
+                  {{ } else { }}
+                    <span>{{: date.toDateString() }}</span>
+                  {{ } }}
+                </h2>
+              </div>
+              <div class="row-center ml-10 max-xm">
+                <button class="bt bt-medium input-group-left js-cal-option {{: mode==='year'? 'active':'' }}" data-mode="year">Ano</button>
+                <button class="bt bt-medium input-group-left js-cal-option {{: mode==='month'? 'active':'' }}" data-mode="month">Mês</button>
+                <button class="bt bt-medium input-group-left js-cal-option {{: mode==='week'? 'active':'' }}" data-mode="week">Semana</button>
+                <button class="bt bt-medium js-cal-option {{: mode==='day'? 'active':'' }}" data-mode="day">Dia</button>
+              </div>
+            </div>
+          </fieldset>
+
+          <table class="calendar mt-0">
+
+            {{ if (mode ==='year') {
+              month = 0;
+            }}
+            <tbody>
+              {{ for (j = 0; j < 3; j++) { }}
+              <tr>
+                {{ for (i = 0; i < 4; i++) { }}
+                <td class="calendar-month month-{{:month}} js-cal-option" data-date="{{: new Date(year, month, 1).toISOString() }}" data-mode="month">
+                  {{: months[month] }}
+                  {{ month++;}}
+                </td>
+                {{ } }}
+              </tr>
+              {{ } }}
+            </tbody>
+            {{ } }}
+            {{ if (mode ==='month' || mode ==='week') { }}
+            <thead>
+              <tr class="c-weeks">
+                {{ for (i = 0; i < 7; i++) { }}
+                  <th class="c-name">
+                    {{: days[i] }}
+                  </th>
+                {{ } }}
+              </tr>
+            </thead>
+            <tbody>
+              {{ for (j = 0; j < 6 && (j < 1 || mode === 'month'); j++) { }}
+              <tr>
+                {{ for (i = 0; i < 7; i++) { }}
+                {{ if (thedate > last) { dayclass = nextmonthcss; } else if (thedate >= first) { dayclass = thismonthcss; } }}
+                <td class="calendar-day {{: dayclass }} {{: thedate.toDateCssClass() }} {{: date.toDateCssClass() === thedate.toDateCssClass() ? 'selected':'' }} {{: daycss[i] }} js-cal-option" data-date="{{: thedate.toISOString() }}">
+                  <div class="date">{{: thedate.getDate() }}</div>
+                  {{ thedate.setDate(thedate.getDate() + 1);}}
+                </td>
+                {{ } }}
+              </tr>
+              {{ } }}
+            </tbody>
+            {{ } }}
+            {{ if (mode ==='day') { }}
+            <tbody>
+              <tr>
+                <td colspan="7">
+                  <table class="table table-striped table-condensed table-tight-vert" >
+                    <thead>
+                      <tr>
+                        <th>&nbsp;</th>
+                        <th style="text-align: center; width: 100%">{{: days[date.getDay()] }}</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="timetitle" >Dia Todo</th>
+                        <td class="{{: date.toDateCssClass() }}">  </td>
+                      </tr>
+                      <tr>
+                        <th class="timetitle" >Antes 6 AM</th>
+                        <td class="time-0-0"> </td>
+                      </tr>
+                      {{for (i = 6; i < 22; i++) { }}
+                      <tr>
+                        <th class="timetitle" >{{: i <= 12 ? i : i - 12 }} {{: i < 12 ? "AM" : "PM"}}</th>
+                        <td class="time-{{: i}}-0"> </td>
+                      </tr>
+                      <tr>
+                        <th class="timetitle" >{{: i <= 12 ? i : i - 12 }}:30 {{: i < 12 ? "AM" : "PM"}}</th>
+                        <td class="time-{{: i}}-30"> </td>
+                      </tr>
+                      {{ } }}
+                      <tr>
+                        <th class="timetitle" >Depois 10 PM</th>
+                        <td class="time-22-0"> </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+            {{ } }}
+          </table>
+        </script>
+      </article>
+      <!-- calendar -->
+
+  </content>
+  <!-- fim: content -->
+
+</section>
+<!-- fim: page -->
+
+<!-- js -->
+<script src="js/calendar.js"></script>
+<script type="text/javascript">
+  $(".link_mail").click(function(){ $.get("page/mail.html", function(data) { $("#container").html(data); }); });
+  $(".link_mail-msg").click(function(){ $.get("page/mail-msg.html", function(data) { $("#container").html(data); }); });
+</script>
+<!-- fim: js -->

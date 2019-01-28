@@ -1,0 +1,98 @@
+//==============================================================================
+// THEME
+//==============================================================================
+.theme{
+    &-white{
+        background: var(--base-1);
+        color: var(--base-4);
+        --base-1: #{$cor-white};
+        --base-2: #{$cor-gray-light};
+        --base-3: #{$cor-gray};
+        --base-4: #{$cor-gray-dark};
+        --shadow-1: #{$shadow};
+        --shadow-2: #{$shadow-2};
+        --header-1: #{$cor-white};
+        --header-2: #373846;
+        --header-3: #a71010;
+        --menu-1: #{$cor-white};
+        --menu-2: #373846;
+        --menu-3: #a71010;
+        --primary: #373846;
+        --primary-light: #515267;
+        --primary-dark: #2a2b35;
+        --secondary: #a71010;
+        --secondary-light: #d41515;
+        --secondary-dark: #8c0a04;
+    }
+    &-dark{
+        background: var(--base-1);
+        color: var(--base-4);
+        --base-1: #{$cor-black-dark};
+        --base-2: #181b1d;
+        --base-3: #28292d;
+        --base-4: #{$cor-white};
+        --shadow-1: #{$shadow-5};
+        --shadow-2: #{$shadow-5};
+        --header-1: #1e1f23;
+        --header-2: #a8acaf;
+        --header-3: #{$cor-white};
+        --menu-1: #111115;
+        --menu-2: #a8acaf;
+        --menu-3: #{$cor-white};
+        --primary: #484852;
+        --primary-light: #666671;
+        --primary-dark: #1e1e23;
+        --secondary: #a71010;
+        --secondary-light: #d41515;
+        --secondary-dark: #8c0a04;
+    }
+    &-primary{
+        background: var(--base-1);
+        color: var(--base-4);
+        --base-1: #{$cor-white};
+        --base-2: #{$cor-gray-light};
+        --base-3: #{$cor-gray};
+        --base-4: #{$cor-gray-dark};
+        --shadow-1: #{$shadow};
+        --shadow-2: #{$shadow-5};
+        --header-1: #373846;
+        --header-2: #{$cor-white};
+        --header-3: #d41515;
+        --menu-1: #2a2b35;
+        --menu-2: #{$cor-gray-light};
+        --menu-3: #d41515;
+        --primary: #373846;
+        --primary-light: #515267;
+        --primary-dark: #2a2b35;
+        --secondary: #a71010;
+        --secondary-light: #d41515;
+        --secondary-dark: #8c0a04;
+    }
+    
+}
+//==============================================================================
+// COLOR THEME
+//==============================================================================
+// COLOR | primary
+//------------------------------------------------------------------------------
+$cor-primary: var(--primary);
+.bg-primary{background: var(--primary);}
+.text-primary{color: var(--primary);}
+$cor-primary-dark: var(--primary-dark);
+.bg-primary-dark{background: var(--primary-dark);}
+.text-primary-dark{color: var(--primary-dark);}
+$cor-primary-light: #29d4d4;
+.bg-primary-light{background: var(--primary-light);}
+.text-primary-light{color: var(--primary-light);}
+//------------------------------------------------------------------------------
+// COLOR | Secondary
+//------------------------------------------------------------------------------
+$cor-secondary: var(--secondary);
+.bg-secondary{background: var(--secondary);}
+.text-secondary{color: var(--secondary);}
+$cor-secondary-dark: var(--secondary-dark);
+.bg-secondary-dark{background: var(--secondary-dark);}
+.text-secondary-dark{color: var(--secondary-dark);}
+$cor-secondary-light:var(--secondary-light);
+.bg-secondary-light{background: var(--secondary-light);}
+.text-secondary-light{color: var(--secondary-light);}

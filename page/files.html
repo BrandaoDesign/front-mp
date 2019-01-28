@@ -1,0 +1,179 @@
+<article class="page">
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <h2 class="page-header__title"><b class="ico-folder"></b> Arquivos</h2>
+    <ul class="crumbs">
+      <li>
+        <a href="index.html">Início <b class="ico-arrow-right"></b></a>
+      </li>
+      <li>
+        <p>Arquivos <b class="ico-arrow-right"></b></p>
+      </li>
+    </ul>
+  </div>
+  <!-- fim: HEADER -->
+
+  <!-- submenu -->
+  <nav class="page-sub row-center">
+    <ul class="nav-line row-full">
+      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Novo Arquivo"><b class="ico-file-plus"></b> Novo Arquivo</a></li>
+      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Itens Arquivados"><b class="ico-archive"></b> Arquivados</a></li>
+      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Download"><b class="ico-download"></b></a></li>
+      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b></a></li>
+    </ul>
+  </nav>
+  <!-- fim: submenu -->
+
+  <div class="row mt-15">
+
+    <aside class="col-2 col-m-3 box b-right">
+      <fieldset class="mail-header">
+        <button class="bt-primary bt-small bt-block" name="button"><b class="ico-folder"></b> Nova Pasta</button>
+      </fieldset>
+      <fieldset>
+        <h6>PASTAS</h6><br>
+        <div class="list-group small">
+          <a class="list-group-item block link_mail mail-active" href="#"><b class="ico-folder"></b> Documentos</a>
+          <a class="list-group-item block link_mail" href="#"><b class="ico-folder"></b> Favoritos</a>
+          <a class="list-group-item block link_mail" href="#"><b class="ico-folder"></b> PDF Docs</a>
+          <a class="list-group-item block link_mail" href="#"><b class="ico-folder"></b> Arquivados</a>
+          <a class="list-group-item block link_mail" href="#"><b class="ico-folder"></b> Outros</a>
+        </div>
+      </fieldset>
+      <fieldset class="max-s">
+        <h6>MARCADOR</h6><br>
+        <ul class="list-clear small ml-15">
+          <li class="mb-3">
+            <a class="mb-3 inline status bg-info" href="#"><small>Projetos</small></a>
+          </li>
+          <li class="mb-3">
+            <a class="mb-3 inline status bg-alert" href="#"><small>MP</small></a>
+          </li>
+          <li class="mb-3">
+            <a class="mb-3 inline status bg-success" href="#"><small>Processos</small></a>
+          </li>
+        </ul>
+      </fieldset>
+    </aside>
+
+    <div class="col-10 col-m-9 box">
+
+      <div class="card-line row">
+        <div class="box col-4 col-m-12">
+          <h5 class="mb-10">Busca:</h5>
+          <div class="search small mt-29">
+            <input type="text" class="form-input search-input" placeholder="pesquisar...">
+            <button class="bt search-button"><b class="ico-search"></b></button>
+          </div>
+        </div>
+        <div class="box col-8 col-m-12">
+          <h5 class="mb-10">Filtros:</h5>
+          <div class="form-inline small">
+            <div class="form-group">
+              <label class="form-label">Data:</label>
+              <select class="form-select" name="">
+                <option>Data Criação</option>
+                <option>Última Edição</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Autor:</label>
+              <select class="form-select" name="">
+                <option>Renato Brandão</option>
+                <option>Mariana Rocha</option>
+                <option>Tiago Melo</option>
+                <option>Guilherme Maranhão</option>
+              </select>
+            </div>
+            <div class="form-group mt-18">
+              <button class="bt-primary bt-medium">Filtrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table class="table-line">
+        <thead>
+          <tr>
+            <th class="tw-2"><input type="checkbox" id="all"></th>
+            <th class="tw-2"><b class="ico-file-text"></b></th>
+            <th>Nome</th>
+            <th>Autor</th>
+            <th>Data</th>
+            <th colspan="2">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr class="base-t">
+            <td><input type="checkbox"></td>
+            <td><b class="ico-file-text fs-32 text-gray-dark"></b></td>
+            <td class="row">
+              <div class="row-full mr-10">
+                <strong>Document 001</strong> <small class="block text-gray-dark">Tamanho | 17kb</small>
+              </div>
+              <div class="">
+                <small class="status bg-info">Projeto</small>
+              </div>
+            </td>
+            <td>Renato Brandão <small class="block text-gray-dark">designer</small></td>
+            <td>criado: 09/11/18 <small class="block text-gray-dark">editado: 09/11/18</small></td>
+            <td class="tw-5"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-edit"></b></a></td>
+            <td class="tw-5"><a class="bt-secondary-clear bt-ico" href="#"><b class="ico-trash"></b></a></td>
+          </tr>
+
+          <tr class="base-t">
+            <td><input type="checkbox"></td>
+            <td><b class="ico-file-text fs-32 text-gray-dark"></b></td>
+            <td class="row">
+              <div class="row-full mr-10">
+                <strong>Document 002</strong> <small class="block text-gray-dark">Tamanho | 17kb</small>
+              </div>
+              <div class="">
+                <small class="status bg-success">Processos</small>
+              </div>
+            </td>
+            <td>Mariana Rocha <small class="block text-gray-dark">desenvolvedor</small></td>
+            <td>criado: 09/11/18 <small class="block text-gray-dark">editado: 09/11/18</small></td>
+            <td class="tw-5"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-edit"></b></a></td>
+            <td class="tw-5"><a class="bt-secondary-clear bt-ico" href="#"><b class="ico-trash"></b></a></td>
+          </tr>
+
+          <tr class="base-t">
+            <td><input type="checkbox"></td>
+            <td><b class="ico-file-text fs-32 text-gray-dark"></b></td>
+            <td>
+              <strong>Document 003</strong> <small class="block text-gray-dark">Tamanho | 17kb</small>
+            </td>
+            <td>Tiago Melo <small class="block text-gray-dark">analista</small></td>
+            <td>criado: 09/11/18 <small class="block text-gray-dark">editado: 09/11/18</small></td>
+            <td class="tw-5"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-edit"></b></a></td>
+            <td class="tw-5"><a class="bt-secondary-clear bt-ico" href="#"><b class="ico-trash"></b></a></td>
+          </tr>
+
+          <tr class="base-t">
+            <td><input type="checkbox"></td>
+            <td><b class="ico-file-text fs-32 text-gray-dark"></b></td>
+            <td class="row">
+              <div class="row-full mr-10">
+                <strong>Document 004</strong> <small class="block text-gray-dark">Tamanho | 17kb</small>
+              </div>
+              <div class="">
+                <small class="status bg-alert">MP</small>
+              </div>
+            </td>
+            <td>Guilherme Maranhão <small class="block text-gray-dark">desenvolvedor</small></td>
+            <td>criado: 09/11/18 <small class="block text-gray-dark">editado: 09/11/18</small></td>
+            <td class="tw-5"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-edit"></b></a></td>
+            <td class="tw-5"><a class="bt-secondary-clear bt-ico" href="#"><b class="ico-trash"></b></a></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+
+</article>

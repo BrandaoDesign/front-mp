@@ -1,0 +1,242 @@
+<!-- HEADER -->
+<div class="page-header">
+  <h2 class="page-header__title">Formulários</h2>
+  <ul class="crumbs">
+    <li>
+      <a href="../index.html">Início <b class="ico ico-arrow-right"></b></a>
+    </li>
+    <li>
+      <p>Formulários <b class="ico ico-arrow-right"></b></p>
+    </li>
+    <li>
+      <a href="form.html">Elementos <b class="ico ico-arrow-right"></b></a>
+    </li>
+  </ul>
+</div>
+<!-- fim: HEADER -->
+
+<div class="content-center">
+
+  <!-- card form elements -->
+  <article class="cards-shadow">
+
+    <div class="cards-header-line">
+      <h2 class="cards-titulo">Elementos</h2>
+      <p class="text small">Itens base de um formulário</p>
+    </div>
+
+    <form class="cards-box">
+
+      <h3>Inputs</h3><br>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">label</label>
+        <input class="form-input" placeholder="Placeholder" type="text" name="" value="">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Password</label>
+        <input class="form-input" type="password" name="" value="">
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Disabled</label>
+        <input class="form-input" type="text" name="" value="Disable input" disabled>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Textarea</label>
+        <textarea name="name" rows="5" cols="80"></textarea>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Exmplo</label>
+        <p class="text">email@exemplo.com.br</p>
+      </fieldset>
+
+      <h3>checkbox</h3><br>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Checkbox Padrão</label>
+        <div>
+          <label class="form-check" for="check-1">
+            <input type="checkbox" id="check-1" name="" value="">
+            checkbox 1
+          </label>
+          <label class="form-check" for="check-2">
+            <input type="checkbox" id="check-2" name="" value="">
+            checkbox 2
+          </label>
+          <label class="form-check" for="check-5" disabled>
+            <input type="checkbox" id="check-5" name="" value="" disabled>
+            checkbox 3
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Checkbox Block</label>
+        <label class="form-check-block" for="check-3">
+          <input type="checkbox" id="check-3" name="" value="">
+          checkbox 1
+        </label>
+        <label class="form-check-block" for="check-4">
+          <input type="checkbox" id="check-4" name="" value="">
+          checkbox 2
+        </label>
+        <label class="form-check-block" for="check-6" disabled>
+          <input type="checkbox" id="check-6" name="" value="" disabled>
+          checkbox 3
+        </label>
+      </fieldset>
+
+      <h3>Radio</h3><br>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Radio Padrão</label>
+        <div>
+          <label class="form-radio" for="radio-1">
+            <input type="radio" id="radio-1" name="radio-1" value="">
+            radio 1
+          </label>
+          <label class="form-radio" for="radio-2">
+            <input type="radio" id="radio-2" name="radio-1" value="">
+            radio 2
+          </label>
+          <label class="form-radio" for="radio-3" disabled>
+            <input type="radio" id="radio-3" name="radio-1" value="" disabled>
+            radio 3
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Radio Block</label>
+        <label class="form-radio-block" for="radio-4">
+          <input type="radio" id="radio-4" name="radio-2" value="">
+          radio 1
+        </label>
+        <label class="form-radio-block" for="radio-5">
+          <input type="radio" id="radio-5" name="radio-2" value="">
+          radio 2
+        </label>
+        <label class="form-radio-block" for="radio-6" disabled>
+          <input type="radio" id="radio-6" name="radio-2" value="" disabled>
+          radio 3
+        </label>
+      </fieldset>
+
+      <h3>Toggle</h3><br>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Toggle Padrão</label>
+        <div>
+          <label class="form-toggle" for="toggle1">
+            <input type="checkbox" id="toggle1" class="">
+            <span class="toggle-indicador"></span>
+            toggle 1
+          </label>
+          <label class="form-toggle" for="toggle2">
+            <input type="checkbox" id="toggle2" class="hidden">
+            <span class="toggle-indicador"></span>
+            toggle 2
+          </label>
+          <label class="form-toggle" for="toggle5" disabled>
+            <input type="checkbox" id="toggle5" class="hidden" disabled>
+            <span class="toggle-indicador"></span>
+            toggle 3
+          </label>
+        </div>
+
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Toggle Block</label>
+        <label class="form-toggle-block" for="toggle3">
+          <input type="checkbox" id="toggle3" class="hidden">
+          <span class="toggle-indicador"></span>
+          toggle 1
+        </label>
+        <label class="form-toggle-block" for="toggle4">
+          <input type="checkbox" id="toggle4" class="hidden">
+          <span class="toggle-indicador"></span>
+          toggle 2
+        </label>
+        <label class="form-toggle-block" for="toggle6" disabled>
+          <input type="checkbox" id="toggle6" class="hidden" disabled>
+          <span class="toggle-indicador"></span>
+          toggle 3
+        </label>
+      </fieldset>
+
+      <h3>Select</h3><br>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Select</label>
+        <select class="form-select" name="">
+          <option value="">Selecione</option>
+          <option value="">Option 1</option>
+          <option value="">Option 2</option>
+          <option value="">Option 3</option>
+        </select>
+      </fieldset>
+
+      <h3>Input Group</h3><br>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Input Group</label>
+        <div class="input-group">
+          <input type="text" class="form-input col-10 col-m-9" name="" value="">
+          <button type="button" class="bt col-2 col-m-3 input-group-right" name="button">button</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Select Group</label>
+        <div class="input-group">
+          <select class="form-select col-10 col-m-9" name="">
+            <option value="">Selecione</option>
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+          </select>
+          <button type="button" class="bt col-2 col-m-3 input-group-right" name="button">button</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Select Group/Input Group</label>
+        <div class="input-group">
+          <select class="form-select input-group-left col-3 col-m-4" name="">
+            <option value="">Selecione</option>
+            <option value="">Option 1</option>
+            <option value="">Option 2</option>
+            <option value="">Option 3</option>
+          </select>
+          <input type="text" class="form-input col-10 col-m-6" name="" value="">
+          <button type="button" class="bt col-2 col-m-3 input-group-right" name="button">button</button>
+        </div>
+      </fieldset>
+
+      <h3>Validation</h3><br>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Nome</label>
+        <input type="text" class="form-input valid" name="" value="Renato">
+        <p class="feed-valid">Usuário válido</p>
+      </fieldset>
+
+      <fieldset class="form-group">
+        <label class="form-label" for="">Nome</label>
+        <input type="text" class="form-input invalid" name="" value="Mariana">
+        <p class="feed-invalid">Usuário inválido</p>
+      </fieldset>
+
+    </form>
+
+  </article>
+  <!-- fim: card form elements -->
+
+</div>

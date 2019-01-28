@@ -1,0 +1,513 @@
+<!-- HEADER -->
+<div class="page-header">
+  <h2 class="page-header__title">Table</h2>
+  <ul class="crumbs">
+    <li>
+      <a href="../index.html">Início <b class="ico ico-arrow-right"></b></a>
+    </li>
+    <li>
+      <a href="table.html">table <b class="ico ico-arrow-right"></b></a>
+    </li>
+    <li>
+      <a href="table-exemple.html">exemplo <b class="ico ico-arrow-right"></b></a>
+    </li>
+  </ul>
+</div>
+<!-- fim: HEADER -->
+
+<div class="content">
+
+  <fieldset>
+    <h3>Usuários</h3><br>
+
+    <p class="row-table">Mostrar
+      <select class="form-select" name="">
+        <option value="">10</option>
+        <option value="">20</option>
+        <option value="">50</option>
+        <option value="">100</option>
+      </select>
+      Linhas</p>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="tw-3">Foto</th>
+            <th>Nome</th>
+            <th class="tw-2"><b class="ico-mail"></b></th>
+            <th>E-mail</th>
+            <th class="tw-2"><b class="ico-mail"></b></th>
+            <th>Fone</th>
+            <th colspan="2">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><figure class="user-p"><img src="images/profile.svg"/></figure></td>
+            <td class="td-focus" data-label="Nome:">Guilherme</td>
+            <td><b class="ico-mail"></b></td>
+            <td data-label="E-mail:">guilherme@exemple.com.br</td>
+            <td><b class="ico-phone"></b></td>
+            <td data-label="Fone:">62 9 9999-9999</td>
+            <td class="tw-5"><a class="bt-primary-clear bt-small" href="#">Editar</a></td>
+            <td class="tw-5"><a class="bt-secondary-clear bt-small" href="#">Visualizar</a></td>
+          </tr>
+          <tr>
+            <td><figure class="user-p"><img src="images/profile.svg"/></figure></td>
+            <td class="td-focus" data-label="Nome:">Mariana</td>
+            <td><b class="ico-mail"></b></td>
+            <td data-label="E-mail:">mariana@exemple.com.br</td>
+            <td><b class="ico-phone"></b></td>
+            <td data-label="Fone:">62 9 9999-9999</td>
+            <td class="tw-5"><a class="bt-primary-clear bt-small" href="#">Editar</a></td>
+            <td class="tw-5"><a class="bt-secondary-clear bt-small" href="#">Visualizar</a></td>
+          </tr>
+          <tr>
+            <td><figure class="user-p"><img src="images/profile.svg"/></figure></td>
+            <td class="td-focus" data-label="Nome:">Renato</td>
+            <td><b class="ico-mail"></b></td>
+            <td data-label="E-mail:">renato@exemple.com.br</td>
+            <td><b class="ico-phone"></b></td>
+            <td data-label="Fone:">62 9 9999-9999</td>
+            <td class="tw-5"><a class="bt-primary-clear bt-small" href="#">Editar</a></td>
+            <td class="tw-5"><a class="bt-secondary-clear bt-small" href="#">Visualizar</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row-fluid box">
+        <div class="row-full">
+          <p>Mostrando de <strong>1 a 10</strong> de 50 encontrados.</p>
+        </div>
+        <nav class="row-center">
+          <ul class="pagination">
+            <li><a href="#"><b class="ico-arrow-left"></b> Anterior</a></li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><span>Próxima</span> <b class="ico-arrow-right"></b></a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <h3>Perfis</h3><br>
+
+      <table class="table-line">
+        <thead>
+          <tr>
+            <th class="tw-2"><input type="checkbox"></th>
+            <th>Descrição</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>
+              <div class="row">
+                <div class="box tw-9">
+                  <figure class="user"><img src="images/profile.svg"/></figure>
+                </div>
+                <div class="box row-full">
+                  <h4>Guilherme</h4>
+                  <p class="small">Matricula: 000.000.00</p>
+                  <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça.
+                    Copo furadis é disculpa de bebadis, arcu quam euismod magna. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                  </div>
+                </div>
+              </td>
+              <td><a class="bt-primary" href="#"><b class="ico-plus"></b> Detalhes</a></td>
+            </tr>
+            <tr>
+              <td><input type="checkbox"></td>
+              <td>
+                <div class="row">
+                  <div class="box tw-9">
+                    <figure class="user"><img src="images/profile.svg"/></figure>
+                  </div>
+                  <div class="box row-full">
+                    <h4>Mariana</h4>
+                    <p class="small">Matricula: 000.000.00</p>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Quem num gosta di mim que vai caçá sua turmis!
+                      Copo furadis é disculpa de bebadis, arcu quam euismod magna. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                    </div>
+                  </div>
+                </td>
+                <td><a class="bt-primary" href="#"><b class="ico-plus"></b> Detalhes</a></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>
+                  <div class="row">
+                    <div class="box tw-9">
+                      <figure class="user"><img src="images/profile.svg"/></figure>
+                    </div>
+                    <div class="box row-full">
+                      <h4>Guilherme</h4>
+                      <p class="small">Matricula: 000.000.00</p>
+                      <p>Mussum Ipsum, cacilds vidis litro abertis. Leite de capivaris, leite de mula manquis sem cabeça. Quem num gosta di mim que vai caçá sua turmis!</p>
+                    </div>
+                  </div>
+                </td>
+                <td><a class="bt-primary" href="#"><b class="ico-plus"></b> Detalhes</a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <br>
+
+          <nav class="row-center">
+
+            <ul class="row-full pagination-block">
+              <li><a href="#"><b class="ico-arrow-left"></b></a></li>
+              <li><a class="active" href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#"><b class="ico-arrow-right"></b></a></li>
+            </ul>
+
+            <p class="row-table">Mostrar
+              <select class="form-select" name="">
+                <option value="">10</option>
+                <option value="">20</option>
+                <option value="">50</option>
+                <option value="">100</option>
+              </select>
+              Linhas</p>
+
+            </nav>
+
+          </fieldset>
+
+          <fieldset>
+            <h3>Ocorrências</h3><br>
+
+            <table class="table-border">
+              <thead>
+                <tr>
+                  <th class="tw-2">#</th>
+                  <th>Informação</th>
+                  <th>Usuário</th>
+                  <th>Data</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Status:"><b class="ico-alert-circle text-success"></b></td>
+                  <td data-label="Detalhes:">Mussum Ipsum, cacilds vidis litro abertis. Atirei o pau no gatis, per gatis num morreus. Mauris nec dolor in eros commodo tempor.</td>
+                  <td data-label="Nome:">Guilherme</td>
+                  <td data-label="Data:">00/00/00</td>
+                </tr>
+                <tr>
+                  <td data-label="Status:"><b class="ico-alert-circle text-alert"></b></td>
+                  <td data-label="Detalhes:">Quem num gosta di mim que vai caçá sua turmis!</td>
+                  <td data-label="Nome:">Mariana</td>
+                  <td data-label="Data:">00/00/00</td>
+                </tr>
+                <tr>
+                  <td data-label="Status:"><b class="ico-alert-circle text-error"></b></td>
+                  <td data-label="Detalhes:">Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!</td>
+                  <td data-label="Nome:">Renato</td>
+                  <td data-label="Data:">00/00/00</td>
+                </tr>
+              </tbody>
+            </table><br>
+
+            <nav class="row-center">
+              <ul class="pagination">
+                <li><a href="#"><b class="ico-arrow-left"></b> Anterior</a></li>
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#"><span>Próxima</span> <b class="ico-arrow-right"></b></a></li>
+              </ul>
+            </nav>
+
+          </fieldset>
+
+          <fieldset>
+            <h3>Quantidade</h3><br>
+            <table class="table-block">
+              <thead>
+                <tr>
+                  <th class="tw-2">#</th>
+                  <th>Valor 1</th>
+                  <th>Valor 2</th>
+                  <th class="tw-20">Total</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Valor 1:">1</td>
+                  <td data-label="Valor 2:">R$ 0</td>
+                  <td data-label="Valor 3:">R$ 0</td>
+                  <td data-label="Total:">R$ 00,00</td>
+                </tr>
+                <tr>
+                  <td data-label="Valor 1:">2</td>
+                  <td data-label="Valor 2:">R$ 0</td>
+                  <td data-label="Valor 3:">R$ 0</td>
+                  <td data-label="Total:">R$ 00,00</td>
+                </tr>
+                <tr>
+                  <td data-label="Valor 1:">3</td>
+                  <td data-label="Valor 2:">R$ 0</td>
+                  <td data-label="Valor 3:">R$ 0</td>
+                  <td data-label="Total:">R$ 00,00</td>
+                </tr>
+              </tbody>
+            </table><br>
+
+            <nav class="row-center">
+              <div class="row-full">
+                <p>Mostrando de <strong>1 a 10</strong> de 50 encontrados.</p>
+              </div>
+              <ul class="pagination-line">
+                <li><a href="#"><b class="ico-arrow-left"></b></a></li>
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#"><b class="ico-arrow-right"></b></a></li>
+              </ul>
+            </nav>
+          </fieldset>
+
+          <fieldset>
+            <h3>Status</h3><br>
+
+            <div class="row-fluid">
+              <div class="col-3 box">
+                <h4>Basico</h4><br>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Valor</th>
+                      <th>Exemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Valor:">Padrão | .bg-gray</td>
+                      <td data-label="Exemplo:">
+                        <div class="status bg-gray">Padrão</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">info | .bg-info</td>
+                      <td data-label="Exemplo:">
+                        <div class="status bg-info">info</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">success | .bg-success</td>
+                      <td data-label="Exemplo:">
+                        <div class="status bg-success">success</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">alert | .bg-alert</td>
+                      <td data-label="Exemplo:">
+                        <div class="status bg-alert">alert</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">error | .bg-error</td>
+                      <td data-label="Exemplo:">
+                        <div class="status bg-error">error</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">primary | .bg-primary</td>
+                      <td data-label="Exemplo:">
+                        <div class="status bg-primary">primary</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">secondary | .bg-secondary</td>
+                      <td data-label="Exemplo:">
+                        <div class="status bg-secondary">secondary</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-3 box">
+                <h4>Status Line</h4><br>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Valor</th>
+                      <th>Exemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Valor:">Padrão | .text-gray</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-line text-gray">Padrão</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">info | .text-info</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-line text-info">info</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">success | .text-success</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-line text-success">success</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">alert | .text-alert</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-line text-alert">alert</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">error | .text-error</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-line text-error">error</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">primary | .text-primary</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-line text-primary">primary</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">secondary | .text-secondary</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-line text-secondary">secondary</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-3 box">
+                <h4>Status Shadow</h4><br>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Valor</th>
+                      <th>Exemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Valor:">Padrão | .text-gray</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-shadow bg-gray">Padrão</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">info | .text-info</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-shadow bg-info">info</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">success | .text-success</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-shadow bg-success">success</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">alert | .text-alert</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-shadow bg-alert">alert</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">error | .text-error</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-shadow bg-error">error</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">primary | .text-primary</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-shadow bg-primary">primary</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">secondary | .text-secondary</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-shadow bg-secondary">secondary</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-3 box">
+                <h4>Status ball</h4><br>
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Valor</th>
+                      <th>Exemplo</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Valor:">Padrão | .bg-gray</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-ball bg-gray"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">info | .bg-gray</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-ball bg-info"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">success | .bg-info</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-ball bg-success"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">alert | .bg-alert</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-ball bg-alert"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">error | .bg-error</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-ball bg-error"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">primary | .bg-primary</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-ball bg-primary"></div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td data-label="Valor:">secondary | .bg-secondary</td>
+                      <td data-label="Exemplo:">
+                        <div class="status-ball bg-secondary"></div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </fieldset>
+
+        </div>
