@@ -1,0 +1,175 @@
+//==============================================================================
+// SLIDES | variables
+//==============================================================================
+$qt-slide: 4;
+//==============================================================================
+// SLIDES
+//==============================================================================
+.slide{
+  // background: $cor-primary;
+  position: relative;
+  //----------------------------------------------------------------------------
+  // SLIDES | NAV
+  //----------------------------------------------------------------------------
+  &-nav{
+    @include display-flex;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+  //----------------------------------------------------------------------------
+  // SLIDES | NAV | LABEL
+  //----------------------------------------------------------------------------
+  &-label{
+    width: 30px;
+    height: 20px;
+    margin: 0 3px;
+    border-top: 4px solid var(--base-4);
+    transition: all .5s;
+    cursor: pointer;
+    &:hover{
+      border-color: $cor-white;
+    }
+  }
+  //----------------------------------------------------------------------------
+  // SLIDES | NAV | LABEL
+  //----------------------------------------------------------------------------
+  &-arrow{
+    display: none;
+    color: var(--base-4);
+    font-size: 3em;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    transition: all .5s;
+    z-index: 3;
+    cursor: pointer;
+
+    &:hover{
+      color: var(--secondary);
+    }
+  }
+  //----------------------------------------------------------------------------
+  // SLIDES | CONTAINER
+  //----------------------------------------------------------------------------
+  &-container{
+    @include display-flex;
+    overflow: hidden;
+    position: relative;
+  }
+  //----------------------------------------------------------------------------
+  // SLIDES | CONTAINER | ITEM
+  //----------------------------------------------------------------------------
+  &-item{
+    display: none;
+    @include flex(1);
+    visibility: hidden;
+    margin: 0;
+    animation: fadeIn 1.5s;
+    z-index: 1;
+  }
+  //----------------------------------------------------------------------------
+  // SLIDES | CONTAINER | caption
+  //----------------------------------------------------------------------------
+  &-caption{
+    @include flex(1);
+    padding: 20px 40px 60px;
+    text-shadow: 3px 3px 10px var(--shadow-2);
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  //----------------------------------------------------------------------------
+  // SLIDES | CONTAINER | box
+  //----------------------------------------------------------------------------
+  &-box{
+    @include flex(1);
+    text-shadow: 3px 3px 10px var(--shadow-2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  //----------------------------------------------------------------------------
+  // SLIDES | CONTAINER | fade
+  //----------------------------------------------------------------------------
+  &-fade{
+    opacity: .3;
+    @media screen and (min-width: $break-s){
+      opacity: 1;
+    }
+  }
+  //----------------------------------------------------------------------------
+  // SLIDES | checked
+  //----------------------------------------------------------------------------
+  &-input-1:checked{
+    ~ .slide-nav .slide-1{border-color: var(--secondary)}
+    ~ .slide-arrows .arrow-2{display: block; right: 0; transform: rotate(180deg) translateY(20%);}
+    ~ .slide-container .slide-1{visibility: visible; display: block;}
+  }
+  &-input-2:checked{
+    ~ .slide-nav .slide-2{border-color: var(--secondary)}
+    ~ .slide-arrows .arrow-1{display: block;}
+    ~ .slide-arrows .arrow-3{display: block; right: 0; transform: rotate(180deg) translateY(20%);}
+    ~ .slide-container .slide-2{visibility: visible; display: block;}
+  }
+  &-input-3:checked{
+    ~ .slide-nav .slide-3{border-color: var(--secondary)}
+    ~ .slide-arrows .arrow-2{display: block;}
+    ~ .slide-arrows .arrow-4{display: block; right: 0; transform: rotate(180deg) translateY(20%);}
+    ~ .slide-container .slide-3{visibility: visible; display: block;}
+  }
+  &-input-4:checked{
+    ~ .slide-nav .slide-4{border-color: var(--secondary)}
+    ~ .slide-arrows .arrow-3{display: block;}
+    ~ .slide-container .slide-4{visibility: visible; display: block;}
+  }
+//------------------------------------------------------------------------------
+// TABS | SMARTPHONE
+//==============================================================================
+  @media screen and (max-width: $break-s){
+
+    &-arrow{
+      font-size: 2em;
+    }
+
+    &-nav{
+      bottom: 0;
+    }
+
+    &-caption{
+      padding: 10px 30px 30px;
+    }
+
+    &-caption,
+    &-box{
+
+      h1,h2,h3,h4{
+        font-size: 1.1em;
+      }
+
+      p{
+        font-size: .9em;
+        line-height: 1em;
+        margin: 0;
+      }
+    }
+  }
+}
+//------------------------------------------------------------------------------
+// SLIDES | CAPTION
+//------------------------------------------------------------------------------
+.sc{
+  &-center{
+    bottom: 50%;
+    transform: translateY(50%);
+    padding-bottom: 20px;
+  }
+}

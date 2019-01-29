@@ -1,0 +1,159 @@
+<!-- slide -->
+<section class="slide bg-gray-light">
+  <input type="radio" name="slide-3" id="slide3-1" class="hidden slide-input-1" checked>
+
+  <!-- slide container -->
+  <div class="slide-container">
+
+    <!-- slide 1 -->
+    <div class="slide-item slide-1 card row">
+
+      <figure class="slide-fade col-5 col-m-6 ml-auto">
+        <img src="images/image-1.svg" alt="Fundo Login">
+      </figure>
+
+      <div class="slide-box row">
+        <div class="col-8 col-m-10 mr-auto">
+          <div class="slide-caption sc-center text-center">
+            <h1 class="f-size-3 text-secondary">Bem vindo ao Front-MP,</h1>
+            <h1 class="f-size-2">Um modelo de painel de administrativo premium <br> com conceito de design</h1><br>
+            <!-- <h3 class="text max-xs"></h3> -->
+            <button class="bt-secondary link_intro">Como funciona? <b class="ico-arrow-right"></b></button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- fim: slide 1 -->
+
+  </div>
+  <!-- fim: slide container -->
+</section>
+<!-- fim: slide -->
+
+<section class="content-center row">
+
+  <div class="col-12 row-center">
+    <div class="box col-6 col-m-5">
+      <figure class="figure">
+        <img src="images/imac.jpg" alt="Plataforma Front-MP">
+      </figure>
+    </div>
+    <div class="row-full mb-20">
+      <h1 class="mt-20">Uma plataforma pronta</h1>
+      <h2>e personalizavel para novos sistemas</h2><br>
+      <p class="text">O Front-MP foi desenolvido para patronizar os layouts dos<br> novos sistemas do Ministério Público de Goiás. Personalize cores e elementos do layout de acordo com a necessidade do projeto.</p>
+      <a class="bt-primary" href="template/login.html">Exemplo <b class="ico-arrow-right"></b></a>
+    </div>
+  </div>
+
+  <div class="col-4 col-m-6 box">
+
+    <div class="card-line">
+      <div class="card-content row">
+
+        <div class="">
+          <figure class="figure tw-10">
+            <img src="images/html5.png" alt="Logo HTML5">
+          </figure>
+        </div>
+
+        <div class="row-full ml-20">
+          <h3>HTML5</h3>
+          <ul class="list-icons mt-20">
+            <li>Typescript, & HTML</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-4 col-m-6 box">
+
+    <div class="card-line">
+      <div class="card-content row">
+
+        <div class="">
+          <figure class="figure tw-10">
+            <img src="images/sass.png" alt="Logo HTML5">
+          </figure>
+        </div>
+
+        <div class="row-full ml-20">
+          <h3>CSS 3</h3>
+          <ul class="list-icons mt-20">
+            <li>Sass & SCSS</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-4 col-m-6 box">
+
+    <div class="card-line">
+      <div class="card-content row">
+
+        <div class="">
+          <figure class="figure tw-10">
+            <img src="images/js.png" alt="Logo JS">
+          </figure>
+        </div>
+
+        <div class="row-full ml-20">
+          <h3>JavaScript</h3>
+          <ul class="list-icons mt-20">
+            <li>JS, Jquery</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="bg-gray-light box">
+  <div class="content-center row-center">
+    <div class="col-8 col-m-8 box mb-20">
+      <h1>Layout responsivo</h1>
+      <h2>para dispositivos móveis.</h2>
+      <br>
+      <ul class="list-clear mb-20">
+        <li class="list-item mb-20 row-center">
+          <b class="ico-terminal f-size-3 text-secondary"></b>
+          <span class="ml-20">Código em Scss organizado e comentado</span>
+        </li>
+        <li class="list-item mb-20 row-center">
+          <b class="ico-layout f-size-3 text-secondary"></b>
+          <span class="ml-20">Multiplas opções de Layout</span>
+        </li>
+        <li class="list-item mb-20 row-center">
+          <b class="ico-edit-2 f-size-3 text-secondary"></b>
+          <span class="ml-20">Personalize de acordo com sua necessidade</span>
+        </li>
+      </ul>
+      <button class="bt-primary link_install">Instalar <b class="ico-arrow-right"></b></button>
+    </div>
+    <div class="col-4 col-m-4 max-s">
+      <figure class="figure mr-30">
+        <img src="images/iphone.png" alt="Responsivo">
+      </figure>
+    </div>
+  </div>
+</section>
+
+<script type="text/javascript">
+  $(".link_home").click(function(){ $.get("home.html", function(data) { $("#container").html(data); }); });
+  $(".link_intro").click(function(){ $.get("intro.html", function(data) { $("#container").html(data); }); });
+  $(".link_contact").click(function(){ $.get("contact.html", function(data) { $("#container").html(data); }); });
+  $(".link_install").click(function(){ $.get("installs.html", function(data) { $("#container").html(data); }); });
+  $(".link_components").click(function(){ $.get("components/components.html", function(data) { $("#container").html(data); }); });
+  $(".link_about").click(function(){ $.get("about/team.html", function(data) { $("#container").html(data); }); });
+  $(".link_dev").click(function(){ $.get("about/about.html", function(data) { $("#container").html(data); }); });
+</script>

@@ -1,0 +1,69 @@
+
+<div class="page-center pt-20">
+  <!-- HEADER -->
+  <div class="page-header">
+    <!-- <h1 class="page-header__title mt-20"><b class="ico-archive"></b> Suporte</h1> -->
+    <ul class="crumbs">
+      <li>
+        <a href="index.html">Home <b class="ico ico-arrow-right"></b></a>
+      </li>
+      <li>
+        <p>Suporte <b class="ico ico-arrow-right"></b></p>
+      </li>
+    </ul>
+  </div>
+  <!-- fim: HEADER -->
+
+  <article class="section-sm">
+    <div class="row row-center">
+      <div class="col-m-3 col-4 box">
+        <h1 class="text-center text-secondary mt-10"><b class="ico-phone"></b></h1>
+        <p class="text-center">62. 3243-8491</p>
+      </div>
+      <div class="col-m-4 col-4 box">
+        <h1 class="text-center text-secondary mt-10"><b class="ico-mail"></b></h1>
+        <p class="text-center">informatica@mpgo.mp.br</p>
+      </div>
+      <div class="col-m-5 col-4 box">
+        <h1 class="text-center text-secondary mt-10"><b class="ico-flag"></b></h1>
+        <p class="text-center">Superintendencia de Informática, Edifício Sede do MP-GO - Sala 301 - 3º andar - Ala A</p>
+      </div>
+    </div>
+  </article>
+
+</div>
+
+<section class="bg-gray-light bg-image-2 bg-right">
+  <div class="page-center">
+
+    <div class="col-6 col-m-7 bg-gray-light box-two">
+      <h1>Contato</h1><br>
+    
+      <div id="notify"></div>
+
+      <div class="form" id="form">
+        <div class="form-group">
+          <label class="form-label">Nome:</label>
+          <input type="text" name="nome" id="nome" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">E-mail:</label>
+          <input type="text" name="email" id="email" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" rows="5" cols="80" required></textarea>
+        </div>
+        <div class="nav-buttons">
+          <!-- <button type="submit" id="envia" name="envia" class="bt-primary">Enviar</button> -->
+          <button class="bt-primary" id="send" onclick="sendFunction()">Enviar</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- js -->
+<script src="js/send.js"></script>

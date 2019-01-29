@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="stylesheets/application.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrentMP - Home</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -10,96 +10,29 @@
       $(document).ready(function(){
         $("#header").load("header.html");
         $("#nav").load("menu.html");
-        $("#main").load("dashboard.html");
+        $("#container").load("home.html");
+        $("#footer").load("footer.html");
       });
     </script>
   </head>
-  <body id="theme" class="theme-white">
-
+  <body class="theme-white">
     <!-- menu-left active -->
     <input type="checkbox" id="menu" class="hidden">
-    <!-- aside float active -->
-    <input type="checkbox" id="aside-float" class="hidden">
 
     <!-- header app -->
-    <header class="header" id="header"></header>
+    <header id="header" class="header"></header>
     <!-- fim: header app -->
 
-    <!-- menu-left app -->
-    <nav class="menu" id="nav"></nav>
-    <!-- menu-left app -->
-
     <!-- contet -->
-    <section class="container container-menu">
-      <main id="main"" class="main"></main>
-      <section class="b-top box text-right"><span class="small">Superintendência de Informática / <strong>SINFO - 2018</strong></span></section>
-    </section>
+    <section id="container" class="mt-70"></section>
     <!-- contet -->
 
-    <!-- aside float -->
-    <aside class="aside-float">
+    <!-- menu-left app -->
+    <nav class="menu min-xm" id="nav"></nav>
+    <!-- menu-left app -->
 
-      <fieldset>
-        <h4 class="box">Usuários</h4>
-
-        <div class="list-group">
-          <a href="#" class="list-group-item row-center">
-            <figure class="tw-4 ty-4 user">
-              <img src="images/profile.svg" alt="Profile">
-              <em class="status-ball bg-info"></em>
-            </figure>
-            <div class="row-full ml-10">
-              <span class="block">Guilherme Maranhão</span>
-              <small>Desenvolvedor</small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item row-center">
-            <figure class="tw-4 ty-4 user">
-              <img src="images/profile.svg" alt="Profile">
-              <em class="status-ball bg-info"></em>
-            </figure>
-            <div class="row-full ml-10">
-              <span class="block">Mariana Rocha</span>
-              <small>Desenvolvedor</small>
-            </div>
-          </a>
-          <a href="#" class="list-group-item row-center">
-            <figure class="tw-4 ty-4 user">
-              <img src="images/profile.svg" alt="Profile">
-              <em class="status-ball bg-alert"></em>
-            </figure>
-            <div class="row-full ml-10">
-              <span class="block">Renato Brandão</span>
-              <small>Designer</small>
-            </div>
-          </a>
-        </div>
-      </fieldset>
-
-      <fieldset>
-        <div class="box">
-          <h4>Profissão</h4><br>
-
-          <ul class="list-clear">
-            <li class="list-clear-item"><b class="tick mr-5 bg-success"></b> Analista</li>
-            <li class="list-clear-item"><b class="tick mr-5 bg-info"></b> Desenvolvedor</li>
-            <li class="list-clear-item"><b class="tick mr-5 bg-alert"></b> Designer</li>
-          </ul>
-        </div>
-      </fieldset>
-
-      <div class="box">
-        <h4>Novidades</h4><br>
-
-        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Manduma pindureta quium dia nois paga.
-          Quem num gosta di mim que vai caçá sua turmis! Suco de cevadiss deixa as pessoas mais interessantis.</p>
-      </div>
-
-      <label class="bt-close" for="aside-float"><b class="ico-x"></b></label>
-
-    </aside>
-    <!-- aside float -->
-
-    <!-- <footer>Rodape</footer> -->
+    <!-- footer -->
+    <footer id="footer"></footer>
+    <!-- fim: footer -->
   </body>
 </html>

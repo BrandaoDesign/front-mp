@@ -1,0 +1,68 @@
+//==============================================================================
+// BREAK RESPONSIVE HIDDEN
+//==============================================================================
+// BREAK MIN
+//==============================================================================
+@media screen and (min-width: $break-xs){
+  .min-xs{
+    display: none !important;
+  }
+}
+@media screen and (min-width: $break-s){
+  .min-s{
+    display: none !important;
+  }
+}
+@media screen and (min-width: $break-xm){
+  .min-xm{
+    display: none !important;
+  }
+}
+@media screen and (min-width: $break-m){
+  .min-m{
+    display: none !important;
+  }
+}
+@media screen and (min-width: $break-xl){
+  .min-l{
+    display: none !important;
+  }
+}
+@media screen and (min-width: $break-l){
+  .min-xl{
+    display: none !important;
+  }
+}
+//==============================================================================
+// BREAK MAX
+//==============================================================================
+@media screen and (max-width: $break-xs){
+  .max-xs{
+    display: none !important;
+  }
+}
+@media screen and (max-width: $break-s){
+  .max-s{
+    display: none !important;
+  }
+}
+@media screen and (max-width: $break-xm){
+  .max-xm{
+    display: none !important;
+  }
+}
+@media screen and (max-width: $break-m){
+  .max-m{
+    display: none !important;
+  }
+}
+@media screen and (max-width: $break-xl){
+  .max-xl{
+    display: none !important;
+  }
+}
+@media screen and (max-width: $break-l){
+  .max-l{
+    display: none !important;
+  }
+}

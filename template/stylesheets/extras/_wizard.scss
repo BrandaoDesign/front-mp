@@ -1,0 +1,199 @@
+//==============================================================================
+// WIZAARD
+//==============================================================================
+$qt-wizard: 4;
+// Quantidade de wizards utilizadas
+//------------------------------------------------------------------------------
+.wizard{
+  //----------------------------------------------------------------------------
+  // WIZAARD | nav
+  //----------------------------------------------------------------------------
+  &-nav{
+    @include display-flex;
+    counter-reset: label;
+    border-top: 1px solid var(--base-3);
+    border-bottom: 1px solid var(--base-3);
+
+    label[disabled]{
+      color: var(--base-4);
+    }
+  }
+  //----------------------------------------------------------------------------
+  // WIZAARD | nav | label
+  //----------------------------------------------------------------------------
+  &-label{
+    display: inline-block;
+    letter-spacing: .025em;
+    border-right: 1px solid var(--base-2);
+    margin-bottom: -1px;
+    margin-right: 20px;
+    padding: 15px 20px 15px 0;
+    position: relative;
+    transition: all .5s;
+    cursor: pointer;
+    //--------------------------------------------------------------------------
+    // WIZAARD | nav | number
+    //--------------------------------------------------------------------------
+    &::before{
+      counter-increment: label;
+      content: counter(label) ".";
+      display: inline-block;
+      font-weight: 600;
+      margin-right: 10px;
+      padding: 0 0 0 5px;
+      //------------------------------------------------------------------------
+      // WIZARD | SMARTPHONE
+      //========================================================================
+      @media screen and (min-width: $break-s){
+        min-width: 25px;
+      }
+    }
+    //--------------------------------------------------------------------------
+    // WIZAARD | nav | arrow
+    //--------------------------------------------------------------------------
+    &::after{
+      display: inline-block;
+      content: "";
+      width: 12px;
+      height: 12px;
+      background: var(--base-1);
+      border-top: 1px solid var(--base-2);
+      border-right: 1px solid var(--base-2);
+      position: absolute;
+      top: 50%;
+      right: -2px;
+      transition: all .5s;
+      transform: rotate(45deg) translate(0, -50%);
+    }
+    //--------------------------------------------------------------------------
+    // WIZAARD | nav | hover
+    //--------------------------------------------------------------------------
+    &:hover{
+      color: var(--secondary);
+    }
+
+  }
+  //----------------------------------------------------------------------------
+  // WIZAARD | text
+  //----------------------------------------------------------------------------
+  &-text{
+    font-size: .8em;
+    letter-spacing: 0.035em;
+    line-height: 1em;
+    margin: 0;
+    margin-left: 36px;
+    padding: 0;
+  }
+  //----------------------------------------------------------------------------
+  // WIZAARD | content
+  //----------------------------------------------------------------------------
+  &-content{
+    display: none;
+    padding-top: 20px;
+    animation: fadeIn 1s;
+  }
+  //----------------------------------------------------------------------------
+  // WIZAARD | footer
+  //----------------------------------------------------------------------------
+  &-footer{
+    padding-top: 20px;
+    border-top: 1px dashed var(--base-3);
+
+    label[disabled]{
+      color: var(--base-4);
+      background: var(--base-2);
+      border-color: var(--base-3);
+
+      &:hover{
+        color: var(--base-4);
+        background: var(--base-2);
+        border-color: var(--base-3);
+      }
+    }
+  }
+  //----------------------------------------------------------------------------
+  // WIZAARD | checked
+  //----------------------------------------------------------------------------
+  @for $t from 1 through $qt-wizard{
+
+    .wizard-input-#{$t}:checked{
+      //------------------------------------------------------------------------
+      // WIZAARD | checked | nav
+      //------------------------------------------------------------------------
+      ~ .wizard-nav .wizard-#{$t}{
+        color: var(--secondary);
+        border-color: var(--secondary);
+
+        &::before{
+          border-color: var(--secondary);
+        }
+        &:after{
+          border-color: var(--secondary);
+        }
+      }
+      //------------------------------------------------------------------------
+      // WIZAARD | checked | content
+      //------------------------------------------------------------------------
+      ~ .wizard-container .wizard-#{$t}{
+        display: block;
+      }
+    }
+  }
+//------------------------------------------------------------------------------
+// WIZARD | SMARTPHONE
+//==============================================================================
+@media screen and (max-width: $break-s){
+  &-label{
+    padding: 10px;
+    margin-right: 10px;
+
+    &::before{
+      margin: 0;
+      padding: 0;
+    }
+
+    span,p{
+      display: none;
+    }
+  }
+}
+}
+//==============================================================================
+// WIZARD | horizontal
+//==============================================================================
+.wizard-horizontal{
+  @include display-flex;
+  //----------------------------------------------------------------------------
+  // WIZARD | horizontal | nav
+  //----------------------------------------------------------------------------
+  .wizard-nav{
+    @include flex-direction(column);
+    border: 0;
+  }
+  //----------------------------------------------------------------------------
+  // WIZARD | horizontal | label
+  //----------------------------------------------------------------------------
+  .wizard-label{
+    white-space: nowrap;
+    border: 0;
+    border-bottom: 1px solid var(--base-3);
+
+    &:after{
+      border: 0;
+      border-bottom: 1px solid var(--base-3);
+      border-right: 1px solid var(--base-3);
+      top: initial;
+      left: calc(50% - 8px);
+      bottom: -7px;
+      transform: rotate(45deg) translate(0);
+    }
+  }
+//------------------------------------------------------------------------------
+// WIZARD | SMARTPHONE
+//==============================================================================
+@media screen and (max-width: $break-s){
+  .wizard-label{
+    margin-bottom: 10px;
+  }
+}
+}

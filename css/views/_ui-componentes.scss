@@ -1,0 +1,14 @@
+.ui-componentes{
+  &-menu{
+    height: calc(100% - 70px);
+    background: $cor-white;
+    position: fixed;
+    overflow-y: auto;
+  }
+  
+  @media screen and (min-width: $break-s){
+    &-content{
+      margin-left: 16.66%
+    }
+  }
+}

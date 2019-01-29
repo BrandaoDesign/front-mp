@@ -1,0 +1,47 @@
+<section class="page-center pt-20">
+
+  <!-- HEADER -->
+  <div class="page-header">
+    <!-- <h1 class="page-header__title mt-20"><b class="ico-archive"></b> Introdução</h1> -->
+    <ul class="crumbs">
+      <li>
+        <a href="index.html">Home <b class="ico ico-arrow-right"></b></a>
+      </li>
+      <li>
+        <p>introdução <b class="ico ico-arrow-right"></b></p>
+      </li>
+    </ul>
+  </div>
+  <!-- fim: HEADER -->
+  <br>
+  <!-- intro -->
+  <article class="row">
+    <div class="col-m-6 col-6 box">
+      <h1>Bem-vindo ao Front-MP</h1><br>
+      <p class="text">O Front-MP é um modelo de painel de administração totalmente responsivo, construído com HTML5 e CSS3 e jQuery. 
+        Ele tem uma enorme coleção de <a class="link link_components" id="link_components" href="#">ui componentes</a> de interface do usuário reutilizáveis ​​integrados com plug-ins do jQuery.</p>
+      <p class="text">Ele pode ser usado para todos os tipos de aplicações Web, como painel de administração personalizado, sistema de gerenciamento de projetos ou back-end de aplicativos.</p>
+      <a class="bt" href="template/login.html">Exemplo <b class="ico-arrow-right"></b></a>
+      </div>
+      <div class="col-m-6 col-6 box">
+        <figure class="figure">
+          <img src="images/imac.jpg" alt="">
+        </figure>
+      </div>
+  </article>
+  <!-- fim: intro -->
+</section>
+
+<!-- instalar -->
+<section class="bg-gray-light box">
+  <article class="content-center box">
+    <h2>Começar agora</h2>
+    <p>Saiba como instalar o Front-MP em seu novo projeto agora mesmo.</p>
+    <button class="bt-primary" id="link_install">Instalar <b class="ico-arrow-right"></b></button>
+  </article>
+</section>
+<!-- fim: instalar -->
+<script type="text/javascript">
+  $("#link_install").click(function(){ $.get("installs.html", function(data) { $("#container").html(data); }); });
+  $("#link_components").click(function(){ $.get("components/components.html", function(data) { $("#container").html(data); }); });
+</script>

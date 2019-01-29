@@ -1,0 +1,418 @@
+//==============================================================================
+// FIELDSET
+//==============================================================================
+fieldset{
+  border: 0;
+  border-bottom: 1px dashed var(--base-3);
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-bottom: 20px;
+}
+//==============================================================================
+// TEXTAREA
+//==============================================================================
+textarea{
+  width: 100%;
+  display: block;
+  color: var(--base-4);
+  background: var(--base-1);
+  border: 2px solid var(--base-3);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 10px;
+  -webkit-appearance: none;
+  transition: 1s;
+  &:focus{
+    border-color: var(--primary);
+    box-shadow: none;
+    outline: 0;
+  }
+}
+//==============================================================================
+// INPUTS
+//==============================================================================
+// INPUTS, BUTTON
+//------------------------------------------------------------------------------
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+  padding: 10px 25px;
+}
+//------------------------------------------------------------------------------
+// INPUTS checkbox
+//------------------------------------------------------------------------------
+button[disabled],
+input[disabled]{
+  color: var(--base-4);
+  background: var(--base-2);
+  border: 2px solid var(--base-3);
+
+  &:hover{
+    color: var(--base-4);
+    background: var(--base-2);
+    border: 2px solid var(--base-3);
+  }
+
+  ~ .toggle-indicador{
+    background: var(--base-2);
+    border-color: var(--base-3);
+  }
+}
+//------------------------------------------------------------------------------
+// INPUTS checkbox
+//------------------------------------------------------------------------------
+input[type="checkbox"]{
+  width: 16px;
+  height: 16px;
+  background: var(--base-1);
+  border: 2px solid var(--primary-light);
+  -webkit-appearance: none;
+  transition: all 1s;
+  position: relative;
+  box-shadow: none;
+  outline: 0;
+  top: 2px;
+  &:checked{
+    background: var(--secondary);
+    border-color: var(--secondary);
+  }
+  &:disabled{
+    border-color: var(--base-3);
+  }
+}
+//------------------------------------------------------------------------------
+// INPUTS radio
+//------------------------------------------------------------------------------
+input[type="radio"]{
+  @extend input[type="checkbox"];
+  border-radius: 50%;
+}
+//------------------------------------------------------------------------------
+// INPUT | group
+//------------------------------------------------------------------------------
+.input-group{
+  @include display-flex;
+  @include flex-wrap(wrap);
+  @include align-items(stretch);
+  width: 100%;
+
+  &-left{
+    margin-right: -2px;
+  }
+
+  &-right{
+    margin-left: -2px;
+  }
+
+  [class*="button"]{
+    padding: 12px 25px;
+    z-index: 2;
+  }
+
+  .form-input,
+  .form-select{
+    margin-top: -2px;
+    z-index: 1;
+    padding: 10px !important;
+  }
+  //------------------------------------------------------------------------------
+  // INPUT | SMARTPHONE max
+  //==============================================================================
+  @media screen and (max-width: $break-s){
+
+    &-left{
+      margin-right: 0;
+      margin-top: -2px;
+    }
+
+    &-right{
+      margin-left: 0;
+      margin-top: -2px;
+    }
+
+  }
+  //------------------------------------------------------------------------------
+  // INPUT | SMARTPHONE min
+  //==============================================================================
+  @media screen and (min-width: $break-s){
+
+    .form-input,
+    .form-select,
+    .select-tag{
+      @include flex(1);
+      margin-top: 0;
+    }
+  }
+}
+//==============================================================================
+// FORM
+//==============================================================================
+form, .form{
+  display: block;
+  width: 100%;
+
+
+  .form-input{
+    width: 100%;
+  }
+
+}
+.form{
+
+  [class*="col-"] {
+    padding: 0 15px;
+  }
+  //----------------------------------------------------------------------------
+  // FORM | row
+  //----------------------------------------------------------------------------
+  &-row{
+    @include display-flex;
+    @include flex-wrap(wrap);
+  }
+  //----------------------------------------------------------------------------
+  // FORM | group
+  //----------------------------------------------------------------------------
+  &-group{
+    margin-bottom: 1em;
+  }
+  //----------------------------------------------------------------------------
+  // FORM | label
+  //----------------------------------------------------------------------------
+  &-label{
+    display: inline-block;
+    font-size: .75em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+  }
+  //----------------------------------------------------------------------------
+  // FORM | INPUT
+  //----------------------------------------------------------------------------
+  &-input{
+    // width: 100%;
+    display: block;
+    color: var(--base-4);
+    background: var(--base-1);
+    border: 2px solid var(--base-3);
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px;
+    -webkit-appearance: none;
+    transition: 1s;
+
+    &:focus{
+      border-color: var(--primary);
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+  //----------------------------------------------------------------------------
+  // FORM | SELECT
+  //----------------------------------------------------------------------------
+  &-select{
+    @extend .form-input;
+    min-width: 70px;
+    color: var(--base-4);
+    background: var(--base-1);
+    background-color: var(--base-1);
+    background-position: right 6px;
+    background-size: 1.8em;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0.5 32.5 20 20'%3e%3cpath class='text-secondary' d='M7.8 40.6c-0.2-0.2-0.5-0.2-0.8 0 -0.2 0.2-0.2 0.5 0 0.8l3.2 3.1c0.2 0.2 0.6 0.2 0.8 0l3.2-3.1c0.2-0.2 0.2-0.5 0-0.7 -0.2-0.2-0.5-0.2-0.8 0l-2.7 2.5 -2.7-2.5V40.6z'/%3e%3c/svg%3e");
+    padding-right: 25px;
+  }
+  //----------------------------------------------------------------------------
+  // FORM | CHECKBOX
+  //----------------------------------------------------------------------------
+  &-check,
+  &-radio{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+
+    span{
+      margin-left: 1em;
+    }
+  }
+  &-check-block,
+  &-radio-block{
+    @extend .form-check;
+    display: block;
+  }
+  //----------------------------------------------------------------------------
+  // FORM | toggle
+  //----------------------------------------------------------------------------
+  &-toggle{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+
+    .toggle-indicador{
+      @include display-inline-flex;
+      background: var(--base-3);
+      min-width: 42px;
+      border-radius: 1em;
+      padding: 4px 21px 4px 6px;
+      transition: all .5s;
+      margin-right: .5em;
+
+      &::after{
+        content: "";
+        background: $cor-white;
+        box-shadow: 0 0 5px var(--base-4);
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        transition: all .5s;
+      }
+    }
+
+    input{
+      display: none;
+
+      &:checked{
+        ~ .toggle-indicador{
+          background: var(--secondary);
+          padding: 4px 6px 4px 21px;
+        }
+      }
+    }
+  }
+  //----------------------------------------------------------------------------
+  // FORM | toggle
+  //----------------------------------------------------------------------------
+  &-toggle-block{
+    @extend .form-toggle;
+    display: block;
+  }
+  //----------------------------------------------------------------------------
+  // FORM | toggle
+  //----------------------------------------------------------------------------
+  &-button{
+    padding-top: 25px;
+  }
+  //----------------------------------------------------------------------------
+  // FORM | inline
+  //----------------------------------------------------------------------------
+  &-inline{
+    //--------------------------------------------------------------------------
+    // INPUT | SMARTPHONE max
+    //==========================================================================
+    @media screen and (max-width: $break-s){
+      .form-select{
+        width: 100%;
+      }
+    }
+    //--------------------------------------------------------------------------
+    // INPUT | SMARTPHONE min
+    //==========================================================================
+    @media screen and (min-width: $break-s){
+      .form-group{
+        display: inline-block;
+        margin-bottom: 0;
+        vertical-align: middle;
+      }
+    }
+  }
+  //----------------------------------------------------------------------------
+  // FORM | view
+  //----------------------------------------------------------------------------
+  &-view{
+    font-weight: 600;
+    border: 1px solid var(--base-3);
+    margin: 0;
+    padding: 7px;
+  }
+  //----------------------------------------------------------------------------
+  // FORM | text
+  //----------------------------------------------------------------------------
+  &-text{
+    border: 1px solid var(--base-3);
+    margin: 0;
+    padding: 7px;
+  }
+}
+//==============================================================================
+// FEED
+//==============================================================================
+.valid{
+  border-color: $cor-success-light;
+}
+.invalid{
+  border-color: $cor-error;
+}
+.feed-text{
+  display: none;
+  font-size: .7em;
+  margin: 0;
+  padding: 3px 0 0;
+}
+.feed{
+
+  &-valid{
+    @extend .feed-text;
+    display: block;
+    color: $cor-success;
+  }
+
+  &-invalid{
+    @extend .feed-text;
+    display: block;
+    color: $cor-error;
+  }
+
+}
+//==============================================================================
+// SEARCH
+//==============================================================================
+.search{
+  @include display-flex;
+  @include flex-wrap(nowrap);
+
+  input{
+    width: 100%;
+  }
+
+  &-button{
+    font-size: 1.3em !important;
+    padding: 7px 10px !important;
+    margin-left: -2px;
+  }
+}
+//==============================================================================
+// SELECT-TAG
+//==============================================================================
+.select-tag{
+  padding: 0;
+
+  .select2-container{
+    width: 100% !important;
+    min-height: 42px;
+  }
+  .select2-selection__rendered{
+    font-size: .95em;
+    background-color: $cor-white;
+    background-position: right 6px;
+    background-size: 1.8em;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0.5 32.5 20 20'%3e%3cpath d='M7.8 40.6c-0.2-0.2-0.5-0.2-0.8 0 -0.2 0.2-0.2 0.5 0 0.8l3.2 3.1c0.2 0.2 0.6 0.2 0.8 0l3.2-3.1c0.2-0.2 0.2-0.5 0-0.7 -0.2-0.2-0.5-0.2-0.8 0l-2.7 2.5 -2.7-2.5V40.6z'/%3e%3c/svg%3e");
+    border: 2px solid var(--base-3);
+    padding: 5px 10px;
+  }
+  .select2-container--default
+  .select2-selection--single{
+    background: transparent;
+    border: 0;
+  }
+  .select2-selection__arrow{
+    display: none;
+  }
+}
+.select2-results{
+  font-size: .85em !important;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+  background-color: var(--secondary);
+}

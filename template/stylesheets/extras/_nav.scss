@@ -1,0 +1,143 @@
+//==============================================================================
+// NAV
+//==============================================================================
+.nav{
+  @include display-flex;
+  @include flex-wrap(wrap);
+  @include list-simple;
+  //----------------------------------------------------------------------------
+  // NAV | link
+  //----------------------------------------------------------------------------
+  &-item{
+    margin-right: 10px;
+    padding-right: 10px;
+    &:last-child{
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+  //----------------------------------------------------------------------------
+  // NAV | link
+  //----------------------------------------------------------------------------
+  &-link{
+    color: var(--base-4);
+    font-size: .9em;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 10px 15px;
+    transition: all .5s;
+    cursor: pointer;
+    &:hover{
+      color: var(--secondary);
+    }
+  }
+  //----------------------------------------------------------------------------
+  // NAV | sublink
+  //----------------------------------------------------------------------------
+  &-sublink{
+    color: var(--base-4);
+    font-size: .9em;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all .5s;
+    &:hover{
+      color: var(--secondary);
+    }
+  }
+  //----------------------------------------------------------------------------
+  // NAV | icolink
+  //----------------------------------------------------------------------------
+  &-icolink{
+    @include display-flex;
+    color: var(--base-4);
+    font-size: 1.2em;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 7px 15px;
+    transition: all .5s;
+    cursor: pointer;
+    &:hover{
+      color: var(--secondary);
+    }
+  }
+  //----------------------------------------------------------------------------
+  // NAV | link
+  //----------------------------------------------------------------------------
+  &-link-line{
+    @extend .nav-link;
+    border: 1px solid var(--base-4);
+  }
+}
+//==============================================================================
+// NAV LINE
+//------------------------------------------------------------------------------
+.nav-line{
+  @extend .nav;
+
+  &-item{
+    border-right: 1px solid var(--base-3);
+    margin-right: 10px;
+    padding-right: 10px;
+    &:last-child{
+      border: 0;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+}
+//==============================================================================
+// NAV BALL
+//------------------------------------------------------------------------------
+.nav-ball{
+  @extend .nav;
+
+  &-item{
+    padding-right: 10px;
+    margin-right: 10px;
+    position: relative;
+
+    &:before{
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--base-4);
+      border-radius: 50%;
+      position: absolute;
+      right: -5px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:last-child{
+      margin-right: 0;
+      padding-right: 0;
+      &:before{
+        display: none;
+      }
+    }
+  }
+}
+//==============================================================================
+// NAV SPACE
+//------------------------------------------------------------------------------
+.nav-space{
+  @extend .nav;
+
+  &-item{
+    @include flex(1);
+  }
+}
+//==============================================================================
+// NAV RIGHT
+//------------------------------------------------------------------------------
+.nav-right{
+  @media screen and (min-width: $break-s){
+    @include justify-content(flex-end);
+  }
+}
+.nav-center{
+  @include justify-content(center);
+}
