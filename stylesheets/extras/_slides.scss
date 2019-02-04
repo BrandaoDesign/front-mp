@@ -39,7 +39,9 @@ $qt-slide: 4;
   &-arrow{
     display: none;
     color: var(--base-4);
-    font-size: 3em;
+    background: var(--base-1);
+    font-size: 2em;
+    padding: 10px 5px;
     position: absolute;
     top: 50%;
     margin-top: -15px;

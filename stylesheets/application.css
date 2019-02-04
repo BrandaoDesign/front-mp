@@ -7966,10 +7966,10 @@ input[type="radio"] {
       flex: 1;
       margin-top: 0; } }
 
-form {
+form, .form {
   display: block;
   width: 100%; }
-  form .form-input, form .form-select {
+  form .form-input, form .form-select, .form .form-input, .form .form-select {
     width: 100%; }
 
 .form [class*="col-"] {
@@ -13415,7 +13415,9 @@ form {
   .slide-arrow {
     display: none;
     color: var(--base-4);
-    font-size: 3em;
+    background: var(--base-1);
+    font-size: 2em;
+    padding: 10px 5px;
     position: absolute;
     top: 50%;
     margin-top: -15px;
