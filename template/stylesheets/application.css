@@ -13415,7 +13415,9 @@ form, .form {
   .slide-arrow {
     display: none;
     color: var(--base-4);
-    font-size: 3em;
+    background: var(--base-1);
+    font-size: 2em;
+    padding: 10px 5px;
     position: absolute;
     top: 50%;
     margin-top: -15px;
@@ -16032,6 +16034,44 @@ figcaption {
     padding-top: 0;
     padding-right: 0; }
 
+.popover {
+  position: relative;
+  display: inline-block; }
+  .popover-container {
+    width: auto;
+    background: var(--base-1);
+    position: absolute;
+    box-shadow: 0 2px 10px var(--shadow-1);
+    bottom: calc(100% + 10px);
+    left: -280px;
+    transform: translate(140px, -10px);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97); }
+    .popover-container::before {
+      content: "";
+      bottom: -8px;
+      border-top: 10px solid var(--base-1);
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 0px solid transparent;
+      position: absolute;
+      right: calc(50% - 10px);
+      transition-duration: 0.3s;
+      transition-property: transform;
+      z-index: -1; }
+  .popover-title {
+    border-bottom: 1px solid var(--base-2);
+    padding: 15px; }
+  .popover-content {
+    padding: 15px; }
+  .popover:hover .popover-container {
+    z-index: 6;
+    opacity: 1;
+    visibility: visible;
+    transform: translate(140px, 0); }
+
 .login {
   height: 100vh; }
   .login::before {
@@ -16183,10 +16223,5 @@ figcaption {
 .timetitle {
   white-space: nowrap;
   text-align: right; }
-
-.popover {
-  position: absolute;
-  display: block;
-  background: var(--secondary); }
 
 /*# sourceMappingURL=application.css.map */
