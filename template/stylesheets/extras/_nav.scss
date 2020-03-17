@@ -121,6 +121,37 @@
   }
 }
 //==============================================================================
+// NAV TABS
+//------------------------------------------------------------------------------
+.nav-tabs{
+  @extend .nav;
+  background: var(--base-3);
+  padding: 10px;
+
+  &-item{
+    margin-right: 10px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &-label{
+    color: var(--secondary);
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all .5s;
+  }
+
+  .active{
+    .nav-tabs-label{
+      background: var(--secondary);
+      color: var(--base-3);
+    }
+  }
+}
+//==============================================================================
 // NAV SPACE
 //------------------------------------------------------------------------------
 .nav-space{

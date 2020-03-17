@@ -64,15 +64,16 @@
   // HEADER search
   //----------------------------------------------------------------------------
   &-search{
-    //----------------------------------------------------------------------------
+    //--------------------------------------------------------------------------
     // HEADER search
-    //----------------------------------------------------------------------------
+    //--------------------------------------------------------------------------
     @include display-flex;
     @include flex-wrap(nowrap);
     position: relative;
     margin: 0 15px;
 
     input{
+      background: var(--header-1);
       width: 100%;
       padding-right: 45px;
       border: 1px solid var(--base-3);
@@ -80,14 +81,23 @@
 
     button, a{
       background: transparent;
+      color: var(--header-2);
       font-size: 1.1em;
       border: 0;
       padding: 9px 9px 8px;
       position: absolute;
       top: 0;
       right: 0;
-    }
 
+      &:hover{
+        color: var(--header-3) !important;
+      }
+    }
+    &:hover{
+      input{
+        border: 1px solid var(--header-3);
+      }
+    }
   }
   //----------------------------------------------------------------------------
   // HEADER | user

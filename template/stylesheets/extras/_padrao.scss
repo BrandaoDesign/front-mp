@@ -62,7 +62,9 @@ mark, .mark{
   &-left{
     text-align: left;
   }
-
+  &-space{
+    white-space: nowrap;
+  }
 }
 //------------------------------------------------------------------------------
 // TEXTO | plus

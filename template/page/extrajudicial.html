@@ -17,6 +17,45 @@
   </div>
   <!-- fim: HEADER -->
 
+  <!-- <nav class="submenu">
+      <input type="checkbox" id="submenu" class="hidden">
+      <label class="submenu-label" for="submenu"><b class="ico-menu"></b> MENU DE AÇÕES</label>
+      <ul class="submenu-nav nav row-center">
+        <li>
+          <a class="submenu-link inline tooltip-top" data-tooltip="Copiar capa" href="#" ng-click="showProcCtrl.acessarFuncionalidade('duplicar_autos')">
+            <b ng-class="{ 'ico-copy': true }" area-hidden="true"></b> Copiar
+          </a>
+        </li>
+        <li>
+          <a class="submenu-link inline" href="#" ng-click="showProcCtrl.acessarFuncionalidade('imprimir_processo')">
+            <b ng-class="{ 'ico-printer': true }" area-hidden="true"></b> Imprimir
+          </a>
+        </li>
+        <li>
+          <a class="submenu-link inline tooltip-top" data-tooltip="Imprimir Etiqueta" href="#" ng-click="showProcCtrl.acessarFuncionalidade('imprimir_etiqueta')">
+            <b ng-class="{ 'ico-tag': true }" area-hidden="true"></b> Etiqueta
+          </a>
+        </li>
+        <li>
+          <a class="submenu-link inline" href="#" ng-click="showProcCtrl.acessarFuncionalidade('exibir_historico_acoes')">
+            <b ng-class="{ 'ico-clock': true }" area-hidden="true"></b> Histórico
+          </a>
+        </li>
+        <li>
+          <a class="submenu-link inline tooltip-top" data-tooltip="Visualizar no Atena3" target="_blank" href="/atena/flex-build/Main.html?processoId={{showProcCtrl.objeto_tramitacao_selecionado.id}}" tooltip-placement="right-top" title="Clique para abrir os autos no Atena">
+            <b class="ico-monitor"></b> Atena3
+          </a>
+        </li>
+  
+        <li ng-repeat="(key, value) in funcionalidades" ng-if="permissoes[key]">
+          <a class="submenu-link inline" href="#" ng-click="showProcCtrl.acessarFuncionalidade(key)">
+            <b ng-class="showProcCtrl.retornarIconeFuncionalidade(key)" area-hidden="true"></b>
+            {{value}}
+          </a>
+        </li>
+      </ul>
+    </nav> -->
+
   <!-- submenu -->
   <nav class="page-sub row-center">
     <ul class="nav-line row-full">

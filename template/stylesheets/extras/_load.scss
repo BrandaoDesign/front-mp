@@ -1,0 +1,121 @@
+//==============================================================================
+// LOAD
+//==============================================================================
+.load{
+    b{display: none;}
+
+    &::before{
+        content: "\e9ef";
+        display: inline-block;
+        font-family: 'mp-icons' !important;
+        margin-right: 10px;
+        animation: rotate 2s infinite linear;
+    }
+}
+//==============================================================================
+// BUTTONS
+//==============================================================================
+.bt-load{
+
+    @extend .load;
+
+}
+//==============================================================================
+// FORM
+//==============================================================================
+.form-load{
+    position: relative;
+    animation: fadeIn .8s;
+
+    @extend .load;
+
+    &::before{
+        position: absolute;
+        top: 12px;
+        right: 0;
+        z-index: index($z, content);
+    }
+
+}
+//==============================================================================
+// PAGE
+//==============================================================================
+.page-load{
+    display: block;
+    background: var(--secondary-light);
+    color: var(--base-1);
+    padding: 8px 15px 10px;
+    position: fixed;
+    left: 50%;
+    box-shadow: 0 0 5px var(--shadow-1);
+    transform: translateX(-50%);
+    animation: fadeIn .8s;
+    z-index: 9998;
+
+    span{
+        @extend .load;
+    }
+}
+//==============================================================================
+// BUTTONS
+//==============================================================================
+.box-load{
+    padding: 15px;
+    @extend .load;
+
+    &::before{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+.box-load-float{
+    display: none;
+    background: var(--base-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+    span{
+        @extend .load;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &::before{
+            color: var(--secondary-light);
+        }
+    }
+
+}
+//==============================================================================
+// MODAL
+//==============================================================================
+.modal-load{
+    display: none;
+    background: var(--base-1); 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: index($z, alert);
+    animation: fadeIn .8s;
+
+    span{
+        @extend .load;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+
+        &::before{
+            color: var(--secondary-light);
+        }
+    }
+
+}

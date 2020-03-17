@@ -8,6 +8,7 @@
       <li class="menu-header">Elementos</li>
       <li><a class="menu-link block link_color" href="#">Cores</a></li>
       <li><a class="menu-link block link_icons" href="#">Icones</a></li>
+      <li><a class="menu-link block link_symbol" href="#">Símbolos</a></li>
       <li><a class="menu-link block link_type" href="#">Tipografia</a></li>
       <li><a class="menu-link block link_button" href="#">Button</a></li>
       <li><a class="menu-link block link_cards" href="#">Cards</a></li>
@@ -101,6 +102,7 @@
 <script type="text/javascript">
   $(".link_color").click(function(){ $.get("elements/color.html", function(data) { $("#main").html(data); }); });
   $(".link_icons").click(function(){ $.get("elements/icons.html", function(data) { $("#main").html(data); }); });
+  $(".link_symbol").click(function(){ $.get("elements/symbol.html", function(data) { $("#main").html(data); }); });
   $(".link_type").click(function(){ $.get("elements/type.html", function(data) { $("#main").html(data); }); });
   $(".link_button").click(function(){ $.get("elements/buttons.html", function(data) { $("#main").html(data); }); });
   $(".link_cards").click(function(){ $.get("elements/cards.html", function(data) { $("#main").html(data); }); });

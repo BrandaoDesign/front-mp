@@ -228,3 +228,13 @@ $diretorio: "fonts/";
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'mp-extras';
+  src:  url('#{$diretorio}mp-extras.eot?lhs1ni');
+  src:  url('#{$diretorio}mp-extras.eot?lhs1ni#iefix') format('embedded-opentype'),
+    url('#{$diretorio}mp-extras.ttf?lhs1ni') format('truetype'),
+    url('#{$diretorio}mp-extras.woff?lhs1ni') format('woff'),
+    url('#{$diretorio}mp-extras.svg?lhs1ni#mp-extras') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -38,8 +38,8 @@ $qt-slide: 4;
   //----------------------------------------------------------------------------
   &-arrow{
     display: none;
-    color: var(--base-4);
-    background: var(--base-1);
+    color: var(--base-1);
+    background: var(--primary);
     font-size: 2em;
     padding: 10px 5px;
     position: absolute;
@@ -50,7 +50,7 @@ $qt-slide: 4;
     cursor: pointer;
 
     &:hover{
-      color: var(--secondary);
+      background: var(--primary-light);
     }
   }
   //----------------------------------------------------------------------------

@@ -63,7 +63,7 @@ input[disabled]{
 //------------------------------------------------------------------------------
 // INPUTS checkbox
 //------------------------------------------------------------------------------
-input[type="checkbox"]{
+.input-defaut{
   width: 16px;
   height: 16px;
   background: var(--base-1);
@@ -82,11 +82,14 @@ input[type="checkbox"]{
     border-color: var(--base-3);
   }
 }
+input[type="checkbox"]{
+  @extend .input-defaut;
+}
 //------------------------------------------------------------------------------
 // INPUTS radio
 //------------------------------------------------------------------------------
 input[type="radio"]{
-  @extend input[type="checkbox"];
+  @extend .input-defaut;
   border-radius: 50%;
 }
 //------------------------------------------------------------------------------
