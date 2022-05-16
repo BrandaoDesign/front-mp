@@ -5,7 +5,10 @@ html{
 // BODY
 //==============================================================================
 body{
+  background: var(--background);
+  color: var(--color);
   @include scrollbar;
+  font-size: 14px;
   font-family: 'Montserrat', sans-serif;
   animation: 1s fadeIn;
 }

@@ -1,85 +1,47 @@
-//==============================================================================
-// HEADER
-//==============================================================================
-.header{
+.header {
+  width: 100%;
   background: var(--header-1);
   color: var(--header-2);
-  width: 100%;
-  box-shadow: 0 1px 15px var(--shadow-2);
   position: fixed;
   top: 0;
   z-index: index($z, header);
-  //----------------------------------------------------------------------------
-  // HEADER content | links
-  //----------------------------------------------------------------------------
+
   a,
-  label{
+  label {
     color: var(--header-2);
-    &:hover{
+
+    &:hover {
       color: var(--header-3);
     }
   }
-  //----------------------------------------------------------------------------
-  // HEADER content | dropdown-menu
-  //----------------------------------------------------------------------------
-  .dropdown-menu{
+
+  .dropdown-menu {
     background: var(--header-1);
   }
-  //----------------------------------------------------------------------------
-  // HEADER content
-  //----------------------------------------------------------------------------
-  &-content{
+
+  &-content {
+    height: 60px;
     @include display-flex;
     @include align-items(center);
     @include justify-content(space-between);
-  }
-  //----------------------------------------------------------------------------
-  // HEADER brand
-  //----------------------------------------------------------------------------
-  &-brand{
-    display: inline-block;
-    padding: 10px;
     transition: all .5s;
-
-    .logo{
-      display: none;
-      .fill-1{
-        fill: var(--base-4);
-      }
-      .fill-2{
-        fill: var(--secondary);
-      }
-    }
-    .logo-symbol{
-      width: 50px;
-      .fill-1{
-        fill: var(--base-4);
-      }
-      .fill-2{
-        fill: var(--secondary);
-      }
-    }
   }
-  //----------------------------------------------------------------------------
-  // HEADER search
-  //----------------------------------------------------------------------------
-  &-search{
-    //--------------------------------------------------------------------------
-    // HEADER search
-    //--------------------------------------------------------------------------
+
+  &-search {
     @include display-flex;
     @include flex-wrap(nowrap);
     position: relative;
     margin: 0 15px;
 
-    input{
+    input {
       background: var(--header-1);
       width: 100%;
       padding-right: 45px;
       border: 1px solid var(--base-3);
     }
 
-    button, a{
+    button,
+    a {
       background: transparent;
       color: var(--header-2);
       font-size: 1.1em;
@@ -89,76 +51,47 @@
       top: 0;
       right: 0;
 
-      &:hover{
+      &:hover {
         color: var(--header-3) !important;
       }
     }
-    &:hover{
-      input{
+
+    &:hover {
+      input {
         border: 1px solid var(--header-3);
       }
     }
   }
-  //----------------------------------------------------------------------------
-  // HEADER | user
-  //----------------------------------------------------------------------------
-  &-user{
+
+  &-user {
     @include display-flex;
     cursor: pointer;
   }
-//==============================================================================
-// HEADER | SMARTPHONE min
-//------------------------------------------------------------------------------
-@media screen and (min-width: $break-m){
-  //----------------------------------------------------------------------------
-  // HEADER brand
-  //----------------------------------------------------------------------------
-  &-brand{
-    display: inline-block;
-    width: 220px;
-    padding: 10px;
-    transition: all .5s;
 
-    .logo{
-      display: block;
+  @media screen and (min-width: $break-m) {
+
+    &-content {
+      padding-left: 50px;
     }
-    .logo-symbol{
-      display: none;
+
+  }
+
+  @media screen and (min-width: $break-l) {
+
+    &-content {
+      padding-left: 255px;
+    }
+
+  }
+
+  @media screen and (max-width: $break-m) {
+
+    // &-content{
+    //   padding: 5px;
+    // }
+
+    .dropdown-content {
+      left: calc(100% - 260px);
     }
   }
-  //----------------------------------------------------------------------------
-  // HEADER content
-  //----------------------------------------------------------------------------
-  &-content{
-    height: 70px;
-  }
-}
-//==============================================================================
-// HEADER | SMARTPHONE max
-//------------------------------------------------------------------------------
-@media screen and (max-width: $break-s){
-  //----------------------------------------------------------------------------
-  // HEADER | content
-  //----------------------------------------------------------------------------
-  &-content{
-    padding: 5px;
-  }
-}
-//==============================================================================
-// HEADER | TABLETS max
-//------------------------------------------------------------------------------
-@media screen and (max-width: $break-m){
-  //----------------------------------------------------------------------------
-  // HEADER | content
-  //----------------------------------------------------------------------------
-  &-content{
-    padding: 5px;
-  }
-  //----------------------------------------------------------------------------
-  // HEADER | user
-  //----------------------------------------------------------------------------
-  .dropdown-content{
-    left: calc(100% - 260px);
-  }
-}
 }
