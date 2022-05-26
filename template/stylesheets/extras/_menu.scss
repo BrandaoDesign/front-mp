@@ -45,8 +45,17 @@
     &-item {
         [class*="ico-"] {
             display: inline-block;
+            font-size: 1.1rem;
             min-width: 33px;
             line-height: 25px;
+        }
+        .status{ float: right; padding: 2px 5px;}
+        .status-ball{
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 6px;
+            left: 29px;
         }
     }
 
@@ -69,7 +78,7 @@
         padding: 10px 18px;
         transition: all .5s;
         cursor: pointer;
-
+        position: relative;
 
         &::after {
             font-family: 'mp-icons' !important;
@@ -93,6 +102,7 @@
         text-decoration: none;
         padding: 10px 18px;
         transition: all .5s;
+        position: relative;
 
         &:hover {
             background: var(--menu-4);

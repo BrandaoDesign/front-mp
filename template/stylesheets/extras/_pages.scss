@@ -47,7 +47,7 @@
 }
 
 .content {
-  padding: 15px;
+  padding: var(--grid);
   animation: 1s fadeIn;
 }
 
@@ -60,37 +60,26 @@
 .page {
   animation: 1s fadeIn;
 
-
-
-
   &-center {
     max-width: 1180px;
     margin: 0 auto;
     animation: 1s fadeIn;
   }
 
-
-
-
   &-header {
     border-bottom: 1px solid var(--base-3);
-    padding: 15px 15px 10px;
+    margin: calc(var(--grid) / 2) var(--grid) 0;
+    padding-bottom: calc(var(--grid) / 2);
 
-  
-  
-  
-    &__title {
-    
-      margin: 0;
+    &-title {
+      color: var(--secondary);
+      margin: 0 0 5px;
       padding: 0;
     }
   }
 
-
-
-
   &-sub {
     border-bottom: 1px solid var(--base-3);
-    padding: 5px 15px;
+    margin: 0 var(--grid);
   }
 }

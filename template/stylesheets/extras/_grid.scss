@@ -66,11 +66,11 @@
   //----------------------------------------------------------------------------
   &-fluid{
     @extend .row;
-    margin-left: -15px;
-    margin-bottom: -15px;
+    margin-left: calc(var(--grid) - var(--grid) * 2);
+    // margin-bottom: calc(var(--grid) - var(--grid) * 1.6);
 
     > [class*="col-"]{
-      padding: 0 15px 15px;
+      padding: 0 var(--grid) var(--grid);
       padding-right: 0;
     }
   }
@@ -83,6 +83,11 @@
     width: 100%;
     min-height: 1px;
 }
+// .fluid-col{
+//   > [class*="col-"] {
+//     margin-bottom: var(--grid);
+//   }
+// }
 //==============================================================================
 // COLUNAS - SMARTPHONE
 //==============================================================================
@@ -146,15 +151,15 @@
       position: relative;
       width: 100%;
       min-height: 1px;
-      // padding: 15px 0;
+      // padding: var(--grid) 0;
     }
 }
 //==============================================================================
 // COL FLUID
 //==============================================================================
 .col-fluid{
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: calc(var(--grid) - var(--grid) * 2);
+  margin-left: calc(var(--grid) - var(--grid) * 2);
 }
 //==============================================================================
 // GRID EXEMPLE

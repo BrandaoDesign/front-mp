@@ -20,7 +20,7 @@
   // NAV | link
   //----------------------------------------------------------------------------
   &-link{
-    color: var(--base-4);
+    color: var(--color);
     text-decoration: none;
     white-space: nowrap;
     padding: 10px 15px;
@@ -34,7 +34,7 @@
   // NAV | sublink
   //----------------------------------------------------------------------------
   &-sublink{
-    color: var(--base-4);
+    color: var(--color);
     text-decoration: none;
     white-space: nowrap;
     padding: 10px 15px;
@@ -49,7 +49,7 @@
   //----------------------------------------------------------------------------
   &-icolink{
     @include display-flex;
-    color: var(--base-4);
+    color: var(--color);
     font-size: 1.2em;
     text-decoration: none;
     white-space: nowrap;
@@ -65,7 +65,7 @@
   //----------------------------------------------------------------------------
   &-link-line{
     @extend .nav-link;
-    border: 1px solid var(--base-4);
+    border: 1px solid var(--color);
   }
 }
 //==============================================================================
@@ -100,7 +100,7 @@
       content: "";
       width: 6px;
       height: 6px;
-      background: var(--base-4);
+      background: var(--color);
       border-radius: 50%;
       position: absolute;
       right: -5px;
@@ -168,4 +168,73 @@
 }
 .nav-center{
   @include justify-content(center);
+}
+
+.nav-sub{
+  position: relative;
+
+  &-header{
+    display: none;
+  }
+
+  &-content{
+    display: flex;
+    border-top: 1px solid var(--base-3);
+    border-bottom: 1px solid var(--base-3);
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: $break-xm){
+    
+    &-header{
+      display: flex;
+      margin-bottom: 10px;
+      border-top: 1px solid var(--base-3);
+      border-bottom: 1px solid var(--base-3);
+    }
+    
+    &-content{
+      display: initial;
+      max-width: 280px;
+      background: var(--background);
+      visibility: hidden;
+      opacity: 0;
+      border-top: 0;
+      border-bottom: 1px solid var(--base-3);
+      box-shadow: 0 15px 15px var(--shadow-1);
+      margin: 0;
+      padding: calc(var(--grid) /3);
+      position: absolute;
+      top: calc(100% + 13px);
+      transition: all .3s;
+      z-index: -1;
+  
+      li{
+        border: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+    
+    &-menu{
+      @include list-simple;
+      background: var(--base-1);
+      box-shadow: 0 0 10px var(--shadow-2);
+      margin-top: 1em;
+    }
+  
+    &-input{
+  
+      &:checked{
+        ~ .nav-sub-content{
+          visibility: visible;
+          opacity: 1;
+          z-index: index($z, drop);
+          transform: translateY(-1em);
+        }
+      }
+    }
+  }
+
 }

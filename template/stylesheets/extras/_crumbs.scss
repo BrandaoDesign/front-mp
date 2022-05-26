@@ -1,52 +1,40 @@
-//==============================================================================
-// CRUMBS
-//==============================================================================
 .crumbs{
   @include list-simple;
-  //----------------------------------------------------------------------------
-  // CRUMBS | li
-  //----------------------------------------------------------------------------
+  display: inline-flex;
+  
   li{
-    display: inline-block;
-    &:first-child{
-      a{
-        padding-left: 0;
-      }
+    
+    display: flex;
+    align-items: center;
+    padding-left: .3rem;
+
+    &::before{
+      content: "/";
+      font-size: .75rem;
+      margin-right: .3rem;
     }
-    &:last-child{
-      a,p{
-        b{
-          display: none;
-        }
+
+    &:first-child{
+      &::before{
+        display: none;
       }
     }
   }
-  //----------------------------------------------------------------------------
-  // CRUMBS | li | itens
-  //----------------------------------------------------------------------------
+  
   a, p{
     display: block;
-    color: var(--primary-light);
-    font-size: .7em;
-    font-weight: 500;
-    letter-spacing: .025em;
+    color: var(--color);
     text-decoration: none;
-    text-transform: uppercase;
     margin: 0;
-    padding: 5px 10px;
 
   }
-  //----------------------------------------------------------------------------
-  // CRUMBS | li | itens | link
-  //----------------------------------------------------------------------------
+  
   a{
     &:hover{
-      color: var(--secondary-light);
+      color: var(--secondary);
     }
   }
-  //----------------------------------------------------------------------------
-  // CRUMBS | li | itens | ico
-  //----------------------------------------------------------------------------
+  
   b{
     font-size: .8em;
     margin-left: 5px;

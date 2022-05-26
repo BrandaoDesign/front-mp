@@ -8,10 +8,10 @@
         --base-1: #fff;
         --base-2: #{$cor-gray-light};
         --base-3: #{$cor-gray};
-        --base-4: #747474;
+        --base-4: #a8acaf;
         --shadow-1: #{$shadow};
         --shadow-2: #{$shadow-2};
-        --header-1: #F5F5F5;
+        --header-1: #fff;
         --header-2: #747474;
         --header-3: #0066cc;
         --menu-1: #fff;
@@ -19,17 +19,18 @@
         --menu-3: #0066cc;
         --menu-4: #{$cor-gray-light};
         --primary: #0d1e64;
-        --primary-light: #041d77;
+        --primary-light: #3f51b5;
         --primary-dark: #021350;
         --secondary: #0066cc;
-        --secondary-light: #0066cc;
+        --secondary-light: #2196f3;
         --secondary-dark: #022473;
         --logo-1 : #a8acaf;
         --logo-2 : #0066cc;
+        --grid : 30px;
     }
     &-primary{
         --background: #fff;
-        --color: #747474;
+        --color: #000;
         --base-1: #{$cor-white};
         --base-2: #{$cor-gray-light};
         --base-3: #{$cor-gray};
@@ -37,20 +38,21 @@
         --shadow-1: #{$shadow};
         --shadow-2: #{$shadow-2};
         --header-1: #fff;
-        --header-2: #747474;
+        --header-2: #000;
         --header-3: #0066cc;
-        --menu-1: #021350;
+        --menu-1: #000;
         --menu-2: #fff;
         --menu-3: #0066cc;
-        --menu-4: #0d1e64;
-        --primary: #0d1e64;
-        --primary-light: #041d77;
-        --primary-dark: #021350;
+        --menu-4: #111115;
+        --primary: #2f3541;
+        --primary-light: #3d4557;
+        --primary-dark: #000;
         --secondary: #0066cc;
         --secondary-light: #0066cc;
         --secondary-dark: #022473;
         --logo-1 : #a8acaf;
         --logo-2 : #0066cc;
+        --grid : 30px;
     }
     &-dark{
         --background: var(--base-1);
@@ -64,18 +66,19 @@
         --header-1: var(--base-1);
         --header-2: #a8acaf;
         --header-3: #{$cor-white};
-        --menu-1: #111115;
+        --menu-1: #101318;
         --menu-2: #a8acaf;
         --menu-3: #{$cor-white};
-        --menu-4: #0d1e64;
-        --primary: #0d1e64;
-        --primary-light: #041d77;
-        --primary-dark: #021350;
+        --menu-4: var(--base-1);
+        --primary: #2f3541;
+        --primary-light: #3d4557;
+        --primary-dark: #000;
         --secondary: #0066cc;
         --secondary-light: #0066cc;
         --secondary-dark: #022473;
         --logo-1 : #a8acaf;
         --logo-2 : #0066cc;
+        --grid : 30px;
     }
     
 }
