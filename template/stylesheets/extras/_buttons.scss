@@ -1,44 +1,35 @@
-//==============================================================================
-// BUTTONS
-//==============================================================================
 .bt{
   display: inline-block;
   background: transparent;
-  color: var(--base-4);
+  color: var(--color);
   font-size: .9em;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   line-height: 1;
   letter-spacing: 0.1em;
-  border: 2px solid var(--base-3);
+  border: 1px solid var(--base-3);
+  border-radius: 4px;
   white-space: nowrap;
   padding: 10px 25px;
   transition: .5s;
   cursor: pointer;
   &:hover{
-    color: var(--base-4);
-    border-color: var(--base-4);
+    color: var(--color);
+    border-color: var(--color);
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | link
-//------------------------------------------------------------------------------
 .bt-link{
   background: transparent;
   color: var(--secondary);
   text-decoration: underline;
   border-color: transparent;
-  padding: 8px 25px;
+  padding: 0;
 
   &:hover{
     color: var(--secondary-light);
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | success
-//------------------------------------------------------------------------------
 .bt-success{
   @extend .bt;
   background: $cor-success;
@@ -51,23 +42,18 @@
     border-color: $cor-success-light;
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | success | line
-//------------------------------------------------------------------------------
 .bt-success-line{
   @extend .bt;
   background: transparent;
-  color: $cor-success;
-  border-color: $cor-success;
+  color: var(--color);
+  border-color: $cor-success-light;
 
   &:hover{
-    color: $cor-success-light;
+    color: $cor-white;
     border-color: $cor-success-light;
+    background: $cor-success-light;
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | success | clear
-//------------------------------------------------------------------------------
 .bt-success-clear{
   @extend .bt;
   color: $cor-success;
@@ -76,9 +62,6 @@
     color: $cor-success-light;
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | alert
-//------------------------------------------------------------------------------
 .bt-alert{
   @extend .bt;
   background: $cor-alert;
@@ -91,23 +74,18 @@
     border-color: $cor-alert-light;
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | alert | line
-//------------------------------------------------------------------------------
 .bt-alert-line{
   @extend .bt;
   background: transparent;
-  color: $cor-alert;
-  border-color: $cor-alert;
+  color: var(--color);
+  border-color: $cor-alert-light;
 
   &:hover{
-    color: $cor-alert-light;
+    color: $cor-white;
     border-color: $cor-alert-light;
+    background: $cor-alert-light;
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | alert | clear
-//------------------------------------------------------------------------------
 .bt-alert-clear{
   @extend .bt;
   color: $cor-alert;
@@ -116,9 +94,6 @@
     color: $cor-alert-light;
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | error
-//------------------------------------------------------------------------------
 .bt-error{
   @extend .bt;
   background: $cor-error;
@@ -131,23 +106,18 @@
     border-color: $cor-error-light;
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | error | line
-//------------------------------------------------------------------------------
 .bt-error-line{
   @extend .bt;
   background: transparent;
-  color: $cor-error;
-  border-color: $cor-error;
+  color: var(--color);
+  border-color: $cor-error-light;
 
   &:hover{
-    color: $cor-error-light;
+    color: $cor-white;
     border-color: $cor-error-light;
+    background: $cor-error-light;
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | error | clear
-//------------------------------------------------------------------------------
 .bt-error-clear{
   @extend .bt;
   color: $cor-error;
@@ -156,9 +126,6 @@
     color: $cor-error-light;
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON PRIMARY
-//------------------------------------------------------------------------------
 .bt-primary{
   @extend .bt;
   background: var(--primary);
@@ -171,9 +138,6 @@
     border-color: var(--primary-light);
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON  PRIMARY | clear
-//------------------------------------------------------------------------------
 .bt-primary-clear{
   @extend .bt;
   color: var(--primary);
@@ -182,23 +146,18 @@
     color: var(--primary-light);
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON | Primary | line
-//------------------------------------------------------------------------------
 .bt-primary-line{
   @extend .bt;
   background: transparent;
-  color: var(--primary);
-  border-color: var(--primary);
+  color: var(--color);
+  border-color: var(--primary-light);
 
   &:hover{
-    color: var(--primary-light);
+    color: $cor-white;
     border-color: var(--primary-light);
+    background: var(--primary-light);
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON secondary
-//------------------------------------------------------------------------------
 .bt-secondary{
   @extend .bt;
   background: var(--secondary);
@@ -211,9 +170,6 @@
     border-color: var(--secondary-light);
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON  PRIMARY | clear
-//------------------------------------------------------------------------------
 .bt-secondary-clear{
   @extend .bt;
   color: var(--secondary);
@@ -222,61 +178,53 @@
     color: var(--secondary-light);
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON secondary | line
-//------------------------------------------------------------------------------
 .bt-secondary-line{
   @extend .bt;
   background: transparent;
-  color: var(--secondary);
-  border-color: var(--secondary);
+  color: var(--color);
+  border-color: var(--secondary-light);
 
   &:hover{
-    color: var(--secondary-light);
+    color: $cor-white;
     border-color: var(--secondary-light);
+    background: var(--secondary-light);
   }
 }
-//------------------------------------------------------------------------------
-// BUTTON block
-//------------------------------------------------------------------------------
+.bt-light{
+  @extend .bt;
+  background: var(--base-3);
+  color: var(--color);
+  border-color: var(--base-3);
+
+  &:hover{
+    color: var(--secondary);
+    background: var(--base-2);
+    border-color: var(--base-2);
+  }
+}
 .bt-block{
   display: block;
   width: 100%;
 }
-//------------------------------------------------------------------------------
-// BUTTON large
-//------------------------------------------------------------------------------
 .bt-large{
   font-size: 1.2em;
   font-weight: 600;
   padding: 20px 35px;
 }
-//------------------------------------------------------------------------------
-// BUTTON | medium
-//------------------------------------------------------------------------------
 .bt-medium{
   font-size: .7em;
   font-weight: 600;
   padding: 14px 15px 13px;
 }
-//------------------------------------------------------------------------------
-// BUTTON small
-//------------------------------------------------------------------------------
 .bt-small{
   font-size: .7em;
   font-weight: 600;
   padding: 10px 10px;
 }
-//------------------------------------------------------------------------------
-// BUTTON | search
-//------------------------------------------------------------------------------
 .bt-search, .bt-ico{
   font-size: 1.3em;
   padding: 7px 10px !important;
 }
-//------------------------------------------------------------------------------
-// BUTTON close
-//------------------------------------------------------------------------------
 .bt-close{
   color: var(--base-primary);
   text-decoration: none;
@@ -290,9 +238,6 @@
     color: var(--base-secondary);
   }
 }
-//==============================================================================
-// NAV-BUTTONS
-//==============================================================================
 .nav-buttons{
   text-align: right;
 
@@ -301,17 +246,12 @@
   }
 
 }
-//==============================================================================
-// BUTTON CHECK
-//==============================================================================
 .bt-check{
   cursor: pointer;
   em{
     vertical-align: sub;
   }
-  //----------------------------------------------------------------------------
-  // BUTTON CHECK | input
-  //----------------------------------------------------------------------------
+
   &-input{
     display: none;
 
@@ -322,17 +262,12 @@
     }
   }
 }
-//==============================================================================
-// BUTTON CHECK | sucess
-//==============================================================================
 .bt-check-success{
   cursor: pointer;
   em{
     vertical-align: sub;
   }
-  //----------------------------------------------------------------------------
-  // BUTTON CHECK | input
-  //----------------------------------------------------------------------------
+
   &-input{
     display: none;
 
@@ -343,17 +278,12 @@
     }
   }
 }
-//==============================================================================
-// BUTTON CHECK | alert
-//==============================================================================
 .bt-check-alert{
   cursor: pointer;
   em{
     vertical-align: sub;
   }
-  //----------------------------------------------------------------------------
-  // BUTTON CHECK | input
-  //----------------------------------------------------------------------------
+
   &-input{
     display: none;
 
@@ -364,17 +294,11 @@
     }
   }
 }
-//==============================================================================
-// BUTTON CHECK | error
-//==============================================================================
 .bt-check-error{
   cursor: pointer;
   em{
     vertical-align: sub;
   }
-  //----------------------------------------------------------------------------
-  // BUTTON CHECK | input
-  //----------------------------------------------------------------------------
   &-input{
     display: none;
 
@@ -385,17 +309,12 @@
     }
   }
 }
-//==============================================================================
-// BUTTON CHECK | info
-//==============================================================================
 .bt-check-info{
   cursor: pointer;
   em{
     vertical-align: sub;
   }
-  //----------------------------------------------------------------------------
-  // BUTTON CHECK | input
-  //----------------------------------------------------------------------------
+
   &-input{
     display: none;
 

@@ -1,95 +1,112 @@
-//==============================================================================
-// BOX
-//==============================================================================
 .box{
-  padding: 15px;
-  //----------------------------------------------------------------------------
-  // BOX | ico
-  //----------------------------------------------------------------------------
+  transition: .5s;
   &-ico{
     font-size: 2em;
     transition: .5s;
   }
-  //----------------------------------------------------------------------------
-  // BOX | title
-  //----------------------------------------------------------------------------
   &-title{
     margin-top: 20px;
   }
-  //----------------------------------------------------------------------------
-  // BOX | text
-  //----------------------------------------------------------------------------
   &-text{
-    margin-top: 15px;
+    margin-top: calc(var(--grid)/2);
   }
-  //----------------------------------------------------------------------------
-  // BOX | divider
-  //----------------------------------------------------------------------------
   &-divider{
     display: block;
     width: 50px;
     height: 3px;
     background: var(--secondary);
-    margin-top: 15px;
+    margin-top: calc(var(--grid)/2);
     transition: all .5s;
   }
-  //----------------------------------------------------------------------------
-  // BOX | hover
-  //----------------------------------------------------------------------------
-  &-hover{
-
-    &:hover{
-      border-color: var(--secondary);
-
-       .box-divider{
-        width: 100px;
-       }
-
-      .box-ico{
-        color: var(--secondary);
-      }
-
-    }
-  }
 }
-//==============================================================================
-// BOX line
-//==============================================================================
+
+
+
 .box{
-  //----------------------------------------------------------------------------
-  // BOX | two
-  //----------------------------------------------------------------------------
+  padding: calc(var(--grid)/2);
+  
   &-two{
-    padding: 15px;
+    padding: calc(var(--grid)/2);
+    transition: .5s;
+
     @media screen and (min-width: $break-s){
-      padding: 30px;
+      padding: var(--grid);
     }
   }
-  //----------------------------------------------------------------------------
-  // BOX | line
-  //----------------------------------------------------------------------------
+  &-block{
+    background: var(--base-1);
+  }
   &-line{
     @extend .box;
-    border: 2px solid var(--base-3);
+    border: 1px solid var(--base-3);
     transition: all 1s;
   }
-  //----------------------------------------------------------------------------
-  // BOX | modern
-  //----------------------------------------------------------------------------
+
   &-modern{
     @extend .box;
     border: 4px solid var(--base-3);
-    padding: 25px;
+    padding: calc(var(--grid)/2);
     transition: .5s;
     @media screen and (min-width: $break-s){
-      padding: 35px;
+      padding: var(--grid);
     }
   }
-  //----------------------------------------------------------------------------
-  // BOX | shadow
-  //----------------------------------------------------------------------------
+  
   &-shadow{
     @extend .box;
-    box-shadow: 0 0 15px var(--base-3);
+    box-shadow: 0 0 calc(var(--grid)/2) var(--base-3);
+  }
+
+  &-primary{
+    @extend .box;
+    background: var(--primary);
+    color: $cor-white;
+  }
+
+  &-secondary{
+    @extend .box;
+    background: var(--secondary);
+    color: $cor-white;
+  }
+
+  &-hover{
+    &:hover{
+      background: var(--base-1);
+    }
+
+    &-block{
+      &:hover{
+        background: var(--base-2);
+      }
+    }
+    &-line{
+      &:hover{
+        border-color: var(--secondary);
+      }
+    }
+  
+    &-modern{
+      &:hover{
+        border-color: var(--secondary);
+      }
+    }
+    
+    &-shadow{
+      &:hover{
+        box-shadow: 0 0 var(--grid) var(--secondary);
+      }
+    }
+  
+    &-primary{
+      &:hover{
+        background: var(--primary-light);
+      }
+    }
+  
+    &-secondary{
+      &:hover{
+        background: var(--secondary-light);
+      }
+    }
   }
 }

@@ -25,6 +25,7 @@
     text-decoration: none;
     letter-spacing: 0.1em;
     white-space: nowrap;
+    border-radius: var(--border-radius);
     padding: 10px;
     transition: .5s;
     &:hover{
@@ -96,8 +97,8 @@
   // PAGINATION | link
   //----------------------------------------------------------------------------
   a{
-    border: 2px solid var(--base-3);
-    color: var(--base-4);
+    border: 1px solid var(--base-3);
+    color: var(--color);
     padding: 8px;
     &:hover{
       border: 2px solid var(--secondary);

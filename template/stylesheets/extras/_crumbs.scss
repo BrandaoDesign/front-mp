@@ -7,18 +7,6 @@
     display: flex;
     align-items: center;
     padding-left: .3rem;
-
-    &::before{
-      content: "/";
-      font-size: .75rem;
-      margin-right: .3rem;
-    }
-
-    &:first-child{
-      &::before{
-        display: none;
-      }
-    }
   }
   
   a, p{

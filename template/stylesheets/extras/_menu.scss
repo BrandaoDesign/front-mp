@@ -1,6 +1,12 @@
+
 .menu {
+    --max-width : 255px;
+    --min-width : 60px;
+    --a-link : 10px;
+    --l-link : 20px;
+
     position: fixed;
-    width: 255px;
+    width: var(--max-width);
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -21,11 +27,12 @@
     }
 
     &-brand {
-        width: 255px;
-        height: 60px;
+        width: var(--max-width);
+        height: var(--min-width);
         display: flex;
         align-items: center;
-        padding: 10px 5px 10px 18px;
+        padding: calc(var(--l-link)/2);
+        padding-right: var(--l-link);
 
         &-link {
             flex: 1;
@@ -36,6 +43,8 @@
         color: var(--menu-2);
         cursor: pointer;
         transition: all .5s;
+        transform: translateX(var(--l-link));
+        padding: var(--a-link) var(--l-link);
 
         &:hover{
             color: var(--menu-3);
@@ -46,8 +55,8 @@
         [class*="ico-"] {
             display: inline-block;
             font-size: 1.1rem;
-            min-width: 33px;
             line-height: 25px;
+            margin-right: var(--a-link);
         }
         .status{ float: right; padding: 2px 5px;}
         .status-ball{
@@ -65,17 +74,17 @@
         font-size: .65rem;
         font-weight: bold;
         text-transform: uppercase;
-        padding: 10px 18px;
+        padding: var(--a-link) var(--l-link);
         transition: all .5s;
     }
 
     &-header {
-        width: 255px;
+        width: var(--max-width);
         display: flex;
         align-items: center;
         color: var(--menu-2);
         text-decoration: none;
-        padding: 10px 18px;
+        padding: var(--a-link) var(--l-link);
         transition: all .5s;
         cursor: pointer;
         position: relative;
@@ -96,11 +105,11 @@
     }
 
     &-link {
-        width: 255px;
+        width: var(--max-width);
         display: block;
         color: var(--menu-2);
         text-decoration: none;
-        padding: 10px 18px;
+        padding: var(--a-link) var(--l-link);
         transition: all .5s;
         position: relative;
 
@@ -136,7 +145,7 @@
         height: 0;
         position: relative;
         transition: all .5s;
-        padding-left: 20px;
+        padding-left: var(--l-link);
     }
 
     &-input {
@@ -165,16 +174,35 @@
     }
 
     @media screen and (min-width: $break-m) {
-        width: 50px;
+        width: var(--min-width);
         transform: translateX(0);
 
+        span{
+            opacity: 0;
+            transition: all .5s;
+        }
+
+        .menu-input:checked ~ .menu-content{
+            opacity: 0;
+            height: 0;
+        }
+
         &:hover {
-            width: 255px;
+            width: var(--max-width);
+
+            span{opacity: 1;}
+            .menu-input:checked ~ .menu-content{opacity: 1; height: initial};
         }
     }
 
     @media screen and (min-width: $break-l) {
-        width: 255px;
+        width: var(--max-width);
+
+        .menu-input:checked ~ .menu-content{opacity: 1; height: initial};
+
+        span{
+            opacity: 1;
+        }
     }
 
 }
@@ -197,34 +225,62 @@
 
     @media screen and (min-width: $break-m) {
         ~ .menu {
-            width: 255px;
+            width: var(--max-width);
+
+            span{
+                opacity: 1;
+            }
+            .menu-input:checked ~ .menu-content{opacity: 1; height: initial};
         }
 
         ~.container-menu {
-            margin-left: 255px;
+            margin-left: var(--max-width);
         }
 
         ~.header .header-content {
-            padding-left: 255px;
+            padding-left: var(--max-width);
         }
     }
 
     @media screen and (min-width: $break-l) {
         ~ .menu {
-            width: 50px;
+            width: var(--min-width);
+
+            span{
+                opacity: 0;
+                transition: all .5s;
+            }
+            .menu-input:checked ~ .menu-content{opacity: 0; height: 0};
 
             &:hover {
-                width: 255px;
+                width: var(--max-width);
+
+                span{opacity: 1;}
+                .menu-input:checked ~ .menu-content{opacity: 1; height: initial};
             }
         }
 
         ~.container-menu {
-            margin-left: 50px;
+            margin-left: var(--max-height);
         }
 
         ~.header .header-content {
-            padding-left: 50px;
+            padding-left: calc(var(--max-height) + var(--grid));
         }
+    }
+
+    @media screen and (max-width: $break-m) {
+
+        ~ .menu-close{
+            background: var(--shadow-1);
+            z-index: index($z, content);
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
     }
 
 }

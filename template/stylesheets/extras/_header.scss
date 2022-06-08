@@ -1,10 +1,13 @@
 .header {
+  --max-width : 255px;
+  --max-height : 60px;
+
   width: 100%;
   background: var(--header-1);
   color: var(--header-2);
   position: fixed;
   top: 0;
-  z-index: index($z, header);
+  z-index: index($z, menu);
 
   a,
   label {
@@ -20,7 +23,7 @@
   }
 
   &-content {
-    height: 60px;
+    height: var(--max-height);
     @include display-flex;
     @include align-items(center);
     @include justify-content(space-between);
@@ -71,7 +74,7 @@
   @media screen and (min-width: $break-m) {
 
     &-content {
-      padding-left: 50px;
+      padding-left: var(--max-height);
     }
 
   }
@@ -79,16 +82,12 @@
   @media screen and (min-width: $break-l) {
 
     &-content {
-      padding-left: 255px;
+      padding-left: calc(var(--max-width) + var(--grid));
     }
 
   }
 
   @media screen and (max-width: $break-m) {
-
-    // &-content{
-    //   padding: 5px;
-    // }
 
     .dropdown-content {
       left: calc(100% - 260px);

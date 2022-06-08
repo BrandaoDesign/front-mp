@@ -17,7 +17,7 @@ $qt-slide: 4;
     left: 50%;
     bottom: 20px;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: index($z, content);
   }
   //----------------------------------------------------------------------------
   // SLIDES | NAV | LABEL
@@ -46,8 +46,8 @@ $qt-slide: 4;
     top: 50%;
     margin-top: -15px;
     transition: all .5s;
-    z-index: 3;
     cursor: pointer;
+    z-index: index($z, content);
 
     &:hover{
       background: var(--primary-light);
@@ -70,7 +70,6 @@ $qt-slide: 4;
     visibility: hidden;
     margin: 0;
     animation: fadeIn 1.5s;
-    z-index: 1;
   }
   //----------------------------------------------------------------------------
   // SLIDES | CONTAINER | caption
@@ -84,7 +83,6 @@ $qt-slide: 4;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;
   }
   //----------------------------------------------------------------------------
   // SLIDES | CONTAINER | box
@@ -97,7 +95,6 @@ $qt-slide: 4;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 2;
   }
   //----------------------------------------------------------------------------
   // SLIDES | CONTAINER | fade

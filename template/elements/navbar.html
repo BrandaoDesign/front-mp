@@ -1,4 +1,4 @@
-<!-- HEADER -->
+
 <div class="page-header">
   <h2 class="page-header__title"><b class="ico-archive"></b> Navbar</h2>
   <ul class="crumbs">
@@ -13,26 +13,70 @@
     </li>
   </ul>
 </div>
-<!-- fim: HEADER -->
+
 
 <div class="content">
 
   <fieldset>
+    <h3>Nav Sub</h3><br>
+    <nav class="nav-sub card-line">
+      <input type="checkbox" id="submenu" class="nav-sub-input hidden">
+      <div class="nav-sub-header">
+        <label class="nav-link block uppercase row-center row-full" for="submenu"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+      </div>
+      <div class="nav-sub-content">
+        <ul class="nav-line row-full">
+          <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Novo movimento"><b class="ico-file"></b> Novo movimento</a></li>
+          <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Copiar capa"><b class="ico-copy"></b> Copiar</a></li>
+          <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Histórico completo"><b class="ico-clock"></b> Histórico</a></li>
+          <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Imprimir etiqueta"><b class="ico-printer"></b> Etiqueta</a></li>
+          <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Arquivar"><b class="ico-archive"></b> Arquivar</a></li>
+          <li class="nav-line-item min-m"><a class="nav-link block tooltip-left" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b> Imprimir</a></li>
+        </ul>
+        <ul class="nav-line max-m">
+          <li class="nav-line-item"><a class="nav-link block tooltip-left" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b></a></li>
+        </ul>
+      </div>
+    </nav>
+  </fieldset>
+
+  <fieldset>
     <h3>Nav Basica</h3><br>
 
-    <ul class="nav">
-      <li><a class="nav-link" href="#">MENU</a></li>
-      <li><a class="nav-link" href="#">MENU</a></li>
-      <li><a class="nav-link" href="#">MENU</a></li>
-      <li><a class="nav-link" href="#">MENU</a></li>
-    </ul>
-
-    <ul class="nav nav-right">
-      <li><a class="nav-link" href="#">MENU</a></li>
-      <li><a class="nav-link" href="#">MENU</a></li>
-      <li><a class="nav-link" href="#">MENU</a></li>
-      <li><a class="nav-link" href="#">MENU</a></li>
-    </ul>
+    <div class="row-fluid">
+      <div class="col-6">
+        <nav class="nav-sub card-block">
+          <input type="checkbox" id="submenu2" class="nav-sub-input hidden">
+          <div class="nav-sub-header">
+            <label class="nav-link block uppercase row-center row-full" for="submenu2"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+          </div>
+          <div class="nav-sub-content">
+            <ul class="nav row-full">
+              <li><a class="nav-link block" href="#">MENU</a></li>
+              <li><a class="nav-link block" href="#">MENU</a></li>
+              <li><a class="nav-link block" href="#">MENU</a></li>
+              <li><a class="nav-link block" href="#">MENU</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-6">
+        <nav class="nav-sub card-line">
+          <input type="checkbox" id="submenu3" class="nav-sub-input hidden">
+          <div class="nav-sub-header">
+            <label class="nav-link block uppercase row-center row-full" for="submenu3"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+          </div>
+          <div class="nav-sub-content">
+            <ul class="nav nav-right row-full">
+              <li><a class="nav-link block" href="#">MENU</a></li>
+              <li><a class="nav-link block" href="#">MENU</a></li>
+              <li><a class="nav-link block" href="#">MENU</a></li>
+              <li><a class="nav-link block" href="#">MENU</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
 
   </fieldset>
 
@@ -41,19 +85,41 @@
   <fieldset>
     <h3>Nav Line</h3><br>
 
-    <ul class="nav-line">
-      <li class="nav-line-item"><a class="nav-link" href="#"><b class="ico-bell"></b> MENU</a></li>
-      <li class="nav-line-item"><a class="nav-link" href="#"><b class="ico-box"></b> MENU</a></li>
-      <li class="nav-line-item"><a class="nav-link" href="#"><b class="ico-briefcase"></b> MENU</a></li>
-      <li class="nav-line-item"><a class="nav-link" href="#"><b class="ico-gift"></b> MENU</a></li>
-    </ul>
-
-    <ul class="nav-line nav-right">
-      <li class="nav-line-item"><a class="nav-link" href="#"><b class="ico-bell"></b> MENU</a></li>
-      <li class="nav-line-item"><a class="nav-link" href="#"><b class="ico-box"></b> MENU</a></li>
-      <li class="nav-line-item"><a class="nav-link" href="#"><b class="ico-briefcase"></b> MENU</a></li>
-      <li class="nav-line-item"><a class="nav-link" href="#"><b class="ico-gift"></b> MENU</a></li>
-    </ul>
+    <div class="row-fluid">
+      <div class="col-6">
+        <nav class="nav-sub">
+          <input type="checkbox" id="submenu4" class="nav-sub-input hidden">
+          <div class="nav-sub-header">
+            <label class="nav-link block uppercase row-center row-full" for="submenu4"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+          </div>
+          <div class="nav-sub-content">
+            <ul class="nav-line row-full">
+              <li class="nav-line-item"><a class="nav-link block" href="#"><b class="ico-bell"></b> MENU</a></li>
+              <li class="nav-line-item"><a class="nav-link block" href="#"><b class="ico-box"></b> MENU</a></li>
+              <li class="nav-line-item"><a class="nav-link block" href="#"><b class="ico-briefcase"></b> MENU</a></li>
+              <li class="nav-line-item"><a class="nav-link block" href="#"><b class="ico-gift"></b> MENU</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-6">
+        <nav class="nav-sub card-line">
+          <input type="checkbox" id="submenu5" class="nav-sub-input hidden">
+          <div class="nav-sub-header">
+            <label class="nav-link block uppercase row-center row-full" for="submenu5"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+          </div>
+          <div class="nav-sub-content">
+            <ul class="nav-line nav-right row-full">
+              <li class="nav-line-item"><a class="nav-link block" href="#"><b class="ico-bell"></b> MENU</a></li>
+              <li class="nav-line-item"><a class="nav-link block" href="#"><b class="ico-box"></b> MENU</a></li>
+              <li class="nav-line-item"><a class="nav-link block" href="#"><b class="ico-briefcase"></b> MENU</a></li>
+              <li class="nav-line-item"><a class="nav-link block" href="#"><b class="ico-gift"></b> MENU</a></li>
+            </ul>
+          </div>
+        </nav>
+        
+      </div>
+    </div>
 
   </fieldset>
 
@@ -62,31 +128,53 @@
   <fieldset>
     <h3>Nav ball</h3><br>
 
-    <ul class="nav-ball">
-      <li class="nav-ball-item"><a class="nav-link" href="#">MENU</a></li>
-      <li class="nav-ball-item dropdown">
-        <a class="nav-link" href="#">MENU <b class="ico-chevron-down"></b></a>
-        <div class="dropdown-content dropdown-menu">
-          <a class="nav-link bt-block" href="#">MENU</a>
-          <a class="nav-link bt-block" href="#">MENU</a>
-        </div>
-      </li>
-      <li class="nav-ball-item"><a class="nav-link" href="#">MENU</a></li>
-      <li class="nav-ball-item"><a class="nav-link" href="#">MENU</a></li>
-    </ul>
-
-    <ul class="nav-ball nav-right">
-      <li class="nav-ball-item"><a class="nav-link" href="#">MENU</a></li>
-      <li class="nav-ball-item dropdown">
-        <a class="nav-link" href="#">MENU <b class="ico-chevron-down"></b></a>
-        <div class="dropdown-content dropdown-menu">
-          <a class="nav-link bt-block" href="#">MENU</a>
-          <a class="nav-link bt-block" href="#">MENU</a>
-        </div>
-      </li>
-      <li class="nav-ball-item"><a class="nav-link" href="#">MENU</a></li>
-      <li class="nav-ball-item"><a class="nav-link" href="#">MENU</a></li>
-    </ul>
+    <div class="row-fluid">
+      <div class="col-6">
+        <nav class="nav-sub card-primary">
+          <input type="checkbox" id="submenu6" class="nav-sub-input hidden">
+          <div class="nav-sub-header">
+            <label class="nav-link block uppercase row-center row-full" for="submenu6"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+          </div>
+          <div class="nav-sub-content">
+            <ul class="nav-ball row-full">
+              <li class="nav-ball-item"><a class="nav-link block" href="#">MENU</a></li>
+              <li class="nav-ball-item dropdown">
+                <a class="nav-link block" href="#">MENU <b class="ico-chevron-down"></b></a>
+                <div class="dropdown-content dropdown-menu">
+                  <a class="nav-link bt-block" href="#">MENU</a>
+                  <a class="nav-link bt-block" href="#">MENU</a>
+                </div>
+              </li>
+              <li class="nav-ball-item"><a class="nav-link block" href="#">MENU</a></li>
+              <li class="nav-ball-item"><a class="nav-link block" href="#">MENU</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col-6">
+        <nav class="nav-sub card-shadown">
+          <input type="checkbox" id="submenu7" class="nav-sub-input hidden">
+          <div class="nav-sub-header">
+            <label class="nav-link block uppercase row-center row-full" for="submenu7"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+          </div>
+          <div class="nav-sub-content">
+            <ul class="nav-ball nav-right row-full">
+              <li class="nav-ball-item"><a class="nav-link block" href="#">MENU</a></li>
+              <li class="nav-ball-item dropdown">
+                <a class="nav-link block" href="#">MENU <b class="ico-chevron-down"></b></a>
+                <div class="dropdown-content dropdown-menu">
+                  <a class="nav-link bt-block" href="#">MENU</a>
+                  <a class="nav-link bt-block" href="#">MENU</a>
+                </div>
+              </li>
+              <li class="nav-ball-item"><a class="nav-link block" href="#">MENU</a></li>
+              <li class="nav-ball-item"><a class="nav-link block" href="#">MENU</a></li>
+            </ul>
+          </div>
+        </nav>
+        
+      </div>
+    </div>
 
   </fieldset>
 
@@ -94,19 +182,26 @@
 
   <fieldset>
     <h3>Nav Space</h3><br>
-
-    <ul class="nav-space">
-      <li class="nav-space-item"><a class="nav-link bt-block" href="#">MENU</a></li>
-      <li class="nav-space-item dropdown">
-        <a class="nav-link bt-block" href="#">MENU <b class="ico-chevron-down"></b></a>
-        <div class="dropdown-content dropdown-menu">
-          <a class="nav-link bt-block" href="#">MENU</a>
-          <a class="nav-link bt-block" href="#">MENU</a>
-        </div>
-      </li>
-      <li class="nav-space-item"><a class="nav-link bt-block" href="#">MENU</a></li>
-      <li class="nav-space-item"><a class="nav-link bt-block" href="#">MENU</a></li>
-    </ul>
+    <nav class="nav-sub card-block">
+      <input type="checkbox" id="submenu8" class="nav-sub-input hidden">
+      <div class="nav-sub-header">
+        <label class="nav-link block uppercase row-center row-full" for="submenu8"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+      </div>
+      <div class="nav-sub-content">
+        <ul class="nav-space row-full">
+          <li class="nav-space-item"><a class="nav-link bt-block" href="#">MENU</a></li>
+          <li class="nav-space-item dropdown">
+            <a class="nav-link bt-block" href="#">MENU <b class="ico-chevron-down"></b></a>
+            <div class="dropdown-content dropdown-menu">
+              <a class="nav-link bt-block" href="#">MENU</a>
+              <a class="nav-link bt-block" href="#">MENU</a>
+            </div>
+          </li>
+          <li class="nav-space-item"><a class="nav-link bt-block" href="#">MENU</a></li>
+          <li class="nav-space-item"><a class="nav-link bt-block" href="#">MENU</a></li>
+        </ul>
+      </div>
+    </nav>
 
   </fieldset>
 

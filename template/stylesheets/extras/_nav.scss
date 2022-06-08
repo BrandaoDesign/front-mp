@@ -1,13 +1,7 @@
-//==============================================================================
-// NAV
-//==============================================================================
 .nav{
   @include display-flex;
   @include flex-wrap(wrap);
-  @include list-simple;
-  //----------------------------------------------------------------------------
-  // NAV | link
-  //----------------------------------------------------------------------------
+  @include list-simple;  
   &-item{
     margin-right: 10px;
     padding-right: 10px;
@@ -16,9 +10,6 @@
       padding-right: 0;
     }
   }
-  //----------------------------------------------------------------------------
-  // NAV | link
-  //----------------------------------------------------------------------------
   &-link{
     color: var(--color);
     text-decoration: none;
@@ -30,9 +21,6 @@
       color: var(--secondary);
     }
   }
-  //----------------------------------------------------------------------------
-  // NAV | sublink
-  //----------------------------------------------------------------------------
   &-sublink{
     color: var(--color);
     text-decoration: none;
@@ -44,9 +32,6 @@
       color: var(--secondary);
     }
   }
-  //----------------------------------------------------------------------------
-  // NAV | icolink
-  //----------------------------------------------------------------------------
   &-icolink{
     @include display-flex;
     color: var(--color);
@@ -60,17 +45,11 @@
       color: var(--secondary);
     }
   }
-  //----------------------------------------------------------------------------
-  // NAV | link
-  //----------------------------------------------------------------------------
   &-link-line{
     @extend .nav-link;
     border: 1px solid var(--color);
   }
 }
-//==============================================================================
-// NAV LINE
-//------------------------------------------------------------------------------
 .nav-line{
   @extend .nav;
 
@@ -85,9 +64,6 @@
     }
   }
 }
-//==============================================================================
-// NAV BALL
-//------------------------------------------------------------------------------
 .nav-ball{
   @extend .nav;
 
@@ -117,9 +93,6 @@
     }
   }
 }
-//==============================================================================
-// NAV TABS
-//------------------------------------------------------------------------------
 .nav-tabs{
   @extend .nav;
   background: var(--base-3);
@@ -148,19 +121,16 @@
     }
   }
 }
-//==============================================================================
-// NAV SPACE
-//------------------------------------------------------------------------------
 .nav-space{
   @extend .nav;
 
   &-item{
     @include flex(1);
   }
+  @media screen and (max-width: $break-xm){
+    flex-direction: column;
+  }
 }
-//==============================================================================
-// NAV RIGHT
-//------------------------------------------------------------------------------
 .nav-right{
   @media screen and (min-width: $break-s){
     @include justify-content(flex-end);
@@ -179,33 +149,20 @@
 
   &-content{
     display: flex;
-    border-top: 1px solid var(--base-3);
-    border-bottom: 1px solid var(--base-3);
-    margin-bottom: 10px;
   }
 
   @media screen and (max-width: $break-xm){
     
     &-header{
       display: flex;
-      margin-bottom: 10px;
-      border-top: 1px solid var(--base-3);
-      border-bottom: 1px solid var(--base-3);
     }
     
     &-content{
-      display: initial;
-      max-width: 280px;
-      background: var(--background);
+      max-height: 0px;
       visibility: hidden;
       opacity: 0;
       border-top: 0;
-      border-bottom: 1px solid var(--base-3);
-      box-shadow: 0 15px 15px var(--shadow-1);
       margin: 0;
-      padding: calc(var(--grid) /3);
-      position: absolute;
-      top: calc(100% + 13px);
       transition: all .3s;
       z-index: -1;
   
@@ -214,6 +171,30 @@
         width: 100%;
         margin: 0;
         padding: 0;
+
+        &::before{
+          display: none;
+        }
+      }
+
+      .dropdown{
+        .nav-link, a{
+          display: none;
+        }
+        .dropdown-content{
+          opacity: 1;
+          visibility: visible;
+          background: none;
+          box-shadow: none;
+          position: relative;
+          margin: 0;
+          transform: translateY(-100%);
+          z-index: inherit;
+
+          .nav-link, a{
+            display: block;
+          }
+        }
       }
     }
     
@@ -228,10 +209,12 @@
   
       &:checked{
         ~ .nav-sub-content{
+          max-height: inherit;
+          padding-top: calc(var(--grid) /3);
           visibility: visible;
           opacity: 1;
           z-index: index($z, drop);
-          transform: translateY(-1em);
+          // transform: translateY(-1em);
         }
       }
     }
