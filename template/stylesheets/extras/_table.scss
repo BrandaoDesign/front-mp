@@ -1,185 +1,265 @@
-//==============================================================================
-// TABLE
-//==============================================================================
-.table{
-  background-color: transparent;
+.table {
   width: 100%;
   text-align: left;
   border-collapse: collapse;
   margin-top: 1em;
-  //----------------------------------------------------------------------------
-  // TABLE | tr
-  //----------------------------------------------------------------------------
-  tr{
+
+  tr {
     border-bottom: 1px solid var(--base-3);
   }
-  //----------------------------------------------------------------------------
-  // TABLE | tr e td
-  //----------------------------------------------------------------------------
-  th,td{
-    padding: 15px 10px;
+
+  th,
+  td {
+    padding: calc(var(--grid)/4);
     position: relative;
   }
 
-  thead{
-    tr{
-      border-bottom: 2px solid var(--primary);
+  thead {
+    tr {
+      border-bottom: 1px solid var(--primary);
 
-      th{
+      th {
         font-weight: 600;
         white-space: nowrap;
       }
     }
   }
 
-  tbody{
-    tr{
+  tbody {
+    tr {
       transition: .5s;
-      &:hover{
+
+      &:hover {
         background: var(--base-2);
       }
     }
   }
-//------------------------------------------------------------------------------
-// TABLE | SMARTPHONE
-//==============================================================================
-@media screen and (max-width: $break-s){
 
-  td{
-    padding: 10px;
-
-    &::before{
-      content: attr(data-label);
-      color: $cor-black-light;
-      font-size: .8em;
-      text-transform: uppercase;
-      display: block;
-    }
+  @media screen and (max-width: $break-s) {
+    td{white-space: pre;}
   }
-
-  tr{
-    @include display-flex;
-    @include flex-direction(column);
-
-    th{
-      display: none;
-    }
-  }
-
 }
-}
-.table{
-  //----------------------------------------------------------------------------
-  // TABLE | border
-  //----------------------------------------------------------------------------
-  &-border{
+
+.table {
+
+  &-border {
     @extend .table;
     border: 1px solid var(--base-3);
 
-    th,td{
+    th,
+    td {
       border: 1px solid var(--base-3);
     }
   }
-  //----------------------------------------------------------------------------
-  // TABLE | line
-  //----------------------------------------------------------------------------
-  &-line{
+
+  &-line {
     @extend .table;
 
-    tbody{
-      tr{
+    tbody {
+      tr {
         border: 0;
 
-        &:nth-of-type(odd){
+        &:nth-of-type(odd) {
           background: var(--base-3);
         }
       }
     }
   }
-  //----------------------------------------------------------------------------
-  // TABLE | header
-  //----------------------------------------------------------------------------
-  &-header{
+
+  &-header {
     @extend .table;
 
-    thead{
-      tr{
+    thead {
+      tr {
         color: $cor-white;
         background: var(--primary);
       }
     }
 
-    tbody{
-      tr{
-        &:nth-of-type(odd){
+    tbody {
+      tr {
+        &:nth-of-type(odd) {
           background: var(--base-2);
         }
       }
     }
   }
-  //----------------------------------------------------------------------------
-  // TABLE | block
-  //----------------------------------------------------------------------------
-  &-block{
+
+  &-secondary {
     @extend .table;
 
-    thead{
-      tr{
+    thead {
+      tr {
+        color: $cor-white;
+        background: var(--secondary);
+        border-color: var(--secondary);
+      }
+    }
+  }
+
+  &-block {
+    @extend .table;
+
+    thead {
+      tr {
         background: var(--base-2);
         border-color: var(--base-3);
       }
     }
 
-    td,th{
+    td,
+    th {
       border-right: 1px solid var(--base-3);
-      &:last-child{
+
+      &:last-child {
         background: var(--base-2);
         font-weight: 600;
       }
     }
 
   }
+
+  &-light {
+    @extend .table;
+
+    thead {
+      tr {
+        color: $cor-white;
+        background: var(--base-3);
+        border-color: var(--base-3);
+      }
+    }
+  }
+
+  &-success {
+    @extend .table;
+
+    thead {
+      tr {
+        color: $cor-white;
+        background: $cor-success;
+        border-color: $cor-success;
+      }
+    }
+  }
+
+  &-alert {
+    @extend .table;
+
+    thead {
+      tr {
+        color: $cor-white;
+        background: $cor-alert;
+        border-color: $cor-alert;
+      }
+    }
+  }
+
+  &-error {
+    @extend .table;
+
+    thead {
+      tr {
+        color: $cor-white;
+        background: $cor-error;
+        border-color: $cor-error;
+      }
+    }
+  }
+
+  &-info {
+    @extend .table;
+
+    thead {
+      tr {
+        color: $cor-white;
+        background: $cor-info;
+        border-color: $cor-info;
+      }
+    }
+  }
+
+  &-dark {
+    @extend .table;
+
+    thead {
+      tr {
+        color: $cor-white;
+        background: $cor-black;
+        border-color: $cor-black;
+      }
+    }
+  }
+
+  &-responsive {
+    @extend .table;
+
+    @media screen and (max-width: $break-s) {
+
+      td {
+        padding: calc(var(--grid)/5);
+  
+        &::before {
+          content: attr(data-label);
+          color: $cor-black-light;
+          font-size: .8em;
+          text-transform: uppercase;
+          display: block;
+        }
+      }
+  
+      tr {
+        @include display-flex;
+        @include flex-direction(column);
+  
+        th {
+          display: none;
+        }
+      }
+  
+    }
+
+  }
+
+  &-small{
+    @extend .table;
+    th, td {
+      font-size: 12px;
+      padding: calc(var(--grid)/4);
+      position: relative;
+    }
+  }
 }
-//==============================================================================
-// TABLE RESPONSIVE
-//==============================================================================
-.table-responsive{
-  display: block;
-  width: 100%;
-  overflow: auto;
-}
-//==============================================================================
-// TABLE MAIL
-//==============================================================================
-.table-mail{
-  a{
+
+
+.table-mail {
+  a {
     color: var(--primary);
     text-decoration: none;
   }
-  .mail-active{
+
+  .mail-active {
     font-weight: bold;
   }
 }
-//==============================================================================
-// TD | focus
-//==============================================================================
-.td-focus{
+
+.td-focus {
   font-weight: 600;
 }
-//==============================================================================
-// TD | Width
-//==============================================================================
+
 @for $t from 1 through 200 {
-  .tw-#{$t}, .w-#{$t}{
+
+  .tw-#{$t},
+  .w-#{$t} {
     $value: calc(#{$t}px * 10);
     width: $value;
   }
 }
-//==============================================================================
-// TD | Width
-//==============================================================================
+
 @for $t from 1 through 200 {
-  .ty-#{$t}, .h-#{$t}{
+
+  .ty-#{$t},
+  .h-#{$t} {
     $value: calc(#{$t}px * 10);
     height: $value;
   }

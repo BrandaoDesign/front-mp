@@ -1,26 +1,22 @@
-//==============================================================================
-// FIELDSET
-//==============================================================================
+
 fieldset{
   border: 0;
   border-bottom: 1px dashed var(--base-3);
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: calc(var(--grid)/2);
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: calc(var(--grid)/2);
 }
-//==============================================================================
-// TEXTAREA
-//==============================================================================
+
 textarea{
   width: 100%;
   display: block;
-  color: var(--base-4);
-  background: var(--base-1);
-  border: 2px solid var(--base-3);
+  color: var(--color);
+  background: var(--background);
+  border: 1px solid var(--base-3);
   border-radius: 0;
   box-shadow: none;
-  padding: 10px;
+  padding: calc(var(--grid)/2);
   -webkit-appearance: none;
   transition: 1s;
   &:focus{
@@ -29,30 +25,22 @@ textarea{
     outline: 0;
   }
 }
-//==============================================================================
-// INPUTS
-//==============================================================================
-// INPUTS, BUTTON
-//------------------------------------------------------------------------------
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"]{
-  padding: 10px 25px;
+  padding: calc(var(--grid)/2) calc(var(--grid)-5);
 }
-//------------------------------------------------------------------------------
-// INPUTS checkbox
-//------------------------------------------------------------------------------
 button[disabled],
 input[disabled]{
   color: var(--base-4);
   background: var(--base-2);
-  border: 2px solid var(--base-3);
+  border: 1px solid var(--base-3);
 
   &:hover{
     color: var(--base-4);
     background: var(--base-2);
-    border: 2px solid var(--base-3);
+    border: 1px solid var(--base-3);
   }
 
   ~ .toggle-indicador{
@@ -60,14 +48,12 @@ input[disabled]{
     border-color: var(--base-3);
   }
 }
-//------------------------------------------------------------------------------
-// INPUTS checkbox
-//------------------------------------------------------------------------------
 .input-defaut{
-  width: 16px;
-  height: 16px;
-  background: var(--base-1);
-  border: 2px solid var(--primary-light);
+  width: calc(var(--grid)/2);
+  height: calc(var(--grid)/2);
+  background: var(--background);
+  border: 1px solid var(--primary-light);
+  margin-right: 5px;
   -webkit-appearance: none;
   transition: all 1s;
   position: relative;
@@ -84,17 +70,24 @@ input[disabled]{
 }
 input[type="checkbox"]{
   @extend .input-defaut;
+  padding-left: 0;
+  &:checked{
+    background: var(--background);
+    transform: rotate(50deg);
+    width: calc(var(--grid)/3);
+    border-top: transparent;
+    border-left: transparent;
+    border-width: 2px;
+    margin-right:10px;
+    top: -1px;
+    left: 2px;
+  }
 }
-//------------------------------------------------------------------------------
-// INPUTS radio
-//------------------------------------------------------------------------------
 input[type="radio"]{
   @extend .input-defaut;
   border-radius: 50%;
+  padding-left: 0;
 }
-//------------------------------------------------------------------------------
-// INPUT | group
-//------------------------------------------------------------------------------
 .input-group{
   @include display-flex;
   @include flex-wrap(wrap);
@@ -102,15 +95,17 @@ input[type="radio"]{
   width: 100%;
 
   &-left{
-    margin-right: -2px;
+    margin-right: -1px;
+    border-radius: 0 !important;
   }
 
   &-right{
-    margin-left: -2px;
+    margin-left: -1px;
+    border-radius: 0 !important;
   }
 
   [class*="button"]{
-    padding: 12px 25px;
+    padding: calc(var(--grid)/3) calc(var(--grid)/2);
     z-index: 2;
   }
 
@@ -118,27 +113,25 @@ input[type="radio"]{
   .form-select{
     margin-top: -2px;
     z-index: 1;
-    padding: 10px !important;
+    padding: calc(var(--grid)/3) calc(var(--grid)/2) !important;
   }
-  //------------------------------------------------------------------------------
-  // INPUT | SMARTPHONE max
-  //==============================================================================
+
   @media screen and (max-width: $break-s){
 
     &-left{
       margin-right: 0;
-      margin-top: -2px;
+      margin-top: -1px;
     }
 
     &-right{
       margin-left: 0;
-      margin-top: -2px;
+      margin-top: -1px;
     }
 
   }
-  //------------------------------------------------------------------------------
-  // INPUT | SMARTPHONE min
-  //==============================================================================
+
+
+
   @media screen and (min-width: $break-s){
 
     .form-input,
@@ -149,9 +142,7 @@ input[type="radio"]{
     }
   }
 }
-//==============================================================================
-// FORM
-//==============================================================================
+
 form, .form{
   display: block;
   width: 100%;
@@ -162,27 +153,28 @@ form, .form{
   }
 
 }
+
 .form{
 
   [class*="col-"] {
-    padding: 0 15px;
+    padding: 0 calc(var(--grid)/2);
   }
-  //----------------------------------------------------------------------------
-  // FORM | row
-  //----------------------------------------------------------------------------
+
+
+
   &-row{
     @include display-flex;
     @include flex-wrap(wrap);
   }
-  //----------------------------------------------------------------------------
-  // FORM | group
-  //----------------------------------------------------------------------------
+
+
+
   &-group{
-    margin-bottom: 1em;
+    margin-bottom: calc(var(--grid)/2);
   }
-  //----------------------------------------------------------------------------
-  // FORM | label
-  //----------------------------------------------------------------------------
+
+
+
   &-label{
     display: inline-block;
     font-size: .75em;
@@ -190,18 +182,18 @@ form, .form{
     text-transform: uppercase;
     margin-bottom: .5em;
   }
-  //----------------------------------------------------------------------------
-  // FORM | INPUT
-  //----------------------------------------------------------------------------
+
+
+
   &-input{
-    // width: 100%;
+  
     display: block;
-    color: var(--base-4);
-    background: var(--base-1);
-    border: 2px solid var(--base-3);
+    color: var(--color);
+    background: var(--background);
+    border: 1px solid var(--base-3);
     border-radius: 0;
     box-shadow: none;
-    padding: 10px;
+    padding: calc(var(--grid)/3) calc(var(--grid)/2);
     -webkit-appearance: none;
     transition: 1s;
 
@@ -211,28 +203,28 @@ form, .form{
       outline: 0;
     }
   }
-  //----------------------------------------------------------------------------
-  // FORM | SELECT
-  //----------------------------------------------------------------------------
+
+
+
   &-select{
     @extend .form-input;
-    min-width: 70px;
-    color: var(--base-4);
-    background: var(--base-1);
-    background-color: var(--base-1);
+    min-width: var(--grid);
+    color: var(--color);
+    background: var(--background);
     background-position: right 6px;
     background-size: 1.8em;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0.5 32.5 20 20'%3e%3cpath class='text-secondary' d='M7.8 40.6c-0.2-0.2-0.5-0.2-0.8 0 -0.2 0.2-0.2 0.5 0 0.8l3.2 3.1c0.2 0.2 0.6 0.2 0.8 0l3.2-3.1c0.2-0.2 0.2-0.5 0-0.7 -0.2-0.2-0.5-0.2-0.8 0l-2.7 2.5 -2.7-2.5V40.6z'/%3e%3c/svg%3e");
-    padding-right: 25px;
+    padding-right: var(--grid);
   }
-  //----------------------------------------------------------------------------
-  // FORM | CHECKBOX
-  //----------------------------------------------------------------------------
+
+
+
   &-check,
   &-radio{
     display: inline-block;
-    padding: 10px;
+    padding: calc(var(--grid)/3) calc(var(--grid)/2);
+    padding-left: 0;
     cursor: pointer;
 
     span{
@@ -244,18 +236,19 @@ form, .form{
     @extend .form-check;
     display: block;
   }
-  //----------------------------------------------------------------------------
-  // FORM | toggle
-  //----------------------------------------------------------------------------
+
+
+
   &-toggle{
     display: inline-block;
-    padding: 10px;
+    padding: calc(var(--grid)/3) calc(var(--grid)/2);
+    padding-left: 0;
     cursor: pointer;
 
     .toggle-indicador{
       @include display-inline-flex;
       background: var(--base-3);
-      min-width: 42px;
+      min-width: var(--grid);
       border-radius: 1em;
       padding: 4px 21px 4px 6px;
       transition: all .5s;
@@ -265,8 +258,8 @@ form, .form{
         content: "";
         background: $cor-white;
         box-shadow: 0 0 5px var(--base-4);
-        width: 15px;
-        height: 15px;
+        width: calc(var(--grid)/2);
+        height: calc(var(--grid)/2);
         border-radius: 50%;
         transition: all .5s;
       }
@@ -283,34 +276,34 @@ form, .form{
       }
     }
   }
-  //----------------------------------------------------------------------------
-  // FORM | toggle
-  //----------------------------------------------------------------------------
+
+
+
   &-toggle-block{
     @extend .form-toggle;
     display: block;
   }
-  //----------------------------------------------------------------------------
-  // FORM | toggle
-  //----------------------------------------------------------------------------
+
+
+
   &-button{
-    padding-top: 25px;
+    padding-top: var(--grid);
   }
-  //----------------------------------------------------------------------------
-  // FORM | inline
-  //----------------------------------------------------------------------------
+
+
+
   &-inline{
-    //--------------------------------------------------------------------------
-    // INPUT | SMARTPHONE max
-    //==========================================================================
+  
+  
+  
     @media screen and (max-width: $break-s){
       .form-select{
         width: 100%;
       }
     }
-    //--------------------------------------------------------------------------
-    // INPUT | SMARTPHONE min
-    //==========================================================================
+  
+  
+  
     @media screen and (min-width: $break-s){
       .form-group{
         display: inline-block;
@@ -319,27 +312,24 @@ form, .form{
       }
     }
   }
-  //----------------------------------------------------------------------------
-  // FORM | view
-  //----------------------------------------------------------------------------
+
+
+
   &-view{
     font-weight: 600;
     border: 1px solid var(--base-3);
     margin: 0;
-    padding: 7px;
+    padding: calc(var(--grid)/2);
   }
-  //----------------------------------------------------------------------------
-  // FORM | text
-  //----------------------------------------------------------------------------
+
+
+
   &-text{
     border: 1px solid var(--base-3);
     margin: 0;
-    padding: 7px;
+    padding: calc(var(--grid)/2);
   }
 }
-//==============================================================================
-// FEED
-//==============================================================================
 .valid{
   border-color: $cor-success-light;
 }
@@ -367,9 +357,6 @@ form, .form{
   }
 
 }
-//==============================================================================
-// SEARCH
-//==============================================================================
 .search{
   @include display-flex;
   @include flex-wrap(nowrap);
@@ -384,15 +371,12 @@ form, .form{
     margin-left: -2px;
   }
 }
-//==============================================================================
-// SELECT-TAG
-//==============================================================================
 .select-tag{
   padding: 0;
 
   .select2-container{
     width: 100% !important;
-    min-height: 42px;
+    min-height: var(--grid);
   }
   .select2-selection__rendered{
     font-size: .95em;
@@ -401,7 +385,7 @@ form, .form{
     background-size: 1.8em;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0.5 32.5 20 20'%3e%3cpath d='M7.8 40.6c-0.2-0.2-0.5-0.2-0.8 0 -0.2 0.2-0.2 0.5 0 0.8l3.2 3.1c0.2 0.2 0.6 0.2 0.8 0l3.2-3.1c0.2-0.2 0.2-0.5 0-0.7 -0.2-0.2-0.5-0.2-0.8 0l-2.7 2.5 -2.7-2.5V40.6z'/%3e%3c/svg%3e");
-    border: 2px solid var(--base-3);
+    border: 1px solid var(--base-3);
     padding: 5px 10px;
   }
   .select2-container--default

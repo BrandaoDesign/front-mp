@@ -35,6 +35,7 @@
   }
   &-block{
     background: var(--base-1);
+    padding: calc(var(--grid)/2);
   }
   &-line{
     @extend .box;
@@ -106,6 +107,64 @@
     &-secondary{
       &:hover{
         background: var(--secondary-light);
+      }
+    }
+  }
+}
+
+.box-hidden{
+  position: relative;
+
+  &-container{
+    max-height: 80px;
+    padding-bottom: calc(var(--grid)/2);
+    overflow: hidden;
+    transition: all .5s;
+  }
+
+  [data-box]{
+    &::after{
+      display: none;
+      content: attr(data-box);
+    }
+  }
+
+  &-label{
+    position: relative;
+    padding-left: calc(var(--grid)/2);
+    em{position: absolute; left: 0;}
+  }
+
+  &-footer{
+    display: flex;
+    align-items: end;
+    background: linear-gradient(0deg, var(--background) 20%, transparent);
+    padding: var(--grid) calc(var(--grid)/2) calc(var(--grid)/2);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 50%;
+  }
+
+  &-input {
+    display: none;
+
+    &:checked{
+      ~ .box-hidden-container{
+        max-height: initial;
+      }
+
+      ~ .box-hidden-footer{
+          background: var(--background);
+          padding: calc(var(--grid)/2);
+          top: initial;
+
+          .box-hidden-label{
+            span{display: none;}
+            &::after{display: inline;}
+            em{transform: rotate(180deg);}
+          }
       }
     }
   }

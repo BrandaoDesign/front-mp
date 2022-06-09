@@ -68,7 +68,7 @@
     background: var(--base-1);
   }
 
-  &-shadown{
+  &-shadow{
     @extend .card;
     box-shadow: 0 0 calc(var(--grid) / 2) var(--base-3);
   }
