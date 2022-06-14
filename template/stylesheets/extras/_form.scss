@@ -12,7 +12,7 @@ textarea{
   width: 100%;
   display: block;
   color: var(--color);
-  background: var(--background);
+  background: var(--base-2);
   border: 1px solid var(--base-3);
   border-radius: 0;
   box-shadow: none;
@@ -33,18 +33,18 @@ input[type="submit"]{
 }
 button[disabled],
 input[disabled]{
-  color: var(--base-4);
-  background: var(--base-2);
+  color: var(--base-3);
+  background: var(--background);
   border: 1px solid var(--base-3);
 
   &:hover{
-    color: var(--base-4);
-    background: var(--base-2);
+    color: var(--base-3);
+    background: var(--background);
     border: 1px solid var(--base-3);
   }
 
   ~ .toggle-indicador{
-    background: var(--base-2);
+    background: var(--background);
     border-color: var(--base-3);
   }
 }
@@ -189,7 +189,7 @@ form, .form{
   
     display: block;
     color: var(--color);
-    background: var(--background);
+    background: var(--base-2);
     border: 1px solid var(--base-3);
     border-radius: 0;
     box-shadow: none;
@@ -210,7 +210,7 @@ form, .form{
     @extend .form-input;
     min-width: var(--grid);
     color: var(--color);
-    background: var(--background);
+    background: var(--base-2);
     background-position: right 6px;
     background-size: 1.8em;
     background-repeat: no-repeat;
@@ -331,7 +331,7 @@ form, .form{
   }
 }
 .valid{
-  border-color: $cor-success-light;
+  border-color: $cor-success;
 }
 .invalid{
   border-color: $cor-error;

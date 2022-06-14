@@ -49,7 +49,7 @@
     padding: calc(var(--grid) / 2);
   }
   &-footer{
-    background: var(--base-1);
+    background: var(--base-2);
     padding: 0 calc(var(--grid) / 2) calc(var(--grid) / 2);
   }
   &-input:checked{
@@ -65,7 +65,7 @@
 
   &-block{
     @extend .card;
-    background: var(--base-1);
+    background: var(--base-2);
   }
 
   &-shadow{

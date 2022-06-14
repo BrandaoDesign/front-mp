@@ -191,6 +191,15 @@
     }
   }
 
+  &-clear {
+    @extend .table;
+
+    tr {
+      border: none;
+      vertical-align: top;
+    }
+  }
+
   &-responsive {
     @extend .table;
 

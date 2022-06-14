@@ -1,13 +1,7 @@
-//==============================================================================
-// CORES
-//==============================================================================
-// COLOR | white
-//------------------------------------------------------------------------------
 $cor-white: #fff;
 .bg-white{background: $cor-white;}
 .text-white{color: $cor-white;}
-// COLOR | black
-//------------------------------------------------------------------------------
+
 $cor-black: #131e26;
 .bg-black{background: $cor-black;}
 .text-black{color: $cor-black;}
@@ -17,72 +11,57 @@ $cor-black-dark: #020304;
 $cor-black-light: #243948;
 .bg-black-light{background: $cor-black-light;}
 .text-black-light{color: $cor-black-light;}
-//------------------------------------------------------------------------------
-// COLOR | gray
-//------------------------------------------------------------------------------
-// $cor-gray: #e4eaec;
+
 $cor-gray: #CFD7DD;
 .bg-gray{background: $cor-gray;}
 .text-gray{color: $cor-gray;}
-// $cor-gray-dark: #c7d1d4;
-// $cor-gray-dark: #9a9aa7;
 $cor-gray-dark: #595959;
 .bg-gray-dark{background: $cor-gray-dark;}
 .text-gray-dark{color: $cor-gray-dark;}
 $cor-gray-light: #f9fbfd;
 .bg-gray-light{background: $cor-gray-light;}
 .text-gray-light{color: $cor-gray-light;}
-//------------------------------------------------------------------------------
-// COLOR | success
-//------------------------------------------------------------------------------
-$cor-success: #8BC34A;
+
+$cor-success: #4caf50;
 .bg-success{background: $cor-success;}
 .text-success{color: $cor-success;}
-$cor-success-dark: #4CAF50;
+$cor-success-dark: #009688;
 .bg-success-dark{background: $cor-success-dark;}
 .text-success-dark{color: $cor-success-dark;}
-$cor-success-light: #9ade4a;
+$cor-success-light: #bff9c2;
 .bg-success-light{background: $cor-success-light;}
 .text-success-light{color: $cor-success-light;}
-//------------------------------------------------------------------------------
-// COLOR | alert
-//------------------------------------------------------------------------------
-$cor-alert: #FFC107;
+
+$cor-alert: #ff9800;
 .bg-alert{background: $cor-alert;}
 .text-alert{color: $cor-alert;}
-$cor-alert-dark: #FF9800;
+$cor-alert-dark: #ee720e;
 .bg-alert-dark{background: $cor-alert-dark;}
 .text-alert-dark{color: $cor-alert-dark;}
-$cor-alert-light: #FFEB3B;
+$cor-alert-light: #fdf4a3;
 .bg-alert-light{background: $cor-alert-light;}
 .text-alert-light{color: $cor-alert-light;}
-//------------------------------------------------------------------------------
-// COLOR | error
-//------------------------------------------------------------------------------
-$cor-error: #E91E63;
+
+$cor-error: #f44336;
 .bg-error{background: $cor-error;}
 .text-error{color: $cor-error;}
 $cor-error-dark: #cc094f;
 .bg-error-dark{background: $cor-error-dark;}
 .text-error-dark{color: $cor-error-dark;}
-$cor-error-light: #f53a7d;
+$cor-error-light: #f9d6d4;
 .bg-error-light{background: $cor-error-light;}
 .text-error-light{color: $cor-error-light;}
-//------------------------------------------------------------------------------
-// COLOR | info
-//------------------------------------------------------------------------------
-$cor-info: #37aee3;
+
+$cor-info: #2196f3;
 .bg-info{background: $cor-info;}
 .text-info{color: $cor-info;}
 $cor-info-dark: #116f99;
 .bg-info-dark{background: $cor-info-dark;}
 .text-info-dark{color: $cor-info-dark;}
-$cor-info-light: #00BCD4;
+$cor-info-light: #cae5fb;
 .bg-info-light{background: $cor-info-light;}
 .text-info-light{color: $cor-info-light;}
-//------------------------------------------------------------------------------
-// COLOR | shadow
-//------------------------------------------------------------------------------
+
 $shadow: rgba(0, 0, 0, 0.1);
 $shadow-2: rgba(0, 0, 0, 0.2);
 $shadow-3: rgba(0, 0, 0, 0.3);

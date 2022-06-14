@@ -3,7 +3,6 @@
   display: inline-flex;
   
   li{
-    
     display: flex;
     align-items: center;
     padding-left: .3rem;
@@ -11,6 +10,7 @@
   
   a, p{
     display: block;
+    font-size: .85em;
     color: var(--color);
     text-decoration: none;
     margin: 0;
@@ -24,9 +24,8 @@
   }
   
   b{
-    font-size: .8em;
     margin-left: 5px;
     position: relative;
-    top: -1px;
+    top: 1px;
   }
 }

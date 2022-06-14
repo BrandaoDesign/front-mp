@@ -61,6 +61,7 @@
 
 .page {
   animation: 1s fadeIn;
+  padding: var(--grid);
 
   &-center {
     max-width: 1180px;
@@ -70,18 +71,16 @@
 
   &-header {
     border-bottom: 1px solid var(--base-3);
-    margin: calc(var(--grid) / 2) var(--grid) 0;
     padding-bottom: calc(var(--grid) / 2);
 
     &-title {
       color: var(--secondary);
-      margin: 0 0 5px;
       padding: 0;
     }
   }
 
   &-sub {
     border-bottom: 1px solid var(--base-3);
-    margin: 0 var(--grid);
+    margin-bottom: calc(var(--grid) / 2);
   }
 }

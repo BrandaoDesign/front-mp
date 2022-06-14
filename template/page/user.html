@@ -1,127 +1,227 @@
 <article class="page">
 
-  <!-- HEADER -->
   <div class="page-header">
     <h2 class="page-header-title"><b class="ico-user"></b> Usuários</h2>
     <ul class="crumbs">
       <li>
-        <a href="index.html">Início</a>
+        <a href="index.html">Início <b class="ico-chevron-right"></b></a>
       </li>
       <li>
         <p>Usuarios</p>
       </li>
     </ul>
   </div>
-  <!-- fim: HEADER -->
 
-  <!-- submenu -->
-  <nav class="page-sub">
-    <ul class="nav-line">
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Novo Usuário"><b class="ico-user-plus"></b> Cadastro</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Imprimir tela"><b class="ico-printer"></b> Imprimir</a></li>
-    </ul>
+  <nav class="nav-sub page-sub">
+    <input type="checkbox" id="submenu" class="nav-sub-input hidden">
+    <div class="nav-sub-header">
+      <label class="nav-link block uppercase row-center row-full" for="submenu"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+    </div>
+    <div class="nav-sub-content">
+      <ul class="nav-line row-full">
+        <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Novo movimento"><b class="ico-file"></b> Novo movimento</a></li>
+        <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Copiar capa"><b class="ico-copy"></b> Copiar</a></li>
+        <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Histórico completo"><b class="ico-clock"></b> Histórico</a></li>
+        <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Imprimir etiqueta"><b class="ico-printer"></b> Etiqueta</a></li>
+        <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Arquivar"><b class="ico-archive"></b> Arquivar</a></li>
+        <li class="nav-line-item min-m"><a class="nav-link block tooltip-left" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b> Imprimir</a></li>
+      </ul>
+      <ul class="nav-line max-m">
+        <li class="nav-line-item"><a class="nav-link block tooltip-left" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b></a></li>
+      </ul>
+    </div>
   </nav>
-  <!-- fim: submenu -->
-  <div class="content">
 
-    <p class="alert-success mt-0"><strong>Tudo certis!</strong> Suco de cevadiss, é um leite divinis. </p>
-
-    <div class="card-line row">
-
-      <div class="box col-3 col-m-4">
-        <h5 class="mb-10">Busca:</h5>
-        <div class="search small">
-          <input type="text" class="form-input search-input" placeholder="pesquisar...">
-          <button class="bt search-button"><b class="ico-search"></b></button>
+  <p class="alert-success-block mt-0"><strong>Tudo certis!</strong> Suco de cevadiss, é um leite divinis. </p>
+  <div class="row-fluid">
+    <div class="col-9">
+      <div class="card-line row">
+    
+        <div class="box col-3 col-m-4">
+          <h5 class="mb-10">Busca:</h5>
+          <div class="search">
+            <input type="text" class="form-input search-input" placeholder="pesquisar...">
+            <button class="bt search-button"><b class="ico-search"></b></button>
+          </div>
+        </div>
+        <div class="box row-full">
+          <h5 class="mb-10">Filtros:</h5>
+          <div class="form-inline">
+            <div class="form-group">
+              <select class="form-select" name="">
+                <option>Data Criação</option>
+                <option>Última Edição</option>
+                <option>Mais Frequente</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <select class="form-select" name="">
+                <option>Analista</option>
+                <option>Desenvolvedor</option>
+                <option>Desgin</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <button class="bt-primary bt-medium">Filtrar</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="box row-full">
-        <h5 class="mb-10">Filtros:</h5>
-        <div class="form-inline small">
-          <div class="form-group">
-            <select class="form-select" name="">
-              <option>Data Criação</option>
-              <option>Última Edição</option>
-              <option>Mais Frequente</option>
-            </select>
+    
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="tw-3">Foto</th>
+            <th>Nome</th>
+            <th class="tw-2"><b class="ico-mail"></b></th>
+            <th>E-mail</th>
+            <th class="tw-2"><b class="ico-phone"></b></th>
+            <th>Fone</th>
+            <th colspan="2">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><figure class="user-p ml-0"><img src="images/profile.svg"/></figure></td>
+            <td class="td-focus" data-label="Nome:">Guilherme</td>
+            <td class="max-s"><b class="ico-mail"></b></td>
+            <td data-label="E-mail:">guilherme@exemple.com.br</td>
+            <td class="max-s"><b class="ico-phone"></b></td>
+            <td data-label="Fone:">62 9 9999-9999</td>
+            <td class="tw-5"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-edit"></b></a></td>
+            <td class="tw-5"><a class="bt-secondary-clear bt-ico" href="#"><b class="ico-trash"></b></a></td>
+          </tr>
+          <tr>
+            <td><figure class="user-p ml-0"><img src="images/profile.svg"/></figure></td>
+            <td class="td-focus" data-label="Nome:">Mariana</td>
+            <td class="max-s"><b class="ico-mail"></b></td>
+            <td data-label="E-mail:">mariana@exemple.com.br</td>
+            <td class="max-s"><b class="ico-phone"></b></td>
+            <td data-label="Fone:">62 9 9999-9999</td>
+            <td class="tw-5"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-edit"></b></a></td>
+            <td class="tw-5"><a class="bt-secondary-clear bt-ico" href="#"><b class="ico-trash"></b></a></td>
+          </tr>
+          <tr>
+            <td><figure class="user-p ml-0"><img src="images/profile.svg"/></figure></td>
+            <td class="td-focus" data-label="Nome:">Renato</td>
+            <td class="max-s"><b class="ico-mail"></b></td>
+            <td data-label="E-mail:">renato@exemple.com.br</td>
+            <td class="max-s"><b class="ico-phone"></b></td>
+            <td data-label="Fone:">62 9 9999-9999</td>
+            <td class="tw-5"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-edit"></b></a></td>
+            <td class="tw-5"><a class="bt-secondary-clear bt-ico" href="#"><b class="ico-trash"></b></a></td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <div class="row-fluid row-center mb-10">
+        <div class="col-6 col-m-6 pb-0">
+          <p class="text-gray-dark">Mostrando de <strong>1 a 10</strong> de 50 encontrados.</p>
+        </div>
+        <nav class="col-6 col-m-6 pb-0">
+          <ul class="pagination nav-right">
+            <li><a href="#"><b class="ico-arrow-left"></b> <span>Anterior</span></a></li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#"><span>Próxima</span> <b class="ico-arrow-right"></b></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="accordion">
+        <div class="box-block">
+          <h2>Novos Usuários</h2>
+        </div>
+        <div class="accordion-box card-block b-bottom mb-0">
+          <input type="radio" name="accordion-1" id="acord-1" class="accordion-input" checked>
+          <label class="accordion-header" for="acord-1">
+            <div class="row">
+              <div class="col-2"><figure class="user-p ml-0"><img src="images/profile.svg"/></figure></div>
+              <div class="col-10">
+                <h4 class="accordion-title">Renato</h4>
+                <span>renato@exemple.com.br</span>
+              </div>
+            </div>
+            <b class="accordion-ico"></b>
+          </label>
+          <div class="accordion-container">
+            <div class="accordion-content pt-0 pl-73">
+              <p>
+                <strong>Perfil:</strong><br>
+                In elementis mé pra quem é amistosis quis leo. Per aumento de cachacis, eu reclamis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.</p>
+              <p>
+                <strong>Profissão:</strong><br>
+                Design</p>
+              <p>
+                <strong>Fone:</strong><br>
+                62 9 9999-9999</p>
+              <p><a class="link" href="#">Visualizar</a></p>
+            </div>
           </div>
-          <div class="form-group">
-            <select class="form-select" name="">
-              <option>Analista</option>
-              <option>Desenvolvedor</option>
-              <option>Desgin</option>
-            </select>
+        </div>
+        <div class="accordion-box card-block b-bottom mb-0">
+          <input type="radio" name="accordion-1" id="acord-2" class="accordion-input">
+          <label class="accordion-header" for="acord-2">
+            <div class="row">
+              <div class="col-2"><figure class="user-p ml-0"><img src="images/profile.svg"/></figure></div>
+              <div class="col-10">
+                <h4 class="accordion-title">Mariana</h4>
+                <span>mariana@exemple.com.br</span>
+              </div>
+            </div>
+            <b class="accordion-ico"></b>
+          </label>
+          <div class="accordion-container">
+            <div class="accordion-content pt-0 pl-73">
+              <p>
+                <strong>Perfil:</strong><br>
+                In elementis mé pra quem é amistosis quis leo. Per aumento de cachacis, eu reclamis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.</p>
+              <p>
+                <strong>Profissão:</strong><br>
+                Desenvolvedor</p>
+              <p>
+                <strong>Fone:</strong><br>
+                62 9 9999-9999</p>
+              <p><a class="link" href="#">Visualizar</a></p>
+            </div>
           </div>
-          <div class="form-group">
-            <button class="bt-primary bt-medium">Filtrar</button>
+        </div>
+        <div class="accordion-box card-block b-bottom mb-0">
+          <input type="radio" name="accordion-1" id="acord-3" class="accordion-input">
+          <label class="accordion-header" for="acord-3">
+            <div class="row">
+              <div class="col-2"><figure class="user-p ml-0"><img src="images/profile.svg"/></figure></div>
+              <div class="col-10">
+                <h4 class="accordion-title">Guilherme</h4>
+                <span>guilherme@exemple.com.br</span>
+              </div>
+            </div>
+            <b class="accordion-ico"></b>
+          </label>
+          <div class="accordion-container">
+            <div class="accordion-content pt-0 pl-73">
+              <p>
+                <strong>Perfil:</strong><br>
+                In elementis mé pra quem é amistosis quis leo. Per aumento de cachacis, eu reclamis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit.</p>
+              <p>
+                <strong>Profissão:</strong><br>
+                Desenvolvedor</p>
+              <p>
+                <strong>Fone:</strong><br>
+                62 9 9999-9999</p>
+              <p><a class="link" href="#">Visualizar</a></p>
+            </div>
           </div>
+        </div>
+        <div class="box-block text-center">
+          <button class="bt-secondary">Visualizar todos</button>
         </div>
       </div>
     </div>
-
-    <table class="table-line">
-      <thead>
-        <tr>
-          <th class="tw-3">Foto</th>
-          <th>Nome</th>
-          <th class="tw-2"><b class="ico-mail"></b></th>
-          <th>E-mail</th>
-          <th class="tw-2"><b class="ico-phone"></b></th>
-          <th>Fone</th>
-          <th colspan="2">Ação</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><figure class="user-p ml-0"><img src="images/profile.svg"/></figure></td>
-          <td class="td-focus" data-label="Nome:">Guilherme</td>
-          <td class="max-s"><b class="ico-mail"></b></td>
-          <td data-label="E-mail:">guilherme@exemple.com.br</td>
-          <td class="max-s"><b class="ico-phone"></b></td>
-          <td data-label="Fone:">62 9 9999-9999</td>
-          <td class="tw-5"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-edit"></b></a></td>
-          <td class="tw-5"><a class="bt-secondary-clear bt-ico" href="#"><b class="ico-trash"></b></a></td>
-        </tr>
-        <tr>
-          <td><figure class="user-p ml-0"><img src="images/profile.svg"/></figure></td>
-          <td class="td-focus" data-label="Nome:">Mariana</td>
-          <td class="max-s"><b class="ico-mail"></b></td>
-          <td data-label="E-mail:">mariana@exemple.com.br</td>
-          <td class="max-s"><b class="ico-phone"></b></td>
-          <td data-label="Fone:">62 9 9999-9999</td>
-          <td class="tw-5"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-edit"></b></a></td>
-          <td class="tw-5"><a class="bt-secondary-clear bt-ico" href="#"><b class="ico-trash"></b></a></td>
-        </tr>
-        <tr>
-          <td><figure class="user-p ml-0"><img src="images/profile.svg"/></figure></td>
-          <td class="td-focus" data-label="Nome:">Renato</td>
-          <td class="max-s"><b class="ico-mail"></b></td>
-          <td data-label="E-mail:">renato@exemple.com.br</td>
-          <td class="max-s"><b class="ico-phone"></b></td>
-          <td data-label="Fone:">62 9 9999-9999</td>
-          <td class="tw-5"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-edit"></b></a></td>
-          <td class="tw-5"><a class="bt-secondary-clear bt-ico" href="#"><b class="ico-trash"></b></a></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="row-fluid row-center mb-10">
-      <div class="col-6 col-m-6 pb-0">
-        <p class="text-gray-dark">Mostrando de <strong>1 a 10</strong> de 50 encontrados.</p>
-      </div>
-      <nav class="col-6 col-m-6 pb-0">
-        <ul class="pagination nav-right">
-          <li><a href="#"><b class="ico-arrow-left"></b> <span>Anterior</span></a></li>
-          <li><a class="active" href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#"><span>Próxima</span> <b class="ico-arrow-right"></b></a></li>
-        </ul>
-      </nav>
-    </div>
-
   </div>
 
 </article>

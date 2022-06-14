@@ -1,164 +1,213 @@
-//==============================================================================
-// TABS
-//==============================================================================
+
 $qt-tabs: 5;
-// Quantidade de tabs utilizadas
-//------------------------------------------------------------------------------
+
 .tab{
-  //----------------------------------------------------------------------------
-  // TABS | nav
-  //----------------------------------------------------------------------------
-  &-nav{
-    border-bottom: 3px solid var(--base-3);
-  }
-  //----------------------------------------------------------------------------
-  // TABS | nav | label
-  //----------------------------------------------------------------------------
+
   &-label{
     display: inline-block;
-    letter-spacing: .025em;
-    border-bottom: 3px solid transparent;
-    margin-bottom: -3px;
-    margin-right: 20px;
-    padding: 10px 0 15px;
     transition: all .5s;
     cursor: pointer;
-
-    &:hover{
-      color: var(--secondary);
-    }
-
-
   }
-  //----------------------------------------------------------------------------
-  // TABS | label
-  //----------------------------------------------------------------------------
+
   &-content{
     display: none;
-    padding-top: 20px;
     animation: fadeIn 1s;
   }
-  //----------------------------------------------------------------------------
-  // TABS | checked
-  //----------------------------------------------------------------------------
+
   @for $t from 1 through $qt-tabs{
 
     .tab-input-#{$t}:checked{
-      //------------------------------------------------------------------------
-      // TABS | checked | nav
-      //------------------------------------------------------------------------
-      ~ .tab-nav .tab-#{$t}{
-        color: var(--secondary);
-        border-color: var(--secondary);
-      }
-      //------------------------------------------------------------------------
-      // TABS | checked | content
-      //------------------------------------------------------------------------
       ~ .tab-container .tab-#{$t}{
         display: block;
       }
     }
   }
-//------------------------------------------------------------------------------
-// TABS | SMARTPHONE
-//==============================================================================
-@media screen and (max-width: $break-s){
-  //----------------------------------------------------------------------------
-  // TABS | nav
-  //----------------------------------------------------------------------------
-  &-nav{
-    @include display-flex;
-    @include flex-direction(column);
-    border: 0;
-  }
-  //----------------------------------------------------------------------------
-  // TABS | nav | label
-  //----------------------------------------------------------------------------
-  &-label{
-    margin: 0;
-  }
+
 }
-}
-//==============================================================================
-// TABS | vertical
-//==============================================================================
-.tab-vertical{
-  @include display-flex;
-  @extend .tab;
-  //--------------------------------------------------------------------------
-  // TABS | SMARTPHONE
-  //==========================================================================
-  @media screen and (max-width: $break-s){
-    @include flex-direction(column);
-  }
-  //----------------------------------------------------------------------------
-  // TABS | nav
-  //----------------------------------------------------------------------------
-  .tab-nav{
-    @include display-flex;
-    @include flex-direction(column);
-    border-right: 3px solid var(--base-3);
-    border-bottom: 0;
-    //--------------------------------------------------------------------------
-    // TABS | SMARTPHONE
-    //==========================================================================
-    @media screen and (max-width: $break-s){
-      border-right: 0;
-      border-left: 3px solid var(--base-3);
+
+.tab{
+
+  &-button{
+    @extend .tab;
+
+    .tab-label{
+      border-radius: 5px;
+      padding: calc(var(--grid)/3) var(--grid);
+      margin-right: calc(var(--grid)/3);
+      transition: all .5s;
+      &:hover{
+        color: var(--secondary);
+      }
     }
-  }
-  //----------------------------------------------------------------------------
-  // TABS | nav | label
-  //----------------------------------------------------------------------------
-  .tab-label{
-    border-right: 3px solid transparent;
-    border-bottom: 0;
-    padding: 0 15px 0 10px;
-    margin-right: -3px;
-    margin-bottom: 20px;
-    //--------------------------------------------------------------------------
-    // TABS | SMARTPHONE
-    //==========================================================================
-    @media screen and (max-width: $break-s){
-      border-right: 0;
-      border-left: 3px solid transparent;
-      margin-right: 0;
-      margin-left: -3px;
+
+    @for $t from 1 through $qt-tabs{
+
+      .tab-input-#{$t}:checked{
+        ~ .tab-nav .tab-#{$t}{
+          background: var(--secondary);
+          color: $cor-white;
+        }
+      }
+
     }
+
   }
-  //----------------------------------------------------------------------------
-  // TABS | container
-  //----------------------------------------------------------------------------
-  .tab-container{
-    @include flex(1);
+
+  &-block{
+    @extend .tab;
+
+    .tab-nav{
+      // background: var(--base-2);
+      border: 1px solid var(--base-3);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .tab-label{
+      border-right: 1px solid var(--base-3);
+      padding: calc(var(--grid)/3) var(--grid);
+      transition: all .5s;
+      &:hover{
+        color: var(--secondary);
+      }
+      &:last-child{
+        border-right: none;
+      }
+    }
+
+    @for $t from 1 through $qt-tabs{
+
+      .tab-input-#{$t}:checked{
+        ~ .tab-nav .tab-#{$t}{
+          background: var(--base-1);
+          color: var(--secondary);
+        }
+      }
+
+    }
+
   }
-  //----------------------------------------------------------------------------
-  // TABS | content
-  //----------------------------------------------------------------------------
-  .tab-content{
-    padding: 0 0 0 20px;
+
+  &-icon{
+    @extend .tab;
+
+    .tab-label{
+      border-radius: 1rem;
+      padding: calc(var(--grid)/3) var(--grid);
+      transition: all .5s;
+
+      [class*="ico-"]{
+        font-size: 16px;
+      }
+
+      span{
+        display: none; 
+        padding-left: 5px;
+      }
+
+      &:hover{
+        color: var(--secondary);
+      }
+ 
+    }
+
+    @for $t from 1 through $qt-tabs{
+
+      .tab-input-#{$t}:checked{
+        ~ .tab-nav .tab-#{$t}{
+          background: var(--secondary);
+          color: $cor-white;
+
+          span{display: inline-block;}
+        }
+      }
+
+    }
+
   }
-}
-//==============================================================================
-// BASE
-//==============================================================================
-.base{
-  //----------------------------------------------------------------------------
-  // BASE | top
-  //----------------------------------------------------------------------------
-  &-t{
-    vertical-align: top;
+
+  &-line{
+    @extend .tab;
+
+    .tab-nav{
+      border-bottom: 3px solid var(--base-3);
+    }
+
+    .tab-label{
+      border-bottom: 3px solid transparent;
+      margin-bottom: -3px;
+      padding: calc(var(--grid)/3);
+      transition: all .5s;
+      &:hover{
+        color: var(--secondary);
+      }
+    }
+
+    @for $t from 1 through $qt-tabs{
+
+      .tab-input-#{$t}:checked{
+        ~ .tab-nav .tab-#{$t}{
+          border-color: var(--secondary);
+          color: var(--secondary);
+        }
+      }
+
+    }
+
   }
-  //----------------------------------------------------------------------------
-  // BASE | center
-  //----------------------------------------------------------------------------
-  &-c{
-    vertical-align: middle;
-  }
-  //----------------------------------------------------------------------------
-  // BASE | bottom
-  //----------------------------------------------------------------------------
-  &-b{
-    vertical-align: bottom;
+
+  &-vertical{
+    @extend .tab;
+    @include display-flex;
+    @media screen and (max-width: $break-s){
+      @include flex-direction(column);
+    }
+
+    .tab-nav{
+      @include display-flex;
+      @include flex-direction(column);
+      border-right: 3px solid var(--base-3);
+      border-bottom: 0;
+      margin-right: var(--grid);
+    
+      @media screen and (max-width: $break-s){
+        border-right: 0;
+        border-left: 3px solid var(--base-3);
+        margin-right: 0;
+        margin-bottom: var(--grid);
+      }
+    }
+
+    .tab-label{
+      padding: calc(var(--grid)/3);
+      border-bottom: 0;
+      border-right: 3px solid transparent;
+      transition: all .5s;
+      margin-right: -3px;
+  
+      @media screen and (max-width: $break-s){
+        border-right: 0;
+        border-left: 3px solid transparent;
+        margin-right: 0;
+        margin-left: -3px;
+      }
+      &:hover{
+        color: var(--secondary);
+      }
+    }
+
+    .tab-container{flex: 1;}
+
+    @for $t from 1 through $qt-tabs{
+
+      .tab-input-#{$t}:checked{
+        ~ .tab-nav .tab-#{$t}{
+          border-color: var(--secondary);
+          color: var(--secondary);
+        }
+      }
+
+    }
+
   }
 }

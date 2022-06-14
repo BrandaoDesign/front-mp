@@ -46,12 +46,12 @@
   @extend .bt;
   background: transparent;
   color: var(--color);
-  border-color: $cor-success-light;
+  border-color: $cor-success;
 
   &:hover{
     color: $cor-white;
-    border-color: $cor-success-light;
-    background: $cor-success-light;
+    border-color: $cor-success;
+    background: $cor-success;
   }
 }
 .bt-success-clear{
@@ -78,12 +78,12 @@
   @extend .bt;
   background: transparent;
   color: var(--color);
-  border-color: $cor-alert-light;
+  border-color: $cor-alert;
 
   &:hover{
     color: $cor-white;
-    border-color: $cor-alert-light;
-    background: $cor-alert-light;
+    border-color: $cor-alert;
+    background: $cor-alert;
   }
 }
 .bt-alert-clear{
@@ -110,12 +110,12 @@
   @extend .bt;
   background: transparent;
   color: var(--color);
-  border-color: $cor-error-light;
+  border-color: $cor-error;
 
   &:hover{
     color: $cor-white;
-    border-color: $cor-error-light;
-    background: $cor-error-light;
+    border-color: $cor-error;
+    background: $cor-error;
   }
 }
 .bt-error-clear{
@@ -192,9 +192,9 @@
 }
 .bt-light{
   @extend .bt;
-  background: var(--base-3);
+  background: var(--base-2);
   color: var(--color);
-  border-color: var(--base-3);
+  border-color: var(--base-2);
 
   &:hover{
     color: var(--secondary);

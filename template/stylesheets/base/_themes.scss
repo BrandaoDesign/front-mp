@@ -97,6 +97,10 @@
     }
     
 }
+
+.bg-background{background: var(--background);}
+.text-background{color: var(--background);}
+
 $cor-primary: var(--primary);
 .bg-primary{background: var(--primary);}
 .text-primary{color: var(--primary);}
@@ -106,6 +110,7 @@ $cor-primary-dark: var(--primary-dark);
 $cor-primary-light: #29d4d4;
 .bg-primary-light{background: var(--primary-light);}
 .text-primary-light{color: var(--primary-light);}
+
 $cor-secondary: var(--secondary);
 .bg-secondary{background: var(--secondary);}
 .text-secondary{color: var(--secondary);}
