@@ -131,6 +131,10 @@ mark, .mark{
 .ml-auto{
   margin-left: auto !important;
 }
+.pt-grid{padding-top: var(--grid);}
+.pl-grid{padding-left: var(--grid);}
+.pb-grid{padding-bottom: var(--grid);}
+.pr-grid{padding-right: var(--grid);}
 @for $m from 0 through 100 {
   .mt-#{$m}{
     $value: ($m * 1px);
@@ -161,6 +165,11 @@ mark, .mark{
 .pl-auto{
   padding-left: auto !important;
 }
+.pt-grid{padding-top: var(--grid);}
+.pl-grid{padding-left: var(--grid);}
+.pb-grid{padding-bottom: var(--grid);}
+.pr-grid{padding-right: var(--grid);}
+
 @for $m from 0 through 100 {
   .pt-#{$m}{
     $value: ($m * 1px);
@@ -317,7 +326,7 @@ mark, .mark{
     @include list-simple;
 
     &-item{
-      color: var(--color);
+      color: inherit;
       text-decoration: none;
       padding: 15px;
       transition: all .5s;

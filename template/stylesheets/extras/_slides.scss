@@ -41,7 +41,8 @@ $qt-slide: 4;
     color: var(--base-1);
     background: var(--primary);
     font-size: 2em;
-    padding: 10px 5px;
+    border-radius: 50%;
+    padding: calc(var(--grid)/3.5) calc(var(--grid)/3);
     position: absolute;
     top: 50%;
     margin-top: -15px;
@@ -110,24 +111,24 @@ $qt-slide: 4;
   //----------------------------------------------------------------------------
   &-input-1:checked{
     ~ .slide-nav .slide-1{border-color: var(--secondary)}
-    ~ .slide-arrows .arrow-2{display: block; right: 0; transform: rotate(180deg) translateY(20%);}
+    ~ .slide-arrows .arrow-2{display: block; right:  calc(var(--grid)/2); transform: rotate(180deg) translateY(20%);}
     ~ .slide-container .slide-1{visibility: visible; display: block;}
   }
   &-input-2:checked{
     ~ .slide-nav .slide-2{border-color: var(--secondary)}
-    ~ .slide-arrows .arrow-1{display: block;}
-    ~ .slide-arrows .arrow-3{display: block; right: 0; transform: rotate(180deg) translateY(20%);}
+    ~ .slide-arrows .arrow-1{display: block; left:  calc(var(--grid)/2)}
+    ~ .slide-arrows .arrow-3{display: block; right:  calc(var(--grid)/2); transform: rotate(180deg) translateY(20%);}
     ~ .slide-container .slide-2{visibility: visible; display: block;}
   }
   &-input-3:checked{
     ~ .slide-nav .slide-3{border-color: var(--secondary)}
-    ~ .slide-arrows .arrow-2{display: block;}
-    ~ .slide-arrows .arrow-4{display: block; right: 0; transform: rotate(180deg) translateY(20%);}
+    ~ .slide-arrows .arrow-2{display: block; left:  calc(var(--grid)/2)}
+    ~ .slide-arrows .arrow-4{display: block; right:  calc(var(--grid)/2); transform: rotate(180deg) translateY(20%);}
     ~ .slide-container .slide-3{visibility: visible; display: block;}
   }
   &-input-4:checked{
     ~ .slide-nav .slide-4{border-color: var(--secondary)}
-    ~ .slide-arrows .arrow-3{display: block;}
+    ~ .slide-arrows .arrow-3{display: block; left:  calc(var(--grid)/2)}
     ~ .slide-container .slide-4{visibility: visible; display: block;}
   }
 //------------------------------------------------------------------------------

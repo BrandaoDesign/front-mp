@@ -30,6 +30,7 @@
         --calha: 2em;
         --border: 10px;
         --border-radius : 4px;
+        --card-text : var(--color);
     }
     &-primary{
         --background: #fff;
@@ -62,6 +63,7 @@
         --calha: 2em;
         --border: 10px;
         --border-radius : 4px;
+        --card-text : var(--color);
     }
     &-dark{
         --background: var(--base-1);
@@ -94,6 +96,7 @@
         --calha: 2em;
         --border: 10px;
         --border-radius : 4px;
+        --card-text : var(--base-1);
     }
     
 }

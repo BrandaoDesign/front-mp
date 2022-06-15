@@ -30,7 +30,7 @@
       transition: .5s;
 
       &:hover {
-        background: var(--base-2);
+        background: var(--base-3);
       }
     }
   }
@@ -60,7 +60,7 @@
         border: 0;
 
         &:nth-of-type(odd) {
-          background: var(--base-3);
+          background: var(--base-2);
         }
       }
     }
