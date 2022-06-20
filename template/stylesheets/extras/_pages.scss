@@ -51,12 +51,45 @@
 .content {
   padding: var(--grid);
   animation: 1s fadeIn;
+
+  &-s{
+    @extend .content;
+    max-width: $break-s;
+    margin: 0 auto;
+  }
+  &-xm{
+    @extend .content;
+    max-width: $break-xm;
+    margin: 0 auto;
+  }
+  &-m{
+    @extend .content;
+    max-width: $break-m;
+    margin: 0 auto;
+  }
+  &-xl{
+    @extend .content;
+    max-width: $break-xl;
+    margin: 0 auto;
+  }
+  &-l{
+    @extend .content;
+    max-width: $break-l;
+    margin: 0 auto;
+  }
 }
 
 .content-center {
   @extend .content;
-  max-width: 1180px;
   margin: 0 auto;
+  max-width: $break-xl;
+
+  @media screen and (max-width: $break-xm) {
+    max-width: $break-xm;
+  }
+  @media screen and (max-width: $break-s) {
+    max-width: $break-s;
+  }
 }
 
 .page {
@@ -64,7 +97,7 @@
   padding: var(--grid);
 
   &-center {
-    max-width: 1180px;
+    max-width: $break-m;
     margin: 0 auto;
     animation: 1s fadeIn;
   }

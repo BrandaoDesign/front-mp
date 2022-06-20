@@ -127,7 +127,7 @@
 //==============================================================================
 // COLUNAS - DESKTOP
 //==============================================================================
-@media only screen and (min-width: $break-m) {
+@media only screen and (min-width: $break-xm) {
     /* For desktop: */
     .col-1 {flex: 0 0 8.33%; max-width: 8.33%;}
     .col-2 {flex: 0 0 16.66%; max-width: 16.66%;}
@@ -145,7 +145,7 @@
 //==============================================================================
 // COLUNAS - MOBILE
 //==============================================================================
-@media only screen and (max-width: $break-m) {
+@media only screen and (max-width: $break-s) {
     /* For mobile phones: */
     [class*="col-"] {
       position: relative;
