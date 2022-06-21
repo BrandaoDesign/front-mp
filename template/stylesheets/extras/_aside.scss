@@ -1,58 +1,50 @@
-//==============================================================================
-// ASIDE | float
-//==============================================================================
-.aside-float{
-  background: var(--base-1);
-  box-shadow: 0 1px 5px var(--shadow-1);
+.aside-float {
+  --max-height: 60px;
+  --max-width : 350px;
+
   margin-top: 50px;
   padding-bottom: 50px;
   overflow-y: auto;
   position: fixed;
   top: 0;
   right: 0;
-  width: 350px;
+  width: var(--max-width);
   height: 100%;
   z-index: index($z, menu);
   transition: all .5s;
   transform: translateX(100%);
-  //----------------------------------------------------------------------------
-  // ASIDE | float | label
-  //----------------------------------------------------------------------------
-  &__label{
+
+  &__label {
     cursor: pointer;
   }
-  @media screen and (min-width: $break-m){
-    margin-top: 70px;
-    padding-bottom: 70px;
+
+  @media screen and (min-width: $break-m) {
+    margin-top: var(--max-height);
+    padding-bottom: var(--max-height);
   }
 }
-//------------------------------------------------------------------------------
-// MENU-LEFT | active
-//------------------------------------------------------------------------------
-#aside-float:checked{
 
-  ~ .container .aside-float{
+#aside-float:checked {
+
+  ~.container .aside-float {
     transform: translateX(0);
   }
-  ~ .aside-float{
+
+  ~.aside-float {
     transform: translateX(0);
   }
 }
-//==============================================================================
-// ASIDE | NAV
-//==============================================================================
-.aside-nav{
-//------------------------------------------------------------------------------
-// ASIDE | SMARTPHONE
-//==============================================================================
-@media screen and (max-width: $break-s){
-  @include display-flex;
 
-  b{
-    font-size: 2em;
+.aside-nav {
+  @media screen and (max-width: $break-s) {
+    @include display-flex;
+
+    b {
+      font-size: 2em;
+    }
+
+    span {
+      display: none;
+    }
   }
-  span{
-    display: none;
-  }
-}
 }

@@ -8,7 +8,8 @@
   // DROPDOWN | content
   //----------------------------------------------------------------------------
   &-content{
-    // display: none;
+    overflow: hidden;
+    height: 0;
     visibility: hidden;
     opacity: 0;
     position: absolute;
@@ -32,7 +33,7 @@
   //----------------------------------------------------------------------------
   &:hover{
     .dropdown-content{
-      // display: block;
+      height: inherit;
       visibility: visible;
       opacity: 1;
       z-index: index($z, drop);

@@ -228,18 +228,6 @@ mark, .mark{
     overflow-y: auto;
   }
 }
-@for $ow from 0 through 1024 {
-  .overflow-x-#{$ow}{
-    $value: ($ow * 1px);
-    overflow-x: $value;
-  }
-}
-@for $oh from 0 through 1024 {
-  .overflow-x-#{$oh}{
-    $value: ($oh * 1px);
-    overflow-y: $value;
-  }
-}
 .user, profile{
   @include display-flex;
   @include align-items(center);
@@ -394,12 +382,31 @@ mark, .mark{
   }
 }
 .scroll{
-  overflow-y: auto;
+  overflow: auto;
+
+  &-w{
+    overflow-x: auto;
+  }
+  &-y{
+    overflow-y: auto;
+  }
 }
-@for $s from 0 through 960 {
+@for $s from 0 through 1024 {
   .scroll-#{$s}{
     max-height: calc(#{$s} * 1px);
     overflow-y: auto;
+  }
+}
+@for $ow from 0 through 1024 {
+  .scroll-x-#{$ow}{
+    $value: ($ow * 1px);
+    overflow-x: $value;
+  }
+}
+@for $oh from 0 through 1024 {
+  .scroll-x-#{$oh}{
+    $value: ($oh * 1px);
+    overflow-y: $value;
   }
 }
 .divider{
