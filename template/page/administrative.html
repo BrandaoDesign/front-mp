@@ -1,6 +1,5 @@
 <article class="page">
 
-  <!-- HEADER -->
   <div class="page-header">
     <h2 class="page-header-title"><b class="ico-user"></b> Administrativo</h2>
     <ul class="crumbs">
@@ -9,31 +8,36 @@
       <li><p>Administrativo</p></li>
     </ul>
   </div>
-  <!-- fim: HEADER -->
 
-  <!-- submenu -->
-  <nav class="page-sub row-center">
-    <ul class="nav-line row-full">
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Novo movimento"><b class="ico-file"></b> Novo movimento</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Copiar capa"><b class="ico-copy"></b> Copiar</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Histórico completo"><b class="ico-clock"></b> Histórico</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Imprimir etiqueta"><b class="ico-printer"></b> Etiqueta</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Arquivar"><b class="ico-archive"></b> Arquivar</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b></a></li>
-    </ul>
+  <nav class="nav-sub page-sub mb-0">
+    <input type="checkbox" id="submenu" class="nav-sub-input hidden">
+    <div class="nav-sub-header">
+      <label class="nav-link block uppercase row-center row-full" for="submenu"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+    </div>
+    <div class="nav-sub-content">
+      <ul class="nav-line row-full">
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Novo movimento"><b class="ico-file"></b> Novo movimento</a></li>
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Copiar capa"><b class="ico-copy"></b> Copiar</a></li>
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Histórico completo"><b class="ico-clock"></b> Histórico</a></li>
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Imprimir etiqueta"><b class="ico-printer"></b> Etiqueta</a></li>
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Arquivar"><b class="ico-archive"></b> Arquivar</a></li>
+        <li class="nav-line-item min-xm"><a class="nav-link block tooltip-top" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b> Imprimir</a></li>
+      </ul>
+      <ul class="nav-line max-xm">
+        <li class="nav-line-item"><a class="nav-link block tooltip-left" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b></a></li>
+      </ul>
+    </div>
   </nav>
-  <!-- fim: submenu -->
+  
   <div class="content-center">
 
-    <!-- process -->
-    <div class="card">
+    <div class="card-block">
 
-      <!-- process | header -->
-      <div class="card-header-line box-two bg-sucess-dark">
+      <div class="card-info box-two">
 
-        <div class="divider mt-0 mb-10 text-white">DEPARTAMENTO DE REGISTRO DE PESSOAL</div>
+        <div class="divider mt-0 mb-10">DEPARTAMENTO DE REGISTRO DE PESSOAL</div>
 
-        <article class="box-modern row-top bg-white text-black">
+        <article class="box-two row-top bg-white b-radius">
           <figure class="col-m-2 col-2 user pr-20 max-s">
             <img src="images/ico/mp-color.svg" alt="Logo MP-GO">
           </figure>
@@ -45,13 +49,13 @@
               </span>
             </div>
             <h4>Autos Administrativo</h4>
-            <h5 class="text-gray-dark block">
+            <h5 class="block">
               <span class="tooltip-top tooltip-up" data-tooltip="Administrativo do MP / Procedimento de Gestão Administrativa">Procedimento de Gestão Administrativa</span>
             </h5>
-            <h5 class="text-gray-dark block">
+            <h5 class="block">
               <span class="tooltip-top tooltip-up" data-tooltip="Gestão de Documentos e Informações / Tecnologia da Informação e Comunicação / Sistemas de informação">Sistemas de informação</span>
             </h5>
-            <h5 class="text-gray-dark block">Envolvido(s):
+            <h5 class="block">Envolvido(s):
               <span class="tooltip-top tooltip-up" data-tooltip="Interessado(a)">Guilherme Maranhão</span> | <span class="tooltip-top tooltip-up" data-tooltip="Interessado(a)">Mariana Rocha</span></h5>
           </div>
           <div class="col-m-2 col-2 lh-20">
@@ -59,16 +63,10 @@
             <small class="block fs-14"><b class="ico-clock"></b> 13:03</small>
           </div>
         </article>
-
-
       </div>
-      <!-- fim: process | header -->
-
-
-      <!-- process | content -->
+      
       <div class="card-content box-two">
 
-        <!-- register -->
         <fieldset>
           <div class="nav-line">
 
@@ -91,10 +89,10 @@
 
           </div>
         </fieldset>
-        <!-- fim: register -->
+        
 
-        <!-- tabs -->
-        <div class="tab">
+        
+        <div class="tab-line">
           <input type="radio" name="tab-1" id="tab-1" class="tab-input-1 hidden" checked>
           <input type="radio" name="tab-1" id="tab-2" class="tab-input-2 hidden">
           <nav class="tab-nav">
@@ -103,37 +101,37 @@
           </nav>
           <div class="tab-container">
 
-            <!-- tabs 1 -->
+            
             <article class="tab-content tab-1">
 
-              <!-- accordion -->
+              
               <div class="accordion">
 
-                <!-- accordion | box 1 -->
-                <div class="divider mt-20 mb-20">1º MOVIMENTO</div>
+                
+                <div class="divider-base mt-20 mb-20">1º MOVIMENTO</div>
 
                 <div class="accordion-box card-line">
                   <input type="checkbox" name="accordion-1" id="acord-1" class="accordion-input" checked>
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-1">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
                       <div class="row-full lh-20">
                         <h4>Movimento 001</h4>
-                        <small class="text-gray-dark block"><strong>Autos Administrativo: 2018 0000 0001</strong></small>
-                        <small class="text-gray-dark block">01/01/2018</small>
+                        <small class="block"><strong>Autos Administrativo: 2018 0000 0001</strong></small>
+                        <small class="block">01/01/2018</small>
                       </div>
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -163,19 +161,19 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
                         <div class="col-6 col-m-6 box">
                           <article class="card-line box lh-20">
                               <h5>REGISTRO</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
+                              <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
                               <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
                               </div>
                           </article>
                         </div>
@@ -183,55 +181,55 @@
                         <div class="col-6 col-m-6 box">
                           <article class="card-line box lh-20">
                               <h5>RESPONSÁVEL</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana Rocha</strong></small>
+                              <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana Rocha</strong></small>
                               <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
                               </div>
                           </article>
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
-                      <!-- printer -->
+                      
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+                      
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 1 -->
+                
 
-                <div class="divider">ÚLTIMOS MOVIMENTO</div>
+                <div class="divider-base">ÚLTIMOS MOVIMENTO</div>
 
-                <!-- accordion | box 2 -->
+                
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-2" id="acord-2" class="accordion-input">
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-2">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
                       <div class="row-full lh-20">
                         <h4>Movimento 003</h4>
-                        <small class="text-gray-dark block"><strong>Autos Administrativo: 2018 0000 0002</strong></small>
-                        <small class="text-gray-dark block">01/01/2018</small>
+                        <small class="block"><strong>Autos Administrativo: 2018 0000 0002</strong></small>
+                        <small class="block">01/01/2018</small>
                       </div>
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -261,19 +259,19 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
                         <div class="col-6 col-m-6 box">
                           <article class="card-line box lh-20">
                               <h5>REGISTRO</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
+                              <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
                               <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
                               </div>
                           </article>
                         </div>
@@ -281,53 +279,53 @@
                         <div class="col-6 col-m-6 box">
                           <article class="card-line box lh-20">
                               <h5>RESPONSÁVEL</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Tiago Melo</strong></small>
+                              <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Tiago Melo</strong></small>
                               <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
                               </div>
                           </article>
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
-                      <!-- printer -->
+                      
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+                      
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 2 -->
+                
 
-                <!-- accordion | box 3 -->
+                
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-2" id="acord-2" class="accordion-input">
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-2">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
                       <div class="row-full lh-20">
                         <h4>Movimento 002</h4>
-                        <small class="text-gray-dark block"><strong>Autos Administrativo: 2018 00189 1328</strong></small>
-                        <small class="text-gray-dark block">01/01/2018</small>
+                        <small class="block"><strong>Autos Administrativo: 2018 00189 1328</strong></small>
+                        <small class="block">01/01/2018</small>
                       </div>
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -357,19 +355,19 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
                         <div class="col-6 col-m-6 box">
                           <article class="card-line box lh-20">
                               <h5>REGISTRO</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
+                              <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
                               <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
                               </div>
                           </article>
                         </div>
@@ -377,53 +375,53 @@
                         <div class="col-6 col-m-6 box">
                           <article class="card-line box lh-20">
                               <h5>RESPONSÁVEL</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Thiago Melo</strong></small>
+                              <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Thiago Melo</strong></small>
                               <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
                               </div>
                           </article>
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
-                      <!-- printer -->
+                      
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+                      
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 3 -->
+                
 
-                <!-- accordion | box 4 -->
+                
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-2" id="acord-2" class="accordion-input">
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-2">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
                       <div class="row-full lh-20">
                         <h4>Movimento 001</h4>
-                        <small class="text-gray-dark block"><strong>Autos Administrativo: 2018 0000 0001</strong></small>
-                        <small class="text-gray-dark block">01/01/2018</small>
+                        <small class="block"><strong>Autos Administrativo: 2018 0000 0001</strong></small>
+                        <small class="block">01/01/2018</small>
                       </div>
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -453,19 +451,19 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
                         <div class="col-6 col-m-6 box">
                           <article class="card-line box lh-20">
                               <h5>REGISTRO</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
+                              <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
                               <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
                               </div>
                           </article>
                         </div>
@@ -473,66 +471,64 @@
                         <div class="col-6 col-m-6 box">
                           <article class="card-line box lh-20">
                               <h5>RESPONSÁVEL</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana Rocha</strong></small>
+                              <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana Rocha</strong></small>
                               <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
                               </div>
                           </article>
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
-                      <!-- printer -->
+                      
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+                      
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 4 -->
+                
 
               </div>
-              <!-- fim: accordion -->
+              
 
             </article>
-            <!-- fim: tabs 1 -->
+            
+            <article class="tab-content tab-2 mt-15">
 
-            <!-- tabs 2 -->
-            <article class="tab-content tab-2">
-
-              <!-- accordion -->
+              
               <section class="accordion">
 
-                <!-- accordion | box 1 -->
+                
 
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-2" id="acord-2-1" class="accordion-input" checked>
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-2-1">
                     <article class="row">
                       <b class="ico-link fs-32 mr-20"></b>
                       <div class="row-full lh-20">
                         <h4>Apenso 001</h4>
-                        <small class="text-gray-dark block"><strong>Autos Administrativo: 2018 0000 0001</strong></small>
-                        <small class="text-gray-dark block">01/01/2018</small>
+                        <small class="block"><strong>Autos Administrativo: 2018 0000 0001</strong></small>
+                        <small class="block">01/01/2018</small>
                       </div>
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -562,19 +558,19 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
                         <div class="col-6 col-m-6 box">
                           <article class="card-line box lh-20">
                               <h5>REGISTRO</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
+                              <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
                               <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
                               </div>
                           </article>
                         </div>
@@ -582,16 +578,16 @@
                         <div class="col-6 col-m-6 box">
                           <article class="card-line box lh-20">
                               <h5>RESPONSÁVEL</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana Rocha</strong></small>
+                              <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana Rocha</strong></small>
                               <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
+                                <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
                               </div>
                           </article>
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
@@ -600,25 +596,24 @@
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 1 -->
+                
 
               </section>
-              <!-- fim: accordion -->
+              
 
             </article>
-            <!-- fim: tabs 2 -->
-
+            
           </div>
         </div>
-        <!-- tabs -->
+        
 
       </div>
-      <!-- fim: process | content -->
+      
 
     </div>
-    <!-- fim: process -->
+    
   </div>
 
 </article>

@@ -101,7 +101,7 @@ $.extend(Date.prototype, {
         monthAddEvent(index, event);
         return;
       }
-      var $event = $('<div/>', {'class': 'event status bg-info', text: event.title, title: event.title, 'data-index': index}),
+      var $event = $('<div/>', {'class': 'event status text-white bg-info', text: event.title, title: event.title, 'data-index': index}),
           start = event.start,
           end = event.end || start,
           time = event.start.toTimeString(),
@@ -127,7 +127,7 @@ $.extend(Date.prototype, {
     }
 
     function monthAddEvent(index, event) {
-      var $event = $('<div/>', {'class': 'event status bg-info', text: event.title, title: event.title, 'data-index': index}),
+      var $event = $('<div/>', {'class': 'event status text-white bg-info', text: event.title, title: event.title, 'data-index': index}),
           e = new Date(event.start),
           dateclass = e.toDateCssClass(),
           day = $('.' + e.toDateCssClass()),

@@ -45,7 +45,7 @@ mark, .mark{
   &-left{
     text-align: left;
   }
-  &-space{
+  &-block, &-space{
     white-space: nowrap;
   }
 }
@@ -257,11 +257,11 @@ mark, .mark{
 }
 .list-icons{
   @include list-simple;
-  margin-bottom: 20px;
+  margin-bottom: calc(var(--grid)/3);
 
   li{
   
-    margin-top: 10px;
+    margin-top: calc(var(--grid)/3);
 
     &:first-child{
       margin-top: 0;
@@ -279,12 +279,12 @@ mark, .mark{
 }
 .list-order{
   @include list-simple;
-  margin-bottom: 20px;
+  margin-bottom: calc(var(--grid)/3);
   counter-reset: li;
 
   li{
     display: block;
-    margin-top: 10px;
+    margin-top: calc(var(--grid)/3);
 
     &:first-child{
       margin-top: 0;
@@ -306,7 +306,7 @@ mark, .mark{
     @include list-simple;
 
     &-item{
-      padding: 10px;
+      padding: calc(var(--grid)/3);
     }
   }
 
@@ -316,11 +316,21 @@ mark, .mark{
     &-item{
       color: inherit;
       text-decoration: none;
-      padding: 15px;
+      padding: calc(var(--grid)/2);
       transition: all .5s;
 
       &:hover{
         background: var(--base-2);
+      }
+    }
+    &-item-dark{
+      color: inherit;
+      text-decoration: none;
+      padding: calc(var(--grid)/2);
+      transition: all .5s;
+
+      &:hover{
+        background: var(--base-3);
       }
     }
   }
@@ -330,7 +340,7 @@ mark, .mark{
 
     &-item{
       border-bottom: 1px solid var(--base-3);
-      padding: 10px;
+      padding: calc(var(--grid)/3);
 
       &:last-child{
         border-bottom: 0;
@@ -348,31 +358,22 @@ mark, .mark{
   line-height: normal;
   border-radius: 1rem;
   border: 1px solid;
-  padding: 4px 10px;
+  padding: calc(var(--grid)/7) calc(var(--grid)/3);
 }
+
 .status{
   @extend .badges;
-  color: $cor-white;
   border: 0;
-}
-.status{
-
-
 
   &-line{
     @extend .badges;
   }
 
-
-
   &-shadow{
     @extend .badges;
-    color: $cor-white;
     border: 0;
     box-shadow: 0 0 5px var(--base-4);
   }
-
-
 
   &-ball{
     display: inline-block;
@@ -423,15 +424,38 @@ mark, .mark{
   &::after{
     content: '';
     @include flex-grow(1);
-    border-top: 1px solid var(--base-3);
+    border-top: 1px solid;
   }
 
   &:before{
-    margin-right: 20px;
+    margin-right: calc(var(--grid)/2);
   }
 
   &:after{
-    margin-left: 20px;
+    margin-left: calc(var(--grid)/2);
+  }
+}
+.divider{
+  &-base{
+    @extend .divider;
+    &::before,
+    &::after{
+      border-color: var(--base-3);
+    }
+  }
+  &-primary{
+    @extend .divider;
+    &::before,
+    &::after{
+      border-color: var(--primary);
+    }
+  }
+  &-secondary{
+    @extend .divider;
+    &::before,
+    &::after{
+      border-color: var(--secondary);
+    }
   }
 }
 .base{

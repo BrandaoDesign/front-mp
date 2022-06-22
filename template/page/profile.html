@@ -1,36 +1,33 @@
 <article class="page">
 
-  <!-- HEADER -->
   <div class="page-header">
-    <h2 class="page-header-title"><b class="ico-user"></b> Meu Perfil</h2>
+    <h2 class="page-header-title"><b class="ico-user"></b> Perfil</h2>
     <ul class="crumbs">
-      <li>
-        <a href="index.html">Início</a>
-      </li>
-      <li>
-        <a class="link_user" href="#">Usuarios</a>
-      </li>
-      <li>
-        <p>perfil</p>
-      </li>
+      <li><a href="index.html">Início</a></li>
+      <li><a class="link_user" href="#">Usuarios</a></li>
+      <li><p>perfil</p></li>
     </ul>
   </div>
-  <!-- fim: HEADER -->
 
-  <!-- submenu -->
-  <nav class="page-sub">
-    <ul class="nav-line">
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Editar perfil"><b class="ico-edit"></b> Editar</a></li>
+  <nav class="nav-sub page-sub mb-0">
+    <input type="checkbox" id="submenu" class="nav-sub-input hidden">
+    <div class="nav-sub-header">
+      <label class="nav-link block uppercase row-center row-full" for="submenu"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
+    </div>
+    <div class="nav-sub-content">
+      <ul class="nav-line row-full">
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Editar perfil"><b class="ico-edit"></b> Editar</a></li>
       <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Excluir perfil"><b class="ico-trash"></b> Excluir</a></li>
-    </ul>
+      </ul>
+    </div>
   </nav>
-  <!-- fim: submenu -->
+
   <div class="content-center">
 
-    <!-- profile -->
-    <div class="card">
-      <!-- profile | header -->
-      <div class="card-header-line row-center">
+
+    <div class="card-block box b-radius">
+
+      <div class="card-header row-center">
         <div class="row-center col-9 col-m-8">
           <figure class="tw-8 user mr-20">
             <img src="images/user.png" alt="Foto Perfil">
@@ -44,54 +41,55 @@
           <li class="nav-line-item tooltip-top" data-tooltip="E-mail"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-mail"></b></a></li>
           <li class="nav-line-item tooltip-top" data-tooltip="Facebook"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-facebook"></b></a></li>
           <li class="nav-line-item tooltip-top" data-tooltip="Twitter"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-twitter"></b></a></li>
+          <li class="nav-line-item tooltip-top" data-tooltip="Instagram"><a class="bt-primary-clear bt-ico" href="#"><b class="ico-instagram"></b></a></li>
         </ul>
       </div>
-      <!-- fim: profile | header -->
 
-      <!-- profile | content -->
+
+
       <div class="card-content form">
 
-        <!-- profile | dados -->
+
         <fieldset>
 
-          <div class="divider mt-0">CADASTRO</div>
+          <div class="divider-base mt-0">MEUS DADOS</div>
 
           <div class="row">
-            <!-- form 1 -->
+
             <div class="col-3 col-m-6 form-group">
               <label class="form-label">Nome</label>
               <p class="form-view">Renato</p>
             </div>
-            <!-- form 1 -->
-            <!-- form 2 -->
+
+
             <div class="col-3 col-m-6 form-group">
               <label class="form-label">Sobrenome</label>
               <p class="form-view">Brandão</p>
             </div>
-            <!-- form 2 -->
-            <!-- form 3 -->
+
+
             <div class="col-6 col-m-6 form-group">
               <label class="form-label">E-mail</label>
               <p class="form-view">renato@exemplo.com.br</p>
             </div>
-            <!-- form 3 -->
-            <!-- form 4 -->
+
+
             <div class="col-6 col-m-6 form-group">
               <label class="form-label">Profissão</label>
               <p class="form-view">Designer</p>
             </div>
-            <!-- form 4 -->
-            <!-- form 5 -->
+
+
             <div class="col-6 col-m-12 form-group">
               <label class="form-label">Departamento</label>
               <p class="form-view">Superintendencia de Informática</p>
             </div>
-            <!-- form 5 -->
+
           </div>
 
-        <!-- fim: profile | dados -->
-        <div class="divider">PROFISSIONAL</div>
-        <!-- profile | experiência -->
+
+        <div class="divider-base">PROFISSIONAL</div>
+
 
           <div class="row">
 
@@ -122,9 +120,9 @@
           </div>
 
         </fieldset>
-        <!-- fim: profile | experiência -->
 
-        <!-- profile | perfil -->
+
+
         <fieldset>
           <div class="row">
             <div class="col-4 col-m-5 box">
@@ -140,21 +138,21 @@
               </div>
             </div>
         </fieldset>
-        <!-- fim: profile | perfil -->
 
-        <!-- redes -->
+
+
         <ul class="nav-line nav-center">
           <li class="nav-line-item tooltip-top" data-tooltip="E-mail"><a class="bt-primary-clear bt-small" href="#"><b class="ico-mail"></b> e-mail</a></li>
           <li class="nav-line-item tooltip-top" data-tooltip="Facebook"><a class="bt-primary-clear bt-small" href="#"><b class="ico-facebook"></b> facebook</a></li>
           <li class="nav-line-item tooltip-top" data-tooltip="Twitter"><a class="bt-primary-clear bt-small" href="#"><b class="ico-twitter"></b> twitter</a></li>
         </ul>
-        <!-- fim: redes -->
+
 
       </div>
-      <!-- fim: profile | content -->
+
 
     </div>
-    <!-- fim: profile -->
+
   </div>
 
 </article>

@@ -1,6 +1,6 @@
 <article class="page">
 
-  <!-- HEADER -->
+
   <div class="page-header">
     <h2 class="page-header-title"><b class="ico-bookmark"></b> Autos Extrajudicial</h2>
     <ul class="crumbs">
@@ -15,77 +15,46 @@
       </li>
     </ul>
   </div>
-  <!-- fim: HEADER -->
 
-  <!-- <nav class="submenu">
-      <input type="checkbox" id="submenu" class="hidden">
-      <label class="submenu-label" for="submenu"><b class="ico-menu"></b> MENU DE AÇÕES</label>
-      <ul class="submenu-nav nav row-center">
-        <li>
-          <a class="submenu-link inline tooltip-top" data-tooltip="Copiar capa" href="#" ng-click="showProcCtrl.acessarFuncionalidade('duplicar_autos')">
-            <b ng-class="{ 'ico-copy': true }" area-hidden="true"></b> Copiar
-          </a>
-        </li>
-        <li>
-          <a class="submenu-link inline" href="#" ng-click="showProcCtrl.acessarFuncionalidade('imprimir_processo')">
-            <b ng-class="{ 'ico-printer': true }" area-hidden="true"></b> Imprimir
-          </a>
-        </li>
-        <li>
-          <a class="submenu-link inline tooltip-top" data-tooltip="Imprimir Etiqueta" href="#" ng-click="showProcCtrl.acessarFuncionalidade('imprimir_etiqueta')">
-            <b ng-class="{ 'ico-tag': true }" area-hidden="true"></b> Etiqueta
-          </a>
-        </li>
-        <li>
-          <a class="submenu-link inline" href="#" ng-click="showProcCtrl.acessarFuncionalidade('exibir_historico_acoes')">
-            <b ng-class="{ 'ico-clock': true }" area-hidden="true"></b> Histórico
-          </a>
-        </li>
-        <li>
-          <a class="submenu-link inline tooltip-top" data-tooltip="Visualizar no Atena3" target="_blank" href="/atena/flex-build/Main.html?processoId={{showProcCtrl.objeto_tramitacao_selecionado.id}}" tooltip-placement="right-top" title="Clique para abrir os autos no Atena">
-            <b class="ico-monitor"></b> Atena3
-          </a>
-        </li>
-  
-        <li ng-repeat="(key, value) in funcionalidades" ng-if="permissoes[key]">
-          <a class="submenu-link inline" href="#" ng-click="showProcCtrl.acessarFuncionalidade(key)">
-            <b ng-class="showProcCtrl.retornarIconeFuncionalidade(key)" area-hidden="true"></b>
-            {{value}}
-          </a>
-        </li>
+  <nav class="nav-sub page-sub mb-0">
+    <input type="checkbox" id="submenu" class="nav-sub-input hidden">
+    <div class="nav-sub-header">
+      <label class="nav-link block uppercase row-center row-full" for="submenu"><small class="row-full">Menu</small><em
+          class="ico-menu"></em></label>
+    </div>
+    <div class="nav-sub-content">
+      <ul class="nav-line row-full">
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Novo movimento"><b
+              class="ico-file"></b> Novo movimento</a></li>
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Copiar capa"><b
+              class="ico-copy"></b> Copiar</a></li>
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Histórico completo"><b
+              class="ico-clock"></b> Histórico</a></li>
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Imprimir etiqueta"><b
+              class="ico-printer"></b> Etiqueta</a></li>
+        <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Arquivar"><b
+              class="ico-archive"></b> Arquivar</a></li>
+        <li class="nav-line-item min-xm"><a class="nav-link block tooltip-top" href="#" data-tooltip="Imprimir"><b
+              class="ico-printer"></b> Imprimir</a></li>
       </ul>
-    </nav> -->
-
-  <!-- submenu -->
-  <nav class="page-sub row-center">
-    <ul class="nav-line row-full">
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Arquivar"><b class="ico-edit"></b> Editar</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Novo movimento"><b class="ico-file"></b> Novo movimento</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Enviar"><b class="ico-corner-up-right"></b> Enviar</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Juntar"><b class=" ico-git-branch"></b> Juntar</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Apensar"><b class="ico-link"></b> Apensar</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Alterar Categoria"><b class="ico-list"></b> Categoria</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Copiar capa"><b class="ico-copy"></b> Copiar</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Histórico completo"><b class="ico-clock"></b> Histórico</a></li>
-      <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Imprimir etiqueta"><b class="ico-printer"></b> Etiqueta</a></li>
-    </ul>
-    <ul class="nav-line">
-      <li class="nav-line-item"><a class="nav-link inline tooltip-left" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b></a></li>
-    </ul>
+      <ul class="nav-line max-xm">
+        <li class="nav-line-item"><a class="nav-link block tooltip-left" href="#" data-tooltip="Imprimir"><b
+              class="ico-printer"></b></a></li>
+      </ul>
+    </div>
   </nav>
-  <!-- fim: submenu -->
+
   <div class="content-center">
 
-    <!-- process -->
-    <div class="card">
 
-      <!-- process | header -->
-      <div class="card-header-line box-two bg-info-dark text-black">
+    <div class="card-block">
 
-        <div class="divider text-white mt-0 mb-5">CONSELHO MUNICIPAL DE SAÚDE DE RIO VERDE</div>
-        <small class="block text-center text-white mb-15">Origem externa</small>
+      <div class="card-alert box-two">
 
-        <article class="box-modern row-top bg-white">
+        <div class="divider mt-0 mb-5">CONSELHO MUNICIPAL DE SAÚDE DE RIO VERDE</div>
+        <small class="block text-center mb-15">Origem externa</small>
+
+        <article class="box row-top bg-white">
           <figure class="col-m-2 col-2 user pr-20 max-s">
             <img src="images/ico/mp-color.svg" alt="Logo MP-GO">
           </figure>
@@ -93,18 +62,29 @@
             <div class="row">
               <h2 class="mr-15">2018 0000 0001</h2>
               <span class="tooltip-top" data-tooltip="Favoritar">
-                <label class="bt-check" for="star-1"><input type="checkbox" id="star-1" class="bt-check-input hidden"><em class="ico-star fs-22"></em></label>
+                <label class="bt-check" for="star-1"><input type="checkbox" id="star-1"
+                    class="bt-check-input hidden"><em class="ico-star fs-22"></em></label>
               </span>
             </div>
             <h4>Autos Extrajudicial</h4>
-            <h5 class="text-gray-dark block"><span class="tooltip-top tooltip-up" data-tooltip="Extrajudiciais / Procedimentos do MP / Inquérito Civil">Inquérito Civil</span></h5>
-            <h5 class="text-gray-dark block">
-              <span class="tooltip-top tooltip-up" data-tooltip="Direito Administrativo e Outras Matérias de Direito Público / Atos Administrativos / Improbidade Administrativa / Dano ao Erário">Dano Ao Erário</span>,
-              <span class="tooltip-top tooltip-up" data-tooltip="Direito Administrativo e Outras Matérias de Direito Público / Atos Administrativos / Improbidade Administrativa / Enriquecimento Ilícito">Enriquecimento Ilícito</span>,
-              <span class="tooltip-top tooltip-up" data-tooltip="Direito Administrativo e Outras Matérias de Direito Público / Atos Administrativos / Improbidade Administrativa / Violação Aos Princípios Administrativos">Violação Aos Princípios Administrativos</span></h5>
-            <h5 class="text-gray-dark block">
-              <span class="tooltip-top tooltip-up" data-tooltip="Interessado(a)">Envolvido(s): Municipio de Rio Verde</span> |
-              <span class="tooltip-top tooltip-up" data-tooltip="Interessado(a)">Secretaria Municipal de Saude de Rio Verde - Go</span>
+            <h5 class="block"><span class="tooltip-top tooltip-up"
+                data-tooltip="Extrajudiciais / Procedimentos do MP / Inquérito Civil">Inquérito Civil</span></h5>
+            <h5 class="block">
+              <span class="tooltip-top tooltip-up"
+                data-tooltip="Direito Administrativo e Outras Matérias de Direito Público / Atos Administrativos / Improbidade Administrativa / Dano ao Erário">Dano
+                Ao Erário</span>,
+              <span class="tooltip-top tooltip-up"
+                data-tooltip="Direito Administrativo e Outras Matérias de Direito Público / Atos Administrativos / Improbidade Administrativa / Enriquecimento Ilícito">Enriquecimento
+                Ilícito</span>,
+              <span class="tooltip-top tooltip-up"
+                data-tooltip="Direito Administrativo e Outras Matérias de Direito Público / Atos Administrativos / Improbidade Administrativa / Violação Aos Princípios Administrativos">Violação
+                Aos Princípios Administrativos</span>
+            </h5>
+            <h5 class="block">
+              <span class="tooltip-top tooltip-up" data-tooltip="Interessado(a)">Envolvido(s): Municipio de Rio
+                Verde</span> |
+              <span class="tooltip-top tooltip-up" data-tooltip="Interessado(a)">Secretaria Municipal de Saude de Rio
+                Verde - Go</span>
             </h5>
           </div>
           <div class="col-m-2 col-2 lh-20">
@@ -113,15 +93,10 @@
           </div>
         </article>
 
-
       </div>
-      <!-- fim: process | header -->
 
-
-      <!-- process | content -->
       <div class="card-content box-two">
 
-        <!-- register -->
         <fieldset>
           <div class="nav-line">
 
@@ -129,7 +104,8 @@
               <article class="lh-20">
                 <h5>STATUS</h5>
                 <ul class="nav-ball">
-                  <li class="nav-ball-item"><small><strong class="status bg-info-dark">Extrajudicial</strong></small></li>
+                  <li class="nav-ball-item"><small><strong class="status bg-alert-dark text-white">Extrajudicial</strong></small>
+                  </li>
                   <li class="nav-ball-item"><small><strong>Andamento</strong></small></li>
                 </ul>
               </article>
@@ -138,16 +114,15 @@
             <div class="nav-line-item">
               <article class="lh-20">
                 <h5>POSSE</h5>
-                <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Tiago Melo | </strong>Superintendência de Informática</small>
+                <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Tiago Melo | </strong>Superintendência
+                  de Informática</small>
               </article>
             </div>
 
           </div>
         </fieldset>
-        <!-- fim: register -->
 
-        <!-- tabs -->
-        <div class="tab">
+        <div class="tab-line">
           <input type="radio" name="tab-1" id="tab-1" class="tab-input-1 hidden" checked>
           <input type="radio" name="tab-1" id="tab-2" class="tab-input-2 hidden">
           <input type="radio" name="tab-1" id="tab-3" class="tab-input-3 hidden">
@@ -158,14 +133,12 @@
           </nav>
           <div class="tab-container">
 
-            <!-- tabs 1 -->
             <article class="tab-content tab-1">
 
-              <div class="divider mt-20">DETALHES DO AUTOS</div>
+              <div class="divider-base mt-20">DETALHES DO AUTOS</div>
 
-              <!-- dados -->
-              <fieldset>
-                <div class="row-fluid form">
+              <fieldset class="form">
+                <div class="row">
 
                   <div class="form-group col-6">
                     <label class="form-label">Data Instauração</label>
@@ -179,7 +152,7 @@
 
                   <div class="form-group col-12">
                     <label class="form-label">Envolvido(s)</label>
-                    <table class="table form-view mt-0">
+                    <table class="table table-responsive form-view mt-0">
                       <tbody>
                         <tr>
                           <td>Interessado(a)</td>
@@ -195,526 +168,644 @@
 
                 </div>
               </fieldset>
-              <!-- fim: dados -->
+
 
               <h4>Observação</h4><br>
               <div class="scroll-400 box">
-                <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                  Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam
+                  euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
+                  Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais
+                  bolis eu num gostis.</p>
               </div>
 
             </article>
-            <!-- fim: tabs 1 -->
 
-            <!-- tabs 2 -->
             <article class="tab-content tab-2">
 
-              <!-- accordion -->
+
               <div class="accordion">
 
-                <div class="divider mt-20 mb-20">1º MOVIMENTO</div>
+                <div class="divider-base mt-20 mb-20">1º MOVIMENTO</div>
 
-                <!-- accordion | box 1 -->
+
                 <div class="accordion-box card-line">
                   <input type="checkbox" name="accordion-1" id="acord-1" class="accordion-input" checked>
 
-                  <!-- accordion | header -->
+
                   <label class="accordion-header" for="acord-1">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
                       <div class="row-full lh-20">
                         <h4>Movimento 001</h4>
-                        <small class="text-gray-dark block"><strong>Autos Judicial: 2018 0000 0001</strong></small>
-                        <small class="text-gray-dark block">01/01/2018</small>
+                        <small class="block"><strong>Autos Judicial: 2018 0000 0001</strong></small>
+                        <small class="block">01/01/2018</small>
                       </div>
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
 
-                  <!-- accordion | content -->
+
+
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
 
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                           Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                           Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                              Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent
+                          lacinia ultrices consectetur. Sed non ipsum felis.
+                          Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá.
+                          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                          Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+                          Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá.
+                          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
 
-                        <h5>1. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>1. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <h5>2. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>2. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <h5>3. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>3. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
 
-                      <!-- register -->
+
+
                       <br>
                       <div class="row-fluid">
 
                         <div class="col-6 box">
                           <article class="card-line box lh-20">
-                              <h5>REGISTRO</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
-                              <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
-                              </div>
+                            <h5>REGISTRO</h5>
+                            <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme
+                                Maranhão</strong></small>
+                            <div class="row">
+                              <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado:
+                                02/02/18, 13:03:05</small>
+                              <small class="col-6 block"><b
+                                  class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                            </div>
                           </article>
                         </div>
 
                         <div class="col-6 box">
                           <article class="card-line box lh-20">
-                              <h5>RESPONSÁVEL</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana Rocha</strong></small>
-                              <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
-                              </div>
+                            <h5>RESPONSÁVEL</h5>
+                            <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana
+                                Rocha</strong></small>
+                            <div class="row">
+                              <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado:
+                                02/02/18, 13:03:05</small>
+                              <small class="col-6 block"><b
+                                  class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                            </div>
                           </article>
                         </div>
 
                       </div>
-                      <!-- fim: register -->
 
-                      <!-- printer -->
+
+
                       <ul class="nav-line nav-right b-top mt-20">
-                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
-                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
+                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a
+                            class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
+                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a
+                            class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+
 
                     </div>
 
                   </div>
-                  <!-- fim: accordion | content -->
+
 
                 </div>
-                <!-- fim: accordion | box 1 -->
 
-                <div class="divider">ÚLTIMOS MOVIMENTOS</div>
 
-                <!-- accordion | box 2 -->
+                <div class="divider-base">ÚLTIMOS MOVIMENTOS</div>
+
+
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-2" id="acord2-1" class="accordion-input">
 
-                  <!-- accordion | header -->
+
                   <label class="accordion-header" for="acord2-1">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
                       <div class="row-full lh-20">
                         <h4>Movimento 003</h4>
-                        <small class="text-gray-dark block"><strong>Autos Judicial: 2018 0000 0002</strong></small>
-                        <small class="text-gray-dark block">01/01/2018</small>
+                        <small class="block"><strong>Autos Judicial: 2018 0000 0002</strong></small>
+                        <small class="block">01/01/2018</small>
                       </div>
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
 
-                  <!-- accordion | content -->
+
+
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
 
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                           Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                           Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                              Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent
+                          lacinia ultrices consectetur. Sed non ipsum felis.
+                          Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá.
+                          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                          Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+                          Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá.
+                          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
 
-                        <h5>1. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>1. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <h5>2. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>2. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <h5>3. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>3. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
 
-                      <!-- register -->
+
+
                       <br>
                       <div class="row-fluid">
 
                         <div class="col-6 box">
                           <article class="card-line box lh-20">
-                              <h5>REGISTRO</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
-                              <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
-                              </div>
+                            <h5>REGISTRO</h5>
+                            <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme
+                                Maranhão</strong></small>
+                            <div class="row">
+                              <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado:
+                                02/02/18, 13:03:05</small>
+                              <small class="col-6 block"><b
+                                  class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                            </div>
                           </article>
                         </div>
 
                         <div class="col-6 box">
                           <article class="card-line box lh-20">
-                              <h5>RESPONSÁVEL</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Tiago Melo</strong></small>
-                              <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
-                              </div>
+                            <h5>RESPONSÁVEL</h5>
+                            <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Tiago
+                                Melo</strong></small>
+                            <div class="row">
+                              <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado:
+                                02/02/18, 13:03:05</small>
+                              <small class="col-6 block"><b
+                                  class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                            </div>
                           </article>
                         </div>
 
                       </div>
-                      <!-- fim: register -->
 
-                      <!-- printer -->
+
+
                       <ul class="nav-line nav-right b-top mt-20">
-                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
-                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
+                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a
+                            class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
+                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a
+                            class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
-                </div>
-                <!-- fim: accordion | box 2 -->
 
-                <!-- accordion | box 3 -->
+                </div>
+
+
+
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-3" id="acord3-1" class="accordion-input">
 
-                  <!-- accordion | header -->
+
                   <label class="accordion-header" for="acord3-1">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
                       <div class="row-full lh-20">
                         <h4>Movimento 002</h4>
-                        <small class="text-gray-dark block"><strong>Autos Judicial: 2018 00189 1328</strong></small>
-                        <small class="text-gray-dark block">01/01/2018</small>
+                        <small class="block"><strong>Autos Judicial: 2018 00189 1328</strong></small>
+                        <small class="block">01/01/2018</small>
                       </div>
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
 
-                  <!-- accordion | content -->
+
+
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
 
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                           Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                           Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                              Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent
+                          lacinia ultrices consectetur. Sed non ipsum felis.
+                          Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá.
+                          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                          Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+                          Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá.
+                          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
 
-                        <h5>1. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>1. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <h5>2. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>2. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <h5>3. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>3. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
 
-                      <!-- register -->
+
+
                       <br>
                       <div class="row-fluid">
 
                         <div class="col-6 box">
                           <article class="card-line box lh-20">
-                              <h5>REGISTRO</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
-                              <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
-                              </div>
+                            <h5>REGISTRO</h5>
+                            <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme
+                                Maranhão</strong></small>
+                            <div class="row">
+                              <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado:
+                                02/02/18, 13:03:05</small>
+                              <small class="col-6 block"><b
+                                  class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                            </div>
                           </article>
                         </div>
 
                         <div class="col-6 box">
                           <article class="card-line box lh-20">
-                              <h5>RESPONSÁVEL</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Thiago Melo</strong></small>
-                              <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
-                              </div>
+                            <h5>RESPONSÁVEL</h5>
+                            <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Thiago
+                                Melo</strong></small>
+                            <div class="row">
+                              <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado:
+                                02/02/18, 13:03:05</small>
+                              <small class="col-6 block"><b
+                                  class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                            </div>
                           </article>
                         </div>
 
                       </div>
-                      <!-- fim: register -->
 
-                      <!-- printer -->
+
+
                       <ul class="nav-line nav-right b-top mt-20">
-                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
-                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
+                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a
+                            class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
+                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a
+                            class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
-                </div>
-                <!-- fim: accordion | box 3 -->
 
-                <!-- accordion | box 4 -->
+                </div>
+
+
+
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-4" id="acord4-1" class="accordion-input">
 
-                  <!-- accordion | header -->
+
                   <label class="accordion-header" for="acord4-1">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
                       <div class="row-full lh-20">
                         <h4>Movimento 001</h4>
-                        <small class="text-gray-dark block"><strong>Autos Judicial: 2018 0000 0001</strong></small>
-                        <small class="text-gray-dark block">01/01/2018</small>
+                        <small class="block"><strong>Autos Judicial: 2018 0000 0001</strong></small>
+                        <small class="block">01/01/2018</small>
                       </div>
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
 
-                  <!-- accordion | content -->
+
+
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
 
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                           Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
-                           Praesent lacinia ultrices consectetur. Sed non ipsum felis.
-                              Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent
+                          lacinia ultrices consectetur. Sed non ipsum felis.
+                          Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá.
+                          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.
+                          Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+                          Pra lá , depois divoltis porris, paradis. Casamentiss faiz malandris se pirulitá.
+                          Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
 
-                        <h5>1. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>1. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <h5>2. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>2. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <h5>3. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>3. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
 
-                      <!-- register -->
+
+
                       <br>
                       <div class="row-fluid">
 
                         <div class="col-6 box">
                           <article class="card-line box lh-20">
-                              <h5>REGISTRO</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
-                              <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
-                              </div>
+                            <h5>REGISTRO</h5>
+                            <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme
+                                Maranhão</strong></small>
+                            <div class="row">
+                              <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado:
+                                02/02/18, 13:03:05</small>
+                              <small class="col-6 block"><b
+                                  class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                            </div>
                           </article>
                         </div>
 
                         <div class="col-6 box">
                           <article class="card-line box lh-20">
-                              <h5>RESPONSÁVEL</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana Rocha</strong></small>
-                              <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
-                              </div>
+                            <h5>RESPONSÁVEL</h5>
+                            <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana
+                                Rocha</strong></small>
+                            <div class="row">
+                              <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado:
+                                02/02/18, 13:03:05</small>
+                              <small class="col-6 block"><b
+                                  class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                            </div>
                           </article>
                         </div>
 
                       </div>
-                      <!-- fim: register -->
 
-                      <!-- printer -->
+
+
                       <ul class="nav-line nav-right b-top mt-20">
-                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
-                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
+                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a
+                            class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
+                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a
+                            class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+
                 </div>
-                <!-- fim: accordion | box 4 -->
+
 
               </div>
-              <!-- fim: accordion -->
+
 
             </article>
-            <!-- fim: tabs 2 -->
 
-            <!-- tabs 3 -->
-            <article class="tab-content tab-3">
+            <article class="tab-content tab-3 mt-15">
 
-              <!-- accordion -->
+
               <section class="accordion">
 
-                <!-- accordion | box 1 -->
+
 
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-3" id="acord-3-1" class="accordion-input" checked>
 
-                  <!-- accordion | header -->
+
                   <label class="accordion-header" for="acord-3-1">
                     <article class="row">
                       <b class="ico-link fs-32 mr-20"></b>
                       <div class="row-full lh-20">
                         <h4>Apenso 001</h4>
-                        <small class="text-gray-dark block"><strong>Autos Judicial: 2018 0000 0001</strong></small>
-                        <small class="text-gray-dark block">01/01/2018</small>
+                        <small class="block"><strong>Autos Judicial: 2018 0000 0001</strong></small>
+                        <small class="block">01/01/2018</small>
                       </div>
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
 
-                  <!-- accordion | content -->
+
+
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
 
-                        <h5>1. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>1. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <h5>2. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>2. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <h5>3. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5><br>
-                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
+                        <h5>3. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </h5>
+                        <br>
+                        <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de
+                          capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
 
-                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis, arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
-                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                        <p class="text">Mussum Ipsum, cacilds vidis litro abertis. Copo furadis é disculpa de bebadis,
+                          arcu quam euismod magna. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo
+                          pose.
+                          Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis,
+                          mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
 
-                      <!-- register -->
+
+
                       <br>
                       <div class="row-fluid">
 
                         <div class="col-6 box">
                           <article class="card-line box lh-20">
-                              <h5>REGISTRO</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme Maranhão</strong></small>
-                              <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
-                              </div>
+                            <h5>REGISTRO</h5>
+                            <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Guilherme
+                                Maranhão</strong></small>
+                            <div class="row">
+                              <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado:
+                                02/02/18, 13:03:05</small>
+                              <small class="col-6 block"><b
+                                  class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                            </div>
                           </article>
                         </div>
 
                         <div class="col-6 box">
                           <article class="card-line box lh-20">
-                              <h5>RESPONSÁVEL</h5>
-                              <small class="text-gray-dark block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana Rocha</strong></small>
-                              <div class="row">
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Criado: 02/02/18, 13:03:05</small>
-                                <small class="col-6 text-gray-dark block"><b class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
-                              </div>
+                            <h5>RESPONSÁVEL</h5>
+                            <small class="block"><b class="ico-user fs-18 mr-10"></b><strong>Mariana
+                                Rocha</strong></small>
+                            <div class="row">
+                              <small class="col-6 block"><b class="ico-calendar fs-16 mr-10"></b>Criado:
+                                02/02/18, 13:03:05</small>
+                              <small class="col-6 block"><b
+                                  class="ico-calendar fs-16 mr-10"></b>Atualizado: 02/02/18, 13:03:05</small>
+                            </div>
                           </article>
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+
 
                       <ul class="nav-line nav-right b-top mt-20">
-                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
-                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
+                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a
+                            class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
+                        <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a
+                            class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+
                 </div>
-                <!-- fim: accordion | box 1 -->
+
 
               </section>
-              <!-- fim: accordion -->
+
 
             </article>
-            <!-- fim: tabs 3 -->
 
           </div>
         </div>
-        <!-- tabs -->
+
 
       </div>
-      <!-- fim: process | content -->
+
 
     </div>
-    <!-- fim: process -->
+
   </div>
 
 </article>

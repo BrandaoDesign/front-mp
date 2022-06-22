@@ -1,7 +1,5 @@
-<!-- page -->
 <section class="page">
-
-  <!-- HEADER -->
+  
   <div class="page-header">
     <h2 class="page-header-title"><b class="ico-calendar"></b> Calendário</h2>
     <ul class="crumbs">
@@ -13,9 +11,7 @@
       </li>
     </ul>
   </div>
-  <!-- fim: HEADER -->
-
-  <!-- content -->
+  
   <content class="row">
 
     <aside class="col-2 box b-right">
@@ -25,14 +21,13 @@
       <fieldset>
         <h6>EVENTOS</h6><br>
         <div class="small">
-          <a class="mb-5 status block bg-info block" href="#">Reunião</a>
-          <a class="mb-5 status block bg-error block" href="#">Audiência</a>
-          <a class="mb-5 status block bg-success block" href="#">Curso</a>
+          <a class="mb-5 status text-white block bg-info block" href="#">Reunião</a>
+          <a class="mb-5 status text-white block bg-error block" href="#">Audiência</a>
+          <a class="mb-5 status text-white block bg-success block" href="#">Curso</a>
         </div>
       </fieldset>
     </aside>
 
-      <!-- calendar -->
       <article class="row-full box theme-showcase">
 
         <div id="holder" class="" ></div>
@@ -67,9 +62,9 @@
           <fieldset class="mail-header">
             <div class="row row-center">
               <div class="row-center mr-10">
-                <button class="js-cal-prev button bt-medium input-group-left"><b class="ico-arrow-left"></b></button>
-                <button class="js-cal-next button bt-medium input-group-right"><b class="ico-arrow-right"></b></button>
-                <button class="max-s js-cal-option button bt-medium ml-5 {{: first.toDateInt() <= today.toDateInt() && today.toDateInt() <= last.toDateInt() ? 'active':'' }}" data-date="{{: today.toISOString()}}" data-mode="month">Hoje</button>
+                <button class="js-cal-prev bt bt-medium"><b class="ico-arrow-left"></b></button>
+                <button class="max-s js-cal-option bt bt-medium ml-5 {{: first.toDateInt() <= today.toDateInt() && today.toDateInt() <= last.toDateInt() ? 'active':'' }}" data-date="{{: today.toISOString()}}" data-mode="month">Hoje</button>
+                <button class="js-cal-next bt bt-medium ml-5"><b class="ico-arrow-right"></b></button>
               </div>
               <div class="row-full">
                 <h2 class="text-center">{{ if (mode !== 'day') { }}
@@ -177,18 +172,16 @@
           </table>
         </script>
       </article>
-      <!-- calendar -->
-
+      
   </content>
-  <!-- fim: content -->
-
+  
 </section>
-<!-- fim: page -->
 
-<!-- js -->
+
+
 <script src="js/calendar.js"></script>
 <script type="text/javascript">
   $(".link_mail").click(function(){ $.get("page/mail.html", function(data) { $("#container").html(data); }); });
   $(".link_mail-msg").click(function(){ $.get("page/mail-msg.html", function(data) { $("#container").html(data); }); });
 </script>
-<!-- fim: js -->
+

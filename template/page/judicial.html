@@ -1,6 +1,5 @@
 <article class="page">
 
-  <!-- HEADER -->
   <div class="page-header">
     <h2 class="page-header-title"><b class="ico-bookmark"></b> Autos Judicial</h2>
     <ul class="crumbs">
@@ -16,10 +15,10 @@
     </ul>
   </div>
   
-  <nav class="page-sub nav-sub row-center">
-    <input type="checkbox" id="submenu" class="hidden">
+  <nav class="nav-sub page-sub mb-0">
+    <input type="checkbox" id="submenu" class="nav-sub-input hidden">
     <div class="nav-sub-header">
-      <label class="menu-label bt-ico" for="submenu"><b class="ico-menu"></b></label>
+      <label class="nav-link block uppercase row-center row-full" for="submenu"><small class="row-full">Menu</small><em class="ico-menu"></em></label>
     </div>
     <div class="nav-sub-content">
       <ul class="nav-line row-full">
@@ -28,25 +27,24 @@
         <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Histórico completo"><b class="ico-clock"></b> Histórico</a></li>
         <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Imprimir etiqueta"><b class="ico-printer"></b> Etiqueta</a></li>
         <li class="nav-line-item"><a class="nav-link inline tooltip-top" href="#" data-tooltip="Arquivar"><b class="ico-archive"></b> Arquivar</a></li>
+        <li class="nav-line-item min-xm"><a class="nav-link block tooltip-top" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b> Imprimir</a></li>
       </ul>
-      <ul class="nav-line">
-        <li class="nav-line-item"><a class="nav-link inline tooltip-left" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b></a></li>
+      <ul class="nav-line max-xm">
+        <li class="nav-line-item"><a class="nav-link block tooltip-left" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b></a></li>
       </ul>
     </div>
   </nav>
   
   <div class="content-center">
 
-    <!-- process -->
-    <div class="card">
+    <div class="card-block">
+      
+      <div class="card-success box-two bg-success-status">
 
-      <!-- process | header -->
-      <div class="card-header-line box-two bg-alert-dark text-black">
+        <div class="divider mt-0 mb-5">7ª PROMOTIRIA DE JUSTIÇA DA COMARCA DE APARECIDA DE GOIÂNIA</div>
+        <small class="block text-center mb-15">Origem externa</small>
 
-        <div class="divider mt-0 mb-5 text-white">7ª PROMOTIRIA DE JUSTIÇA DA COMARCA DE APARECIDA DE GOIÂNIA</div>
-        <small class="block text-center mb-15 text-white">Origem externa</small>
-
-        <article class="box-modern row-top bg-white">
+        <article class="box row-top bg-white">
           <figure class="col-m-2 col-2 user pr-20 max-s">
             <img src="images/ico/mp-color.svg" alt="Logo MP-GO">
           </figure>
@@ -69,15 +67,10 @@
           </div>
         </article>
 
-
       </div>
-      <!-- fim: process | header -->
-
-
-      <!-- process | content -->
+      
       <div class="card-content box-two">
-
-        <!-- register -->
+        
         <fieldset>
           <div class="nav-line">
 
@@ -85,7 +78,7 @@
               <article class="lh-20">
                 <h5>STATUS</h5>
                 <ul class="nav-ball">
-                  <li class="nav-ball-item"><small><strong class="status bg-alert-dark">Judicial 2º Grau</strong></small></li>
+                  <li class="nav-ball-item"><small><strong class="status bg-success text-white">Judicial 2º Grau</strong></small></li>
                   <li class="nav-ball-item"><small><strong>Origem Externa</strong></small></li>
                   <li class="nav-ball-item"><small><strong>Andamento</strong></small></li>
                 </ul>
@@ -101,10 +94,8 @@
 
           </div>
         </fieldset>
-        <!-- fim: register -->
-
-        <!-- tabs -->
-        <div class="tab">
+        
+        <div class="tab-line">
           <input type="radio" name="tab-1" id="tab-1" class="tab-input-1 hidden" checked>
           <input type="radio" name="tab-1" id="tab-2" class="tab-input-2 hidden">
           <input type="radio" name="tab-1" id="tab-3" class="tab-input-3 hidden">
@@ -119,12 +110,11 @@
           </nav>
           <div class="tab-container">
 
-            <!-- tabs 1 -->
             <article class="tab-content tab-1">
 
-              <div class="divider mt-20 mb-20">PROCESSO JUDICIAL</div>
+              <div class="divider-base mt-20 mb-20">PROCESSO JUDICIAL</div>
 
-              <!-- dados -->
+              
               <header class="text-center mb-40">
                 <b class="ico-bookmark fs-32"></b>
                 <div class="lh-25">
@@ -132,90 +122,88 @@
                   <small class="text-gray-dark block"><strong>Tribunal de Justiça Do Estado de Goias / Aparecida de Goiânia - Juizado Especial Criminal</strong></small>
                 </div>
               </header>
-
-              <div class="row-fluid">
-
-                <div class="form-group col-6">
-                  <label class="form-label">Juiz</label>
-                  <p class="form-view">1</p>
+              <div class="form">
+                <div class="row">
+  
+                  <div class="form-group col-6">
+                    <label class="form-label">Juiz</label>
+                    <p class="form-view">1</p>
+                  </div>
+  
+                  <div class="form-group col-6">
+                    <label class="form-label">Redistribuição</label>
+                    <p class="form-view">Normal</p>
+                  </div>
+  
+                  <div class="form-group col-6">
+                    <label class="form-label">Data</label>
+                    <p class="form-view">03/03/2017 - 11:00</p>
+                  </div>
+  
+                  <div class="form-group col-6">
+                    <label class="form-label">Protocolo</label>
+                    <p class="form-view">09/02/2017 - 07:00</p>
+                  </div>
+  
+                  <div class="form-group col-6">
+                    <label class="form-label">Promotor</label>
+                    <p class="form-view">1</p>
+                  </div>
+  
+                  <div class="form-group col-6">
+                    <label class="form-label">Quantidade Doc.</label>
+                    <p class="form-view">1</p>
+                  </div>
+  
+                  <div class="form-group col-12">
+                    <label class="form-label">Infração</label>
+                    <p class="form-view">Crime de Transito / Dirigir veículos Auto Motor em Via Pública sem a devida</p>
+                  </div>
+  
+                  <div class="form-group col-12">
+                    <label class="form-label">Envolvido(s)</label>
+                    <table class="table form-view mt-0">
+                      <tbody>
+                        <tr>
+                          <td>Ofendido</td>
+                          <td>Administração Pública e Outro</td>
+                        </tr>
+                        <tr>
+                          <td>Autor do fato</td>
+                          <td>Guilherme Maranhão</td>
+                        </tr>
+                      </tbody>
+                    </table>
+  
+                  </div>
+  
+                  <div class="form-group col-12">
+                    <label class="form-label">Autor do fato</label>
+                    <p class="form-view">Guilherme Maranhão</p>
+                  </div>
+  
+                  <div class="form-group col-12">
+                    <label class="form-label">Natureza</label>
+                    <p class="form-view">Termo Circunstanciado de Ocorrência</p>
+                  </div>
+  
                 </div>
-
-                <div class="form-group col-6">
-                  <label class="form-label">Redistribuição</label>
-                  <p class="form-view">Normal</p>
-                </div>
-
-                <div class="form-group col-6">
-                  <label class="form-label">Data</label>
-                  <p class="form-view">03/03/2017 - 11:00</p>
-                </div>
-
-                <div class="form-group col-6">
-                  <label class="form-label">Protocolo</label>
-                  <p class="form-view">09/02/2017 - 07:00</p>
-                </div>
-
-                <div class="form-group col-6">
-                  <label class="form-label">Promotor</label>
-                  <p class="form-view">1</p>
-                </div>
-
-                <div class="form-group col-6">
-                  <label class="form-label">Quantidade Doc.</label>
-                  <p class="form-view">1</p>
-                </div>
-
-                <div class="form-group col-12">
-                  <label class="form-label">Infração</label>
-                  <p class="form-view">Crime de Transito / Dirigir veículos Auto Motor em Via Pública sem a devida</p>
-                </div>
-
-                <div class="form-group col-12">
-                  <label class="form-label">Envolvido(s)</label>
-                  <table class="table form-view mt-0">
-                    <tbody>
-                      <tr>
-                        <td>Ofendido</td>
-                        <td>Administração Pública e Outro</td>
-                      </tr>
-                      <tr>
-                        <td>Autor do fato</td>
-                        <td>Guilherme Maranhão</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                </div>
-
-                <div class="form-group col-12">
-                  <label class="form-label">Autor do fato</label>
-                  <p class="form-view">Guilherme Maranhão</p>
-                </div>
-
-                <div class="form-group col-12">
-                  <label class="form-label">Natureza</label>
-                  <p class="form-view">Termo Circunstanciado de Ocorrência</p>
-                </div>
-
               </div>
-              <!-- fim: dados -->
 
             </article>
-            <!-- fim: tabs 1 -->
-
-            <!-- tabs 2 -->
+      
             <article class="tab-content tab-2">
 
-              <!-- accordion -->
+              
               <div class="accordion">
 
-                <div class="divider mt-20 mb-20">1º MOVIMENTO</div>
+                <div class="divider-base mt-20 mb-20">1º MOVIMENTO</div>
 
-                <!-- accordion | box 1 -->
+                
                 <div class="accordion-box card-line">
                   <input type="checkbox" name="accordion-1" id="acord-1" class="accordion-input" checked>
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-1">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
@@ -227,13 +215,13 @@
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -263,9 +251,9 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
@@ -292,30 +280,30 @@
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
-                      <!-- printer -->
+                      
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+                      
 
                     </div>
 
                   </div>
-                  <!-- fim: accordion | content -->
+                  
 
                 </div>
-                <!-- fim: accordion | box 1 -->
+                
 
-                <div class="divider">ÚLTIMOS MOVIMENTOS</div>
+                <div class="divider-base">ÚLTIMOS MOVIMENTOS</div>
 
-                <!-- accordion | box 2 -->
+                
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-2" id="acord2-1" class="accordion-input">
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord2-1">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
@@ -327,13 +315,13 @@
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -363,9 +351,9 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
@@ -392,26 +380,26 @@
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
-                      <!-- printer -->
+                      
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+                      
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 2 -->
+                
 
-                <!-- accordion | box 3 -->
+                
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-3" id="acord3-1" class="accordion-input">
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord3-1">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
@@ -423,13 +411,13 @@
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -459,9 +447,9 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
@@ -488,26 +476,26 @@
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
-                      <!-- printer -->
+                      
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+                      
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 3 -->
+                
 
-                <!-- accordion | box 4 -->
+                
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-4" id="acord4-1" class="accordion-input">
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord4-1">
                     <article class="row">
                       <b class="ico-layers fs-32 mr-20"></b>
@@ -519,13 +507,13 @@
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -555,9 +543,9 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
@@ -584,38 +572,36 @@
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
-                      <!-- printer -->
+                      
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Etiqueta"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Etiqueta</a></li>
                       </ul>
-                      <!-- printer -->
+                      
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 4 -->
+                
 
               </div>
-              <!-- fim: accordion -->
+              
 
             </article>
-            <!-- fim: tabs 2 -->
+       
+            <article class="tab-content tab-3 mt-15">
 
-            <!-- tabs 3 -->
-            <article class="tab-content tab-3">
-
-              <!-- accordion -->
+              
               <section class="accordion">
 
-                <!-- accordion | box 1 -->
+                
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-2" id="acord-2-1" class="accordion-input" checked>
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-2-1">
                     <article class="row">
                       <b class="ico-users fs-32 mr-20"></b>
@@ -627,13 +613,13 @@
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Registro</label>
 
                       <div class="text scroll-600 box">
@@ -655,16 +641,16 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- sentença -->
+                      
                       <div class="form-group">
                         <label class="form-label">Sentença</label>
                         <p class="form-view">Extrajudiciais / ATOS FINALÍSTICOS / Audiência / Instrução e Julgamento</p>
                       </div>
-                      <!-- fim: sentença -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
@@ -691,7 +677,7 @@
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
@@ -700,15 +686,15 @@
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 1 -->
+                
 
-                <!-- accordion | box 2 -->
+                
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-2" id="acord-2-2" class="accordion-input">
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-2-2">
                     <article class="row">
                       <b class="ico-users fs-32 mr-20"></b>
@@ -720,13 +706,13 @@
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Registro</label>
 
                       <div class="text scroll-600 box">
@@ -756,16 +742,16 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- sentença -->
+                      
                       <div class="form-group">
                         <label class="form-label">Sentença</label>
                         <p class="form-view">Extrajudiciais / ATOS FINALÍSTICOS / Audiência / Instrução e Julgamento</p>
                       </div>
-                      <!-- fim: sentença -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
@@ -792,7 +778,7 @@
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
@@ -801,15 +787,15 @@
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 2 -->
+                
 
-                <!-- accordion | box 3 -->
+                
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-2" id="acord-2-3" class="accordion-input">
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-2-3">
                     <article class="row">
                       <b class="ico-users fs-32 mr-20"></b>
@@ -821,13 +807,13 @@
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Registro</label>
 
                       <div class="text scroll-600 box">
@@ -840,16 +826,16 @@
                         <p class="text">Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Leite de capivaris, leite de mula manquis sem cabeça. A ordem dos tratores
                           não altera o pão duris. Delegadis gente finis, bibendum egestas augue arcu ut est.</p>
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- sentença -->
+                      
                       <div class="form-group">
                         <label class="form-label">Sentença</label>
                         <p class="form-view">Extrajudiciais / ATOS FINALÍSTICOS / Audiência / Instrução e Julgamento</p>
                       </div>
-                      <!-- fim: sentença -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
@@ -876,7 +862,7 @@
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
@@ -885,15 +871,15 @@
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 3 -->
+                
 
-                <!-- accordion | box 4 -->
+                
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-2" id="acord-2-4" class="accordion-input">
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-2-4">
                     <article class="row">
                       <b class="ico-users fs-32 mr-20"></b>
@@ -905,13 +891,13 @@
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Registro</label>
 
                       <div class="text scroll-600 box">
@@ -929,16 +915,16 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- sentença -->
+                      
                       <div class="form-group">
                         <label class="form-label">Sentença</label>
                         <p class="form-view">Extrajudiciais / ATOS FINALÍSTICOS / Audiência / Instrução e Julgamento</p>
                       </div>
-                      <!-- fim: sentença -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
@@ -965,7 +951,7 @@
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
@@ -974,28 +960,26 @@
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 4 -->
+                
 
               </section>
-              <!-- fim: accordion -->
+              
 
             </article>
-            <!-- fim: tabs 3 -->
+ 
+            <article class="tab-content tab-4 mt-15">
 
-            <!-- tabs 4 -->
-            <article class="tab-content tab-4">
-
-              <!-- accordion -->
+              
               <section class="accordion">
 
-                <!-- accordion | box 1 -->
+                
 
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-3" id="acord-3-1" class="accordion-input" checked>
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-3-1">
                     <article class="row">
                       <b class="ico-bookmark fs-32 mr-20"></b>
@@ -1007,13 +991,13 @@
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -1026,9 +1010,9 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
@@ -1055,7 +1039,7 @@
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
@@ -1064,28 +1048,26 @@
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 1 -->
+                
 
               </section>
-              <!-- fim: accordion -->
+              
 
             </article>
-            <!-- fim: tabs 4 -->
 
-            <!-- tabs 5 -->
-            <article class="tab-content tab-5">
+            <article class="tab-content tab-5 mt-15">
 
-              <!-- accordion -->
+              
               <section class="accordion">
 
-                <!-- accordion | box 1 -->
+                
 
                 <div class="accordion-box card-line mb-20">
                   <input type="checkbox" name="accordion-4" id="acord-4-1" class="accordion-input" checked>
 
-                  <!-- accordion | header -->
+                  
                   <label class="accordion-header" for="acord-4-1">
                     <article class="row">
                       <b class="ico-link fs-32 mr-20"></b>
@@ -1097,13 +1079,13 @@
                     </article>
                     <b class="accordion-ico"></b>
                   </label>
-                  <!-- fim: accordion | header -->
+                  
 
-                  <!-- accordion | content -->
+                  
                   <div class="accordion-container">
                     <div class="accordion-content">
 
-                      <!-- info -->
+                      
                       <label class="form-label">Descrição</label>
 
                       <div class="text scroll-600 box">
@@ -1124,9 +1106,9 @@
                           Atirei o pau no gatis, per gatis num morreus. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
 
                       </div>
-                      <!-- fim: info -->
+                      
 
-                      <!-- register -->
+                      
                       <br>
                       <div class="row-fluid">
 
@@ -1153,7 +1135,7 @@
                         </div>
 
                       </div>
-                      <!-- fim: register -->
+                      
 
                       <ul class="nav-line nav-right b-top mt-20">
                         <li class="nav-line-item tooltip-top" data-tooltip="Imprimir Movimento"><a class="nav-link inline" href="#"><b class="ico-printer"></b> Imprimir</a></li>
@@ -1162,25 +1144,24 @@
 
                     </div>
                   </div>
-                  <!-- fim: accordion | content -->
+                  
                 </div>
-                <!-- fim: accordion | box 1 -->
+                
 
               </section>
-              <!-- fim: accordion -->
+              
 
             </article>
-            <!-- fim: tabs 5 -->
-
+            
           </div>
         </div>
-        <!-- tabs -->
+        
 
       </div>
-      <!-- fim: process | content -->
+      
 
     </div>
-    <!-- fim: process -->
+    
   </div>
 
 </article>

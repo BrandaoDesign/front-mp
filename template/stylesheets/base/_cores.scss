@@ -25,12 +25,15 @@ $cor-gray-light: #f9fbfd;
 $cor-success: #4caf50;
 .bg-success{background: $cor-success;}
 .text-success{color: $cor-success;}
-$cor-success-dark: #009688;
+$cor-success-dark: #38873c;
 .bg-success-dark{background: $cor-success-dark;}
 .text-success-dark{color: $cor-success-dark;}
-$cor-success-light: #bff9c2;
+$cor-success-light: #8bc34a;
 .bg-success-light{background: $cor-success-light;}
 .text-success-light{color: $cor-success-light;}
+$cor-success-status: #bff9c2;
+.bg-success-status{background: $cor-success-status;}
+.text-success-status{color: $cor-success-status;}
 
 $cor-alert: #ff9800;
 .bg-alert{background: $cor-alert;}
@@ -38,29 +41,38 @@ $cor-alert: #ff9800;
 $cor-alert-dark: #ee720e;
 .bg-alert-dark{background: $cor-alert-dark;}
 .text-alert-dark{color: $cor-alert-dark;}
-$cor-alert-light: #fdf4a3;
+$cor-alert-light: #ffc107;
 .bg-alert-light{background: $cor-alert-light;}
 .text-alert-light{color: $cor-alert-light;}
+$cor-alert-status: #fdf4a3;
+.bg-alert-status{background: $cor-alert-status;}
+.text-alert-status{color: $cor-alert-status;}
 
 $cor-error: #f44336;
 .bg-error{background: $cor-error;}
 .text-error{color: $cor-error;}
-$cor-error-dark: #cc094f;
+$cor-error-dark: #d2382d;
 .bg-error-dark{background: $cor-error-dark;}
 .text-error-dark{color: $cor-error-dark;}
-$cor-error-light: #f9d6d4;
+$cor-error-light: #fd5d5d;
 .bg-error-light{background: $cor-error-light;}
 .text-error-light{color: $cor-error-light;}
+$cor-error-status: #f9d6d4;
+.bg-error-status{background: $cor-error-status;}
+.text-error-status{color: $cor-error-status;}
 
 $cor-info: #2196f3;
 .bg-info{background: $cor-info;}
 .text-info{color: $cor-info;}
-$cor-info-dark: #116f99;
+$cor-info-dark: #1078f0;
 .bg-info-dark{background: $cor-info-dark;}
 .text-info-dark{color: $cor-info-dark;}
-$cor-info-light: #cae5fb;
+$cor-info-light: #00abf9;
 .bg-info-light{background: $cor-info-light;}
 .text-info-light{color: $cor-info-light;}
+$cor-info-status: #cae5fb;
+.bg-info-status{background: $cor-info-status;}
+.text-info-status{color: $cor-info-status;}
 
 $shadow: rgba(0, 0, 0, 0.1);
 $shadow-2: rgba(0, 0, 0, 0.2);

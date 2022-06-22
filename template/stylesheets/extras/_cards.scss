@@ -78,7 +78,7 @@
     box-shadow: none;
     border: 1px solid var(--base-3);
 
-    .card-header{
+    .card-header-line{
       border-bottom: 1px solid var(--base-3);
     }
     .card-footer{
@@ -143,13 +143,13 @@
   }
   &-success{
     @extend .card;
-    background: $cor-success-light;
+    background: $cor-success-status;
     color: var(--card-text);
     .card-container{
       color: var(--card-text);
     }
     .card-footer{
-      background: $cor-success-light;
+      background: $cor-success-status;
     }
     a{
       color: var(--card-text);
@@ -160,13 +160,13 @@
   }
   &-alert{
     @extend .card;
-    background: $cor-alert-light;
+    background: $cor-alert-status;
     color: var(--card-text);
     .card-container{
       color: var(--card-text);
     }
     .card-footer{
-      background: $cor-alert-light;
+      background: $cor-alert-status;
     }
     a{
       &:hover{
@@ -176,13 +176,13 @@
   }
   &-error{
     @extend .card;
-    background: $cor-error-light;
+    background: $cor-error-status;
     color: var(--card-text);
     .card-container{
       color: var(--card-text);
     }
     .card-footer{
-      background: $cor-error-light;
+      background: $cor-error-status;
 
     }
     a{
@@ -194,13 +194,13 @@
   }
   &-info{
     @extend .card;
-    background: $cor-info-light;
+    background: $cor-info-status;
     color: var(--card-text);
     .card-container{
         color: var(--card-text);
       }
     .card-footer{
-      background: $cor-info-light;
+      background: $cor-info-status;
     }
     a{
       color: var(--card-text);

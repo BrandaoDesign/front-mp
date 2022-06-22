@@ -15,9 +15,9 @@
         --menu-2: #747474;
         --menu-3: #0066cc;
         --menu-4: #{$cor-gray-light};
-        --primary: #0d1e64;
-        --primary-light: #3f51b5;
-        --primary-dark: #021350;
+        --primary: #2f3541;
+        --primary-light: #3d4557;
+        --primary-dark: #000;
         --secondary: #0066cc;
         --secondary-light: #2196f3;
         --secondary-dark: #022473;
@@ -110,7 +110,7 @@ $cor-primary: var(--primary);
 $cor-primary-dark: var(--primary-dark);
 .bg-primary-dark{background: var(--primary-dark);}
 .text-primary-dark{color: var(--primary-dark);}
-$cor-primary-light: #29d4d4;
+$cor-primary-light: var(--primary-light);
 .bg-primary-light{background: var(--primary-light);}
 .text-primary-light{color: var(--primary-light);}
 

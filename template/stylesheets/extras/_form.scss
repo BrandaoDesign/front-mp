@@ -313,16 +313,12 @@ form, .form{
     }
   }
 
-
-
   &-view{
     font-weight: 600;
     border: 1px solid var(--base-3);
     margin: 0;
-    padding: calc(var(--grid)/2);
+    padding: calc(var(--grid)/3) calc(var(--grid)/2);
   }
-
-
 
   &-text{
     border: 1px solid var(--base-3);

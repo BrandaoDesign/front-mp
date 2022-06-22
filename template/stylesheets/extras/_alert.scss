@@ -39,7 +39,8 @@
   &-info{
     @extend .alert;
     color: $cor-info;
-    border-color: $cor-info-light;
+    border-color: $cor-info-status;
+    border-left-color: $cor-info;
     
     .bt-close{
       color: $cor-info;
@@ -51,7 +52,8 @@
     &-block{
       @extend .alert-info;
       color: $cor-info;
-      background: $cor-info-light;
+      background: $cor-info-status;
+      border-color: $cor-info-status;
       border-left-color: $cor-info;
       
       .bt-close{
@@ -63,7 +65,8 @@
   &-success{
     @extend .alert;
     color: $cor-success;
-    border-color: $cor-success-light;
+    border-color: $cor-success-status;
+    border-left-color: $cor-success;
     
     .bt-close{
       color: $cor-success-dark;
@@ -75,7 +78,8 @@
     &-block{
       @extend .alert-success;
       color: $cor-success;
-      background: $cor-success-light;
+      background: $cor-success-status;
+      border-color: $cor-success-status;
       border-left-color: $cor-success;
       
       .bt-close{
@@ -87,7 +91,8 @@
   &-alert{
     @extend .alert;
     color: $cor-alert;
-    border-color: $cor-alert-light;
+    border-color: $cor-alert-status;
+    border-left-color: $cor-alert;
     
     .bt-close{
       color: $cor-alert-dark;
@@ -99,7 +104,8 @@
     &-block{
       @extend .alert-alert;
       color: $cor-alert;
-      background: $cor-alert-light;
+      background: $cor-alert-status;
+      border-color: $cor-alert-status;
       border-left-color: $cor-alert;
       
       .bt-close{
@@ -111,7 +117,8 @@
   &-error{
     @extend .alert;
     color: $cor-error;
-    border-color: $cor-error-light;
+    border-color: $cor-error-status;
+    border-left-color: $cor-error;
     
     .bt-close{
       color: $cor-error-dark;
@@ -123,7 +130,8 @@
     &-block{
       @extend .alert-error;
       color: $cor-error;
-      background: $cor-error-light;
+      background: $cor-error-status;
+      border-color: $cor-error-status;
       border-left-color: $cor-error;
       
       .bt-close{

@@ -20,9 +20,9 @@
     <div class="nav-sub-content">
       <ul class="nav-line row-full">
         <li class="nav-line-item"><a class="nav-link block tooltip-top" href="#" data-tooltip="Cadastrar"><b class="ico-user-plus"></b> Cadastrar</a></li>
-        <li class="nav-line-item min-m"><a class="nav-link block tooltip-left" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b> Imprimir</a></li>
+        <li class="nav-line-item min-xm"><a class="nav-link block tooltip-top" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b> Imprimir</a></li>
       </ul>
-      <ul class="nav-line max-m">
+      <ul class="nav-line max-xm">
         <li class="nav-line-item"><a class="nav-link block tooltip-left" href="#" data-tooltip="Imprimir"><b class="ico-printer"></b></a></li>
       </ul>
     </div>
@@ -34,37 +34,39 @@
       
       <div class="card-line box b-radius">
         
-        <div class="row-fluid">
-          <div class="box col-3 col-m-4">
-            <h5 class="mb-10">Busca:</h5>
-            <div class="search">
-              <input type="text" class="form-input search-input" placeholder="pesquisar...">
-              <button class="bt search-button input-group-right"><b class="ico-search"></b></button>
-            </div>
-          </div>
-          <div class="col-9 col-m-8">
-            <h5 class="mb-10">Filtros:</h5>
-            <div class="form-inline">
-              <div class="form-group">
-                <select class="form-select" name="">
-                  <option>Data Criação</option>
-                  <option>Última Edição</option>
-                  <option>Mais Frequente</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <select class="form-select" name="">
-                  <option>Analista</option>
-                  <option>Desenvolvedor</option>
-                  <option>Desgin</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <button class="bt bt-medium">Filtrar</button>
+        <fieldset class="form">
+          <div class="row">
+            <div class="box col-3 col-m-4">
+              <h5 class="mb-10">Busca:</h5>
+              <div class="search">
+                <input type="text" class="form-input search-input" placeholder="pesquisar...">
+                <button class="bt search-button input-group-right"><b class="ico-search"></b></button>
               </div>
             </div>
+            <div class="col-9 col-m-8">
+              <h5 class="mb-10">Filtros:</h5>
+              <div class="form-inline">
+                <div class="form-group">
+                  <select class="form-select" name="">
+                    <option>Data Criação</option>
+                    <option>Última Edição</option>
+                    <option>Mais Frequente</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select class="form-select" name="">
+                    <option>Analista</option>
+                    <option>Desenvolvedor</option>
+                    <option>Desgin</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <button class="bt bt-medium">Filtrar</button>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </fieldset>
 
         <div class="scroll-w">
           <table class="table-line mt-0">
@@ -124,12 +126,12 @@
           </table>
         </div>
 
-        <div class="row-fluid row-center mt-15">
+        <div class="row-fluid row-center mt-30">
           <div class="col-6 col-m-6 pb-0">
             <small class="text-gray-dark">Mostrando de <strong>1 a 10</strong> de 50 encontrados.</small>
           </div>
           <nav class="col-6 col-m-6 pb-0">
-            <ul class="pagination nav-right fs-13">
+            <ul class="pagination-line nav-right fs-13">
               <li><a href="#"><b class="ico-arrow-left"></b> <span>Anterior</span></a></li>
               <li><a class="active" href="#">1</a></li>
               <li><a href="#">2</a></li>

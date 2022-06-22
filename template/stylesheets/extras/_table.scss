@@ -31,12 +31,15 @@
 
       &:hover {
         background: var(--base-3);
+        &:nth-of-type(odd) {
+          background: var(--base-3);
+        }
       }
     }
   }
 
   @media screen and (max-width: $break-s) {
-    td{white-space: pre;}
+    td{white-space: nowrap;}
   }
 }
 
@@ -207,6 +210,7 @@
 
       td {
         padding: calc(var(--grid)/5);
+        white-space: inherit;
   
         &::before {
           content: attr(data-label);
@@ -271,5 +275,41 @@
   .h-#{$t} {
     $value: calc(#{$t}px * 10);
     height: $value;
+  }
+}
+
+.order{
+  &-base{
+    position: relative;
+    padding-right: var(--grid) !important;
+    cursor: pointer;
+    transition: all .5s;
+
+    &:after{
+      font-family: 'mp-icons' !important;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: calc(var(--grid)/4);
+      transform: translateY(-50%);
+    }
+
+    &:hover{
+      &::after{
+        color: var(--secondary);
+      }
+    }
+  }
+  &-asc{
+    @extend .order-base;
+    &::after{
+      content: "\e992";
+    }
+  }
+  &-desc{
+    @extend .order-base;
+    &::after{
+      content: "\e98f";
+    }
   }
 }
