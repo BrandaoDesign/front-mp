@@ -25,7 +25,14 @@
   <label class="menu-header" for="menu-id2"><small class="status-ball bg-success"></small><em class="ico-grid"></em><span> Elementos</span></label>
   <div class="menu-content">
     <a class="menu-link-1 link_color" href="#">Cores</a>
-    <a class="menu-link-1 link_icons" href="#">Icones <small class="status bg-success text-white">novo</small></a>
+    <div class="menu-item">
+      <input type="checkbox" name="menu" id="menu-icons" class="menu-input hidden">
+      <label class="menu-header-1" for="menu-icons"><span> Ícones</span></label>
+      <div class="menu-content">
+        <a class="menu-link-2 link_icons" href="#">Ícones</a>
+        <a class="menu-link-2 link_material" href="#">Material Icons <small class="status bg-success text-white">novo</small></a>
+      </div>
+    </div>
     <a class="menu-link-1 link_symbol" href="#">Símbolos</a>
     <a class="menu-link-1 link_type" href="#">Tipografia</a>
     <a class="menu-link-1 link_button" href="#">Button</a>
@@ -94,6 +101,7 @@
 <script type="text/javascript">
   $(".link_color").click(function () { $.get("elements/color.html", function (data) { $("#main").html(data); }); });
   $(".link_icons").click(function () { $.get("elements/icons.html", function (data) { $("#main").html(data); }); });
+  $(".link_material").click(function () { $.get("elements/material.html", function (data) { $("#main").html(data); }); });
   $(".link_symbol").click(function () { $.get("elements/symbol.html", function (data) { $("#main").html(data); }); });
   $(".link_type").click(function () { $.get("elements/type.html", function (data) { $("#main").html(data); }); });
   $(".link_button").click(function () { $.get("elements/buttons.html", function (data) { $("#main").html(data); }); });
