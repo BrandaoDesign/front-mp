@@ -97,9 +97,17 @@
   padding: var(--grid);
 
   &-center {
-    max-width: $break-m;
+    max-width: $break-xl;
     margin: 0 auto;
     animation: 1s fadeIn;
+
+    @media screen and (max-width: $break-xm) {
+      max-width: $break-xm;
+    }
+    @media screen and (max-width: $break-s) {
+      max-width: $break-s;
+    }
+    
   }
 
   &-header {
@@ -116,4 +124,5 @@
     border-bottom: 1px solid var(--base-3);
     margin-bottom: calc(var(--grid) / 2);
   }
+
 }

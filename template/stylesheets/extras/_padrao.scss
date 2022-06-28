@@ -94,10 +94,33 @@ mark, .mark{
 .uppercase{
   text-transform: uppercase;
 }
+.light {
+  font-weight: 200;
+}
+.bold {
+  font-weight: 600;
+}
+.extra-bold {
+  font-weight: 700;
+}
 @for $f from 1 through 72 {
-  .fs-#{$f}{
-    $value: $f * 1px;
-    font-size: $value;
+  @media screen and (max-width: $break-s) {
+    .fs-s-#{$f}{
+      $value: $f * 1px;
+      font-size: $value;
+    }
+  }
+  @media screen and (min-width: $break-s) {
+    .fs-m-#{$f}{
+      $value: $f * 1px;
+      font-size: $value;
+    }
+  }
+  @media screen and (min-width: $break-xm) {
+    .fs-#{$f}{
+      $value: $f * 1px;
+      font-size: $value;
+    }
   }
 }
 @for $lh from 1 through 30 {
@@ -123,6 +146,19 @@ mark, .mark{
 
   &:focus{
     color: var(--secondary-light);
+  }
+}
+.link-primary{
+  color: var(--primary);
+  transition: .5s;
+  cursor: pointer;
+
+  &:hover{
+    color: var(--primary-light);
+  }
+
+  &:focus{
+    color: var(--primary-light);
   }
 }
 .mr-auto{
@@ -228,7 +264,7 @@ mark, .mark{
     overflow-y: auto;
   }
 }
-.user, profile{
+.user, .profile{
   @include display-flex;
   @include align-items(center);
   @include justify-content(center);
@@ -467,5 +503,29 @@ mark, .mark{
   }
   &-b{
     vertical-align: bottom;
+  }
+}
+@for $wp from 1 through 100 {
+  .width-p-#{$wp}{
+    $value: $wp + 0%;
+    letter-spacing: $value;
+  }
+}
+
+@for $t from 1 through 200 {
+
+  .tw-#{$t},
+  .w-#{$t} {
+    $value: calc(#{$t}px * 10);
+    width: $value;
+  }
+}
+
+@for $t from 1 through 200 {
+
+  .ty-#{$t},
+  .h-#{$t} {
+    $value: calc(#{$t}px * 10);
+    height: $value;
   }
 }

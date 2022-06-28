@@ -1,31 +1,20 @@
-<nav class="header-content page-center">
-
-  <a class="header-brand link_home" href="#">
-    <figure class="logo"><img class="img-fluid" src="template/images/logo.svg" alt="Logo do Sistema"></figure>
-    <figure class="logo-symbol"><img class="img-fluid" src="template/images/logo-symbol.svg" alt="Logo do Sistema"></figure>
-  </a>
+<nav class="page-center row box">
 
   <label class="nav-icolink inline mr-auto min-xm" for="menu"><b class="ico ico-menu"></b></label>
+  
+  <a class="link_home" href="#">
+    <figure class="w-14"><img class="img-fluid" src="template/images/logo.svg" alt="Logo do Sistema"></figure>
+  </a>
 
-  <ul class="nav row-center max-xm mr-auto">
-    <li><a class="nav-link block link_home" href="#" id="home">Home</a></li>
-    <li><a class="nav-link block link_intro" href="#" id="intro">Introdução</a></li>
-    <li class="dropdown">
-      <a class="nav-link block" href="#">Documentação <span class="ico-chevron-down"></span></a>
 
-      <ul class="dropdown-content dropdown-menu">
-        <li><a class="nav-sublink block link_install" href="#" id="installs">Instalação</a></li>
-        <li><a class="nav-sublink block link_components" href="#">UI Componentes</a></li>
-        <li><a class="nav-sublink block" href="template/login.html">Exemplo</a></li>
-      </ul>
-
-    </li>
-    <li><a class="nav-link block link_about" href="#" id="contact">Sobre</a></li>
-    <li><a class="nav-link block link_contact" href="#" id="contact">Suporte</a></li>
-
+  <ul class="nav row-center max-xm ml-auto td-focus">
+    <li><a class="nav-link block link_home" href="#">Inicio</a></li>
+    <li><a class="nav-sublink block link_install" href="#" >Instalação</a></li>
+    <li><a class="nav-sublink block link_components" href="#">UI Componentes</a></li>
+    <li><a class="nav-sublink block" href="template/login.html">Exemplo</a></li>
   </ul>
 
-  <div class="row row-center pr-10">
+  <div class="row row-center pr-10 ml-auto">
     <figure class="tw-3">
       <img src="template/images/ico/mp.svg" alt="Foto do Perfil">
     </figure>
@@ -33,3 +22,9 @@
   </div>
 
 </nav>
+
+<script type="text/javascript">
+  $(".link_home").click(function(){ $.get("home.html", function(data) { $("#container").html(data); }); });
+  $(".link_install").click(function(){ $.get("installs.html", function(data) { $("#container").html(data); }); });
+  $(".link_components").click(function(){ $.get("components/components.html", function(data) { $("#container").html(data); }); });
+</script>

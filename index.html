@@ -2,9 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="template/stylesheets/application.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Front-MP</title>
+    <title>Front-MP 2.0</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
@@ -15,9 +16,13 @@
       });
     </script>
   </head>
-  <body class="theme-white">
+  <body class="theme-front">
     <!-- menu-left active -->
     <input type="checkbox" id="menu" class="hidden">
+    <label class="menu-close" for="menu"></label>
+
+    <input type="checkbox" id="menu-component" class="hidden">
+    <!-- <label class="menu-close" for="menu-component"></label> -->
 
     <!-- header app -->
     <header id="header" class="header"></header>

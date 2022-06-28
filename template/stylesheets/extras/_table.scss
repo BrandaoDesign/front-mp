@@ -88,6 +88,18 @@
     }
   }
 
+  &-primary {
+    @extend .table;
+
+    thead {
+      tr {
+        color: $cor-white;
+        background: var(--primary);
+        border-color: var(--primary);
+      }
+    }
+  }
+
   &-secondary {
     @extend .table;
 
@@ -258,24 +270,6 @@
 
 .td-focus {
   font-weight: 600;
-}
-
-@for $t from 1 through 200 {
-
-  .tw-#{$t},
-  .w-#{$t} {
-    $value: calc(#{$t}px * 10);
-    width: $value;
-  }
-}
-
-@for $t from 1 through 200 {
-
-  .ty-#{$t},
-  .h-#{$t} {
-    $value: calc(#{$t}px * 10);
-    height: $value;
-  }
 }
 
 .order{

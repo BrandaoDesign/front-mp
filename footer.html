@@ -1,44 +1,38 @@
-<section class="section-sm">
-  <fieldset class="content-center">
-    <div class="row">
-        <ul class="list-clear col-s-6 col-m-4 col-2">
-          <li class="mb-15"><strong>Início</strong></li>
-          <li class="mb-15"><a class="link link_home" href="#">Home</a></li>
-        </ul>
-        <ul class="list-clear col-s-6 col-m-4 col-2">
-          <li class="mb-15"><strong>O Front-MP</strong></li>
-          <li class="mb-15"><a class="link link_intro" href="#">Introdução</a></li>
-        </ul>
-        <ul class="list-clear col-s-6 col-m-4 col-2">
-          <li class="mb-15"><strong>Documentação</strong></li>
-          <li class="mb-15"><a class="link link_install" href="#">Instalação</a></li>
-          <li class="mb-15"><a class="link link_components" href="#">UI Componentes</a></li>
-          <li class="mb-15"><a class="link" href="template/login.html">Exemplo</a></li>
-        </ul>
-        <ul class="list-clear col-s-6 col-m-4 col-2">
-          <li class="mb-15"><strong>Departamento</strong></li>
-          <li class="mb-15"><a class="link link_dev" href="#">Sobre</a></li>
-          <li class="mb-15"><a class="link link_about" href="#">Equipe</a></li>
-        </ul>
-        <ul class="list-clear col-s-6 col-m-4 col-4">
-          <li class="mb-15"><strong>Contato</strong></li>
-          <li class="mb-15"><a class="link link_contact" href="#">Suporte</a></li>
-        </ul>
+<div class="content-center">
+  <div class="row row-center">
+    <div class="col-m-4 col-3">
+      <h1 class="text-secondary mb-15"><b class="ico-phone"></b></h1>
+      <strong class="text-primary">Contato</strong>
+      <p class="">62. 3243-8491</p>
     </div>
-  </fieldset>
-</section>
+    <div class="col-m-4 col-3">
+      <h1 class="text-secondary mb-15"><b class="ico-mail"></b></h1>
+      <strong class="text-primary">Email</strong>
+      <p>informatica@mpgo.mp.br</p>
+    </div>
+    <div class="col-m-5 col-6">
+      <h1 class="text-secondary mb-15"><b class="ico-flag"></b></h1>
+      <strong class="text-primary">Localização</strong>
+      <p>Superintendencia de Informática, Edifício Sede do MP-GO - Sala 301 - 3º andar - Ala A</p>
+    </div>
+  </div>
+</div>
 
-<footer class="content-center box">
-  <div class="row-center box">
-    <small class="col-m-6 col-6">Front-MP © 2018</small>
-    <small class="col-m-6 col-6 h-ass">Superintendencia de Informática - Sala 301</small>
+<footer class="content-center">
+  <div class="row-center wizard-footer">
+    <small class="full"><strong>Front-MP © 2018</strong> <br>Superintendencia de Informática - Sala 301</small>
+    <div class="">
+      <a class="link_home" href="#">
+        <figure class="w-14"><img class="img-fluid" src="template/images/logo.svg" alt="Logo do Sistema"></figure>
+      </a>
+    </div>
   </div>
 </footer>
 <script type="text/javascript">
-  $(".link_home").click(function(){ $.get("home.html", function(data) { $("#container").html(data); }); });
-  $(".link_intro").click(function(){ $.get("intro.html", function(data) { $("#container").html(data); }); });
-  $(".link_contact").click(function(){ $.get("contact.html", function(data) { $("#container").html(data); }); });
-  $(".link_install").click(function(){ $.get("installs.html", function(data) { $("#container").html(data); }); });
-  $(".link_components").click(function(){ $.get("components/components.html", function(data) { $("#container").html(data); }); });
-  $(".link_about").click(function(){ $.get("about.html", function(data) { $("#container").html(data); }); });
+  $(".link_home").click(function () { $.get("home.html", function (data) { $("#container").html(data); }); });
+  $(".link_intro").click(function () { $.get("intro.html", function (data) { $("#container").html(data); }); });
+  $(".link_contact").click(function () { $.get("contact.html", function (data) { $("#container").html(data); }); });
+  $(".link_install").click(function () { $.get("installs.html", function (data) { $("#container").html(data); }); });
+  $(".link_components").click(function () { $.get("components/components.html", function (data) { $("#container").html(data); }); });
+  $(".link_about").click(function () { $.get("about.html", function (data) { $("#container").html(data); }); });
 </script>
