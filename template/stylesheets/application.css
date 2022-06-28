@@ -966,6 +966,9 @@ mark, .mark {
   display: block;
   width: 100%; }
 
+.relative {
+  position: relative; }
+
 .inline {
   display: inline-block; }
 
@@ -24788,7 +24791,7 @@ figcaption {
   height: 100vh; }
   .login::before {
     content: "";
-    background: url("../images/bg-login.svg");
+    background: url("../images/background/bg-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
@@ -24798,7 +24801,7 @@ figcaption {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 30%;
+    left: 25%;
     z-index: -1; }
   .login-box {
     display: -webkit-flex;

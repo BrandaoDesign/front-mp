@@ -68,7 +68,14 @@
         <input type="checkbox" name="menu" id="elements" class="menu-input hidden" checked>
           <label class="menu-header" for="elements"><em class="ico-package"></em><span> Elementos</span></label>
         <div class="menu-content">
-          <a class="menu-link-1 block scroll" href="#icons">Ícones</a>
+          <div class="menu-item">
+            <input type="checkbox" name="menu" id="icones" class="menu-input hidden">
+              <label class="menu-header pl-52" for="icones"><span> Ícones</span></label>
+            <div class="menu-content">
+              <a class="menu-link-2 block scroll" href="#icons">Front Ícones</a>
+              <a class="menu-link-2 block scroll" href="#material">Material Icons</a>
+            </div>
+          </div>
           <a class="menu-link-1 block scroll" href="#button">Botões</a>
           <a class="menu-link-1 block scroll" href="#dropdown">Dropdown</a>
           <a class="menu-link-1 block scroll" href="#cards">Cards</a>
@@ -96,8 +103,8 @@
       <div class="page-center pt-20">
         
         <ul class="crumbs">
-          <li><a href="index.html">Home <b class="ico ico-arrow-right"></b></a></li>
-          <li><p>UI Componentes <b class="ico ico-arrow-right"></b></p></li>
+          <li><a href="index.html">Home <b class="ico-chevron-right"></b></a></li>
+          <li><p>UI Componentes <b class="ico-chevron-right"></b></p></li>
         </ul>
         
         <div class="page-center row-center">
@@ -585,7 +592,7 @@
                 <td>.user, .profile</td>
                 <td>
                   <figure class="user w-8">
-                    <img src="images/renato-brandao.png" alt="Foto Perfil">
+                    <img src="template/images/renato-brandao.png" alt="Foto Perfil">
                   </figure>
                 </td>
               </tr>
@@ -594,14 +601,14 @@
   
             <div class="col-1">
               <figure class="user w-4">
-                <img src="images/renato-brandao.png" alt="Foto Perfil">
+                <img src="template/images/renato-brandao.png" alt="Foto Perfil">
                 <em class="status-ball bg-error"></em>
               </figure>
             </div><br>
             <p class="small">exemple</p>
             <code class="box b-radius bg-black-light text-white block">
               <span><</span>figure class="user tw-4"><br>
-                <span class="ml-10"><</span>img src="images/renato-brandao.png" alt="Foto Perfil"><br>
+                <span class="ml-10"><</span>img src="template/images/renato-brandao.png" alt="Foto Perfil"><br>
                 <span class="ml-10"><</span>em class="status-ball bg-error"><span><</span>/em><br>
               <span><</span>/figure>
             </code>
@@ -1028,6 +1035,62 @@
             </code>
         </fieldset>
   
+      </article>
+
+      <article id="theme">
+        <h2>Theme</h2><br><br>
+
+        <fieldset>
+          <h4>Theme White</h4><br>
+          <div class="relative block ty-30 card-shadow">
+            <div class="theme-white text-center bg-background block ty-30" style="position: absolute; z-index: 1;">
+              <header class="header" style="position: absolute;"><div class="header-content">Cabeçalho</div></header>
+              <section class="container container-menu" style="height: 200px">
+                <main class="main"><div class="content-center">Conteúdo</div></main>
+                <footer><div class="wizard-footer">Rodapé</div></footer>
+              </section>
+              <nav class="menu" style="position: absolute;"><div class="box">Menu</div></nav>
+            </div>
+          </div><br>
+          <code class="box b-radius bg-black-light text-white block">
+            <span><</span>body class="theme-white">Theme White<span><</span>/body><br>
+          </code>
+        </fieldset>
+
+        <fieldset>
+          <h4>Theme Primary</h4><br>
+          <div class="relative block ty-30 card-shadow">
+            <div class="theme-primary text-center bg-background block ty-30" style="position: absolute; z-index: 1;">
+              <header class="header" style="position: absolute;"><div class="header-content">Cabeçalho</div></header>
+              <section class="container container-menu" style="height: 200px">
+                <main class="main"><div class="content-center">Conteúdo</div></main>
+                <footer><div class="wizard-footer">Rodapé</div></footer>
+              </section>
+              <nav class="menu" style="position: absolute;"><div class="box">Menu</div></nav>
+            </div>
+          </div><br>
+          <code class="box b-radius bg-black-light text-white block">
+            <span><</span>body class="theme-primary">Theme Primary<span><</span>/body><br>
+          </code>
+        </fieldset>
+
+        <fieldset>
+          <h4>Theme Dark</h4><br>
+          <div class="relative block ty-30 card-shadow">
+            <div class="theme-dark text-center bg-background block ty-30" style="position: absolute; z-index: 1;">
+              <header class="header" style="position: absolute;"><div class="header-content">Cabeçalho</div></header>
+              <section class="container container-menu" style="height: 200px">
+                <main class="main"><div class="content-center">Conteúdo</div></main>
+                <footer><div class="wizard-footer">Rodapé</div></footer>
+              </section>
+              <nav class="menu" style="position: absolute;"><div class="box">Menu</div></nav>
+            </div>
+          </div><br>
+          <code class="box b-radius bg-black-light text-white block">
+            <span><</span>body class="theme-dark">Theme Dark<span><</span>/body><br>
+          </code>
+        </fieldset>
+
       </article>
 
       <div class="divider-base">CONTEÚDO</div>
@@ -2608,14 +2671,14 @@
   
         <fieldset>
           <figure class="figure col-6">
-            <img src="images/background/bg-1.jpg" alt="Background 1">
+            <img src="template/images/background/bg-1.jpg" alt="Background 1">
           </figure>
           <figcaption>Casamentiss faiz malandris se pirulitá.</figcaption>
           <br>
           <p class="small">exemple</p>
           <code class="box b-radius bg-black-light text-white block">
             <span><</span>figure class="figure col-6"><br>
-              <span class="ml-10"><</span>img src="images/background/bg-1.jpg" alt="Tela de Login"><br>
+              <span class="ml-10"><</span>img src="template/images/background/bg-1.jpg" alt="Tela de Login"><br>
             <span><</span>span><</span>/figure><br>
             <span><</span>figcaption>Casamentiss faiz malandris se pirulitá.<span><</span>/figcaption>
           </code>
@@ -2632,19 +2695,19 @@
               <div class="divider">NOV 2018</div>
               <ul class="list-clear gallery">
                 <li class="col-12">
-                  <div class="photo-link"><a class="figure" href="#"><img src="images/background/bg-1.jpg" alt="Foto Iphone"></a></div>
+                  <div class="photo-link"><a class="figure" href="#"><img src="template/images/background/bg-1.jpg" alt="Foto Iphone"></a></div>
                 </li>
                 <li class="col-3 col-m-3">
-                  <div class="photo-link"><a class="figure" href="#"><img src="images/background/bg-1.jpg" alt="Foto Iphone"></a></div>
+                  <div class="photo-link"><a class="figure" href="#"><img src="template/images/background/bg-1.jpg" alt="Foto Iphone"></a></div>
                 </li>
                 <li class="col-3 col-m-3">
-                  <div class="photo-link"><a class="figure" href="#"><img src="images/background/bg-2.jpg" alt="Foto Iphone"></a></div>
+                  <div class="photo-link"><a class="figure" href="#"><img src="template/images/background/bg-2.jpg" alt="Foto Iphone"></a></div>
                 </li>
                 <li class="col-3 col-m-3">
-                  <div class="photo-link"><a class="figure" href="#"><img src="images/background/bg-1.jpg" alt="Foto Iphone"></a></div>
+                  <div class="photo-link"><a class="figure" href="#"><img src="template/images/background/bg-1.jpg" alt="Foto Iphone"></a></div>
                 </li>
                 <li class="col-3 col-m-3">
-                  <div class="photo-link"><a class="figure" href="#"><img src="images/background/bg-2.jpg" alt="Foto Iphone"></a></div>
+                  <div class="photo-link"><a class="figure" href="#"><img src="template/images/background/bg-2.jpg" alt="Foto Iphone"></a></div>
                 </li>
               </ul>
           </div><br>
@@ -2654,19 +2717,19 @@
                 <span class="ml-10"><</span>div class="divider">NOV 2018<span><</span>/div><br>
                 <span class="ml-10"><</span>ul class="list-clear gallery"><br>
                   <span class="ml-20"><</span>li class="col-12"><br>
-                    <span class="ml-30"><</span>div class="photo-link"><span><</span>a class="figure" href="#"><span><</span>img src="images/background/bg-1.jpg" alt="Foto Iphone"><span><</span>/a><span><</span>/div><br>
+                    <span class="ml-30"><</span>div class="photo-link"><span><</span>a class="figure" href="#"><span><</span>img src="template/images/background/bg-1.jpg" alt="Foto Iphone"><span><</span>/a><span><</span>/div><br>
                   <span class="ml-20"><</span>/li><br>
                   <span class="ml-20"><</span>li class="col-3 col-m-3"><br>
-                    <span class="ml-30"><</span>div class="photo-link"><span><</span>a class="figure" href="#"><span><</span>img src="images/background/bg-1.jpg" alt="Foto Iphone"><span><</span>/a><span><</span>/div><br>
+                    <span class="ml-30"><</span>div class="photo-link"><span><</span>a class="figure" href="#"><span><</span>img src="template/images/background/bg-1.jpg" alt="Foto Iphone"><span><</span>/a><span><</span>/div><br>
                   <span class="ml-20"><</span>/li><br>
                   <span class="ml-20"><</span>li class="col-3 col-m-3"><br>
-                    <span class="ml-30"><</span>div class="photo-link"><span><</span>a class="figure" href="#"><span><</span>img src="images/background/bg-2.jpg" alt="Foto Iphone"><span><</span>/a><span><</span>/div><br>
+                    <span class="ml-30"><</span>div class="photo-link"><span><</span>a class="figure" href="#"><span><</span>img src="template/images/background/bg-2.jpg" alt="Foto Iphone"><span><</span>/a><span><</span>/div><br>
                   <span class="ml-20"><</span>/li><br>
                   <span class="ml-20"><</span>li class="col-3 col-m-3"><br>
-                    <span class="ml-30"><</span>div class="photo-link"><span><</span>a class="figure" href="#"><span><</span>img src="images/background/bg-1.jpg" alt="Foto Iphone"><span><</span>/a><span><</span>/div><br>
+                    <span class="ml-30"><</span>div class="photo-link"><span><</span>a class="figure" href="#"><span><</span>img src="template/images/background/bg-1.jpg" alt="Foto Iphone"><span><</span>/a><span><</span>/div><br>
                   <span class="ml-20"><</span>/li><br>
                   <span class="ml-20"><</span>li class="col-3 col-m-3"><br>
-                    <span class="ml-30"><</span>div class="photo-link"><span><</span>a class="figure" href="#"><span><</span>img src="images/background/bg-2.jpg" alt="Foto Iphone"><span><</span>/a><span><</span>/div><br>
+                    <span class="ml-30"><</span>div class="photo-link"><span><</span>a class="figure" href="#"><span><</span>img src="template/images/background/bg-2.jpg" alt="Foto Iphone"><span><</span>/a><span><</span>/div><br>
                   <span class="ml-20"><</span>/li><br>
                 <span class="ml-10"><</span>/ul><br>
             <span><</span>/div>
@@ -5640,6 +5703,315 @@
           </div>
   
         </fieldset>
+
+        <fieldset id="material">
+          <h4>Material Icons</h4><br><br>
+
+          <p>Importar a font Material Icones do google fonts</p>
+          <code class="box-line block bg-gray-light small">
+            <span>&lt;</span>head&gt;<br>
+              <span><</span>link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"><br>
+            <span>&lt;</span>/head&gt;
+          </code>
+
+          <b class="material-icons-outlined plus">search</b>
+          <p class="small">exemple</p>
+          <code class="box b-radius bg-black-light text-white block">
+              <span><</span>b class="material-icons-outlined plus">search<span><</span>/b>
+          </code><br><br>
+
+          <div class="row-fluid mt-15 text-center">
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">search</b>
+              <span class="pl-10">Search</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">home</b>
+              <span class="pl-10">Home</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">menu</b>
+              <span class="pl-10">Menu</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">close</b>
+              <span class="pl-10">Close</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">settings</b>
+              <span class="pl-10">Settings</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">done</b>
+              <span class="pl-10">Done</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">expand_more</b>
+              <span class="pl-10">Expand More</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">check_circle</b>
+              <span class="pl-10">Check Circle</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">favorite</b>
+              <span class="pl-10">Favorite</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">add</b>
+              <span class="pl-10">Add</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">delete</b>
+              <span class="pl-10">Delete</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_back</b>
+              <span class="pl-10">Arrow Back</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">logout</b>
+              <span class="pl-10">Logout</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">chevron_right</b>
+              <span class="pl-10">Chevron Right</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">star</b>
+              <span class="pl-10">Star</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_forward_ios</b>
+              <span class="pl-10">Arrow Forward Ios</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">add_circle</b>
+              <span class="pl-10">Add Circle</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">cancel</b>
+              <span class="pl-10">Cancel</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_back_ios</b>
+              <span class="pl-10">Arrow Back Ios</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">file_download</b>
+              <span class="pl-10">File Download</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_forward</b>
+              <span class="pl-10">Arrow Forward</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_drop_down</b>
+              <span class="pl-10">Arrow Drop Down</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">more_vert</b>
+              <span class="pl-10">More Vert</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">check</b>
+              <span class="pl-10">Check</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">check_box</b>
+              <span class="pl-10">Check Box</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">toggle_on</b>
+              <span class="pl-10">Toggle On</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">grade</b>
+              <span class="pl-10">Grade</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">login</b>
+              <span class="pl-10">Login</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">open_in_new</b>
+              <span class="pl-10">Open In New</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">check_box_outline_blank</b>
+              <span class="pl-10">Check Box Outline Blank</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">refresh</b>
+              <span class="pl-10">Refresh</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">chevron_left</b>
+              <span class="pl-10">Chevron Left</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">expand_less</b>
+              <span class="pl-10">Expand Less</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">radio_button_unchecked</b>
+              <span class="pl-10">Radio Button Unchecked</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">more_horiz</b>
+              <span class="pl-10">More Horiz</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_right_alt</b>
+              <span class="pl-10">Arrow Right Alt</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">radio_button_checked</b>
+              <span class="pl-10">Radio Button Checked</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">file_upload</b>
+              <span class="pl-10">File Upload</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">apps</b>
+              <span class="pl-10">Apps</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">remove</b>
+              <span class="pl-10">Remove</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">download</b>
+              <span class="pl-10">Download</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">toggle_off</b>
+              <span class="pl-10">Toggle Off</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">bolt</b>
+              <span class="pl-10">Bolt</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">delete_forever</b>
+              <span class="pl-10">Delete Forever</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_upward</b>
+              <span class="pl-10">Arrow Upward</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">filter_list</b>
+              <span class="pl-10">Filter List</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">autorenew</b>
+              <span class="pl-10">Autorenew</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">sort</b>
+              <span class="pl-10">Sort</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">sync</b>
+              <span class="pl-10">Sync</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_back_ios_new</b>
+              <span class="pl-10">Arrow Back Ios New</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_downward</b>
+              <span class="pl-10">Arrow Downward</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">add_box</b>
+              <span class="pl-10">Add Box</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">block</b>
+              <span class="pl-10">Block</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">restart_alt</b>
+              <span class="pl-10">Restart Alt</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">key</b>
+              <span class="pl-10">Key</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">menu_open</b>
+              <span class="pl-10">Menu Open</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">backspace</b>
+              <span class="pl-10">Backspace</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">undo</b>
+              <span class="pl-10">Undo</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">done_all</b>
+              <span class="pl-10">Done All</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">expand_circle_down</b>
+              <span class="pl-10">Expand Circle Down</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_circle_right</b>
+              <span class="pl-10">Arrow Circle Right</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">arrow_right</b>
+              <span class="pl-10">Arrow Right</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">double_arrow</b>
+              <span class="pl-10">Double Arrow</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">shopping_cart_checkout</b>
+              <span class="pl-10">Shopping Cart Checkout</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">open_in_full</b>
+              <span class="pl-10">Open In Full</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">manage_search</b>
+              <span class="pl-10">Manage Search</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">zoom_in</b>
+              <span class="pl-10">Zoom In</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">done_outline</b>
+              <span class="pl-10">Done Outline</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">do_not_disturb_on</b>
+              <span class="pl-10">Do Not Disturb On</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">sync_alt</b>
+              <span class="pl-10">Sync Alt</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">drag_indicator</b>
+              <span class="pl-10">Drag Indicator</span>
+            </div>
+            <div class="col-2 col-m-4 row-center">
+              <b class="material-icons-outlined plus">fullscreen</b>
+              <span class="pl-10">Fullscreen</span>
+            </div>
+            
+          </div>
+        </fieldset>
   
       </article>
 
@@ -6067,7 +6439,7 @@
           <div class="card card-hidden col-3">
             <div class="card-container">
               <figure class="figure">
-                <img src="images/background/bg-1.jpg" alt="Background 1">
+                <img src="template/images/background/bg-1.jpg" alt="Background 1">
               </figure>
               <div class="card-footer">
                 <h3>Card Hidden</h3>
@@ -6079,7 +6451,7 @@
               <span><</span>div class="card card-hidden col-3"><br>
                 <span class="ml-10"><</span>div class="card-container"><br>
                   <span class="ml-20"><</span>figure class="figure"><br>
-                    <span class="ml-30"><</span>img src="images/background/bg-1.jpg" alt="Background 1"><br>
+                    <span class="ml-30"><</span>img src="template/images/background/bg-1.jpg" alt="Background 1"><br>
                   <span class="ml-20"><</span>/figure><br>
                   <span class="ml-20"><</span>div class="card-footer"><br>
                     <span class="ml-30"><</span>h3>Card Hidden<span><</span>/h3><br>
@@ -6093,7 +6465,7 @@
           <div class="card card-caption col-3">
             <div class="card-container">
               <figure class="figure">
-                <img src="images/background/bg-1.jpg" alt="Background 1">
+                <img src="template/images/background/bg-1.jpg" alt="Background 1">
               </figure>
               <div class="card-footer">
                 <h3>Card Caption</h3><br>
@@ -6106,7 +6478,7 @@
               <span><</span>div class="card card-hidden col-3"><br>
                 <span class="ml-10"><</span>div class="card-container"><br>
                   <span class="ml-20"><</span>figure class="figure"><br>
-                    <span class="ml-30"><</span>img src="images/background/bg-1.jpg" alt="Background 1"><br>
+                    <span class="ml-30"><</span>img src="template/images/background/bg-1.jpg" alt="Background 1"><br>
                   <span class="ml-20"><</span>/figure><br>
                   <span class="ml-20"><</span>div class="card-footer"><br>
                     <span class="ml-30"><</span>h3>Card Hidden<span><</span>/h3><br>
@@ -7569,7 +7941,7 @@
                 <figure class="figure">
                   <img src="template/images/slides/slide-3.jpg" alt="Background 2">
                 </figure>
-                <div class="slide-caption">
+                <div class="slide-caption bg-black-light">
                   <h2 class="text-white">Mussum Ipsum, cacilds vidis litro abertis.</h2><br>
                   <p class="text text-white">Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis. </p>
                 </div>
