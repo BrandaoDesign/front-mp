@@ -801,7 +801,7 @@ table {
   --card-text: var(--color); }
 .theme-dark {
   --background: var(--base-1);
-  --color: #CDCFD4;
+  --color: #fff;
   --base-1: #141A28;
   --base-2: #1b2337;
   --base-3: #202940;
@@ -815,12 +815,12 @@ table {
   --menu-2: #CDCFD4;
   --menu-3: #fff;
   --menu-4: var(--base-1);
-  --primary: #2f3541;
-  --primary-light: #3d4557;
-  --primary-dark: #000;
+  --primary: #0b328d;
+  --primary-light: #0d3dae;
+  --primary-dark: #022473;
   --secondary: #0066cc;
-  --secondary-light: #0066cc;
-  --secondary-dark: #022473;
+  --secondary-light: #3d78f0;
+  --secondary-dark: #2150ab;
   --logo-1: #fff;
   --logo-2: #0066cc;
   --grid: 30px;
